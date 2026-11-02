@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2004</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/impressions/2004/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+
+  
+  
+
+  <div class="max-w-4xl mx-auto p-4">
+    <!-- Title Section with Navigation -->
+    <header class="mb-8">
+      <!-- Navigation Arrows -->
+      <div class="flex items-center justify-between">
+        <div>
+          
+          <a href="/impressions/2003"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              <i
+                class="fas fa-chevron-left flex items-center justify-center group-hover:-translate-x-1 transition-all "></i>
+              2003
+            </span>
+          </a>
+          
+        </div>
+
+        <div>
+          
+          <a href="/impressions/2005"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              2005
+              <i
+                class="fas fa-chevron-right flex items-center justify-center group-hover:translate-x-1 transition-all "></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Title and Info -->
+      <div class="text-center">
+        <h1 class="mb-4 text-4xl font-bold text-light-purple">
+          IAYC 2004
+        </h1>
+        <div class="flex items-center justify-center space-x-2 text-light-gray italic">
+          <span>Sayda, Germany</span>
+          <span>•</span>
+          <span>Erik Jansen (Netherlands)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="prose max-w-none">
+      <p>As I had missed the IAYC 2003 in Klingenthal, I felt a bit like a lost soul coming back home. But it was surprising how much I had forgotten about my beloved home…</p>
+
+<p>The first hole in my memory was forgetting how much an IAYC asks of a person physically. It is common knowledge that after an IAYC you need a holiday to get back to normal. So the last thing you want to do is show up on the first day of IAYC tired. Due to a preunion of a few days in Prague with this year’s Spanish delegation, and a birthday of one of the members of this delegation, we arrived in Sayda in a mixed state of a hangover and a lack of sleep of approximately 10 hours. Mistake.</p>
+
+<p>While refinding my place among the living in the first days of the camp, I noticed that there was something special about the group of people this year. Very early in the camp there was a lot of interaction between the people. This could only mean one thing: this was going to be one great camp…</p>
+
+<p>…and it became one great camp. The center of social life was the stairway to the camphouse.</p>
+
+<p>When not working on their projects, people were sitting here talking about the good food they just had, the beautiful constellation they were a part of or the name of a song they lost their mind on at last evening’s party. And, probably due to the large portion of Southern-European participants, there were a lot of parties to talk about. One invention made this camp was the rain-party.</p>
+
+<p>Speakers out the windows and dancing until not a dry spot was left on anybody. A successive showerparty, an invention from the year before, was sufficient to warm up again. When the visitors reminded us that it was the 40th camp, we knew that they meant this had to be celebrated. And so it happened. I remember the breakfast next morning was very amusing…</p>
+
+<p>So was the IAYC 2004 only about parties? Not by a long shot. Many people were working a lot on their projects, acquiring very nice results. The image of a line of people walking to the observation field is imprinted in my brain. It was a very nice walk through the forest ending on top of a hill with a view 360 degrees around. Many clear nights allowed people to work on their projects, or just stargaze. Numerous days started on the observation field and when quick enough, it was possible to see a sunrise twice by using the hunting towers that were everywhere around.</p>
+
+<p>It is impossible to name all the things that made this camp special. But some things have to be mentioned. There was a revival of the wacky competitions spirit first observed in 2000. As back then, it started again with the cookie competition. This time it ended with rarities such as the ‘where are you going - I don’t know - competition’ and of course the legendary ass-competition. The winner of this competition is since this camp also known as Dr Drice, due to an unsuccessful, but explosive, experiment with dry ice. The camphouse also had a very nice field where both boys and girls were able to express themselves in the international language called football. One small but important feature of the camphouse that the beloved NAP-leader Ania will never forget was the fountain. She spent most of her time there, reminiscing the wonderful chaos she had just created moments before, and wondering how she ended up in the fountain again.</p>
+
+<p>Talking about NAP, the constructing game has to be mentioned. The construction game is the yearly event when the international bunch of astronomers prove that they could have just as easily become a successful engineer. This year, the challenge was to transport a pingpongball as far as possible through air. Of course, supplied with anything but useful material, the challenge was not an easy one. This is the only excuse I can think of for justifying my part in the construction of the worst ever built hot air balloon in human history.</p>
+
+<p>When thinking back to this camp, I get a lot of short memory flashes: Klaas with his swollen foot, Rob with his bunny ears, Balazs with his tail, seeing a shooting star breaking into different pieces, an incredible pink sky in an early morning, loosing a juggling ball in the nearby pond, cleaning up dozens of half empty beer bottles after a party, people going insane at the Somerrodelbahn on the free day resulting in many wounded, a great water fight, finding the observation field had suddenly disappeared, walking on this field nevertheless only to find out the ground was more fertilizer than soil, waking up on the observation road and walking back for breakfast, sitting in the working group window, standing on the dancefloor realizing the sun was already shining… but all these memories are dominated by the people in them. Because in the end it was the friends, old and new, from all over the world, that made this an unforgettable three weeks.</p>
+
+<p>“How do you feel?”</p>
+
+<p>“I feel great!”</p>
+
+    </article>
+  </div>
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>Apply to the next IAYC</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/nextcamp/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    <h1 class="mb-2 mt-4 text-4xl font-bold leading-relaxed text-light-purple">Apply to the next IAYC</h1>
+
+<!-- Display date, author, and meta if it is a post -->
+<p class="italic text-light-gray mb-6">
+	
+	
+	
+</p>
+
+<!-- Floating Table of Contents -->
+
+
+<article class="prose max-w-none">
+	
+
+
+<script>
+  window.location.href = "/2025/12/31/iayc-2026-first-info.html";
+</script>
+
+<p>
+  Redirecting to the latest camp information...
+  <a href="/2025/12/31/iayc-2026-first-info.html">Click here if you are not redirected automatically.</a>
+</p>
+</article>
+
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

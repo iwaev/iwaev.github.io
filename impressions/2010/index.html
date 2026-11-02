@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2010</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/impressions/2010/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+
+  
+  
+
+  <div class="max-w-4xl mx-auto p-4">
+    <!-- Title Section with Navigation -->
+    <header class="mb-8">
+      <!-- Navigation Arrows -->
+      <div class="flex items-center justify-between">
+        <div>
+          
+          <a href="/impressions/2009"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              <i
+                class="fas fa-chevron-left flex items-center justify-center group-hover:-translate-x-1 transition-all "></i>
+              2009
+            </span>
+          </a>
+          
+        </div>
+
+        <div>
+          
+          <a href="/impressions/2011"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              2011
+              <i
+                class="fas fa-chevron-right flex items-center justify-center group-hover:translate-x-1 transition-all "></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Title and Info -->
+      <div class="text-center">
+        <h1 class="mb-4 text-4xl font-bold text-light-purple">
+          IAYC 2010
+        </h1>
+        <div class="flex items-center justify-center space-x-2 text-light-gray italic">
+          <span>Klingenthal, Germany</span>
+          <span>•</span>
+          <span>Aleksandra Sokołowska (Poland)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="prose max-w-none">
+      <p><em>For a minute there I lost myself,</em></p>
+
+<p><em>I lost myself…</em></p>
+
+<p>First IAYC – for me it was a big question mark, especially that I had no clue what to expect. Probably that is the reason why as a newcomer I was greeted by the general coordinator pointing at my three huge suitcases with words: ‘good lord, is that your make-up equipment’?</p>
+
+<p>Despite five minutes of a shame, I smiled broadly, since the sunbeams giving a pleasant warm to my skin revealed the beauty of a mixture of colours – a clear blue sky without a single cloud and lush green grass. Although this allure did not tend to appear very often, the light of friendships being established played a dominant role, letting people forget about the gloomy weather somewhere there, nine hundred meters above the sea level, in the forgotten lands of Sachsen, Klingenthal.</p>
+
+<p>Surely, we could be compared to a herd of sheep looking for its shepherd, giving an understanding to the matter: all of us sharing the same passion and love for astronomy became members of an elite, having discovered true values and virtues in cooperation rather than widely exposed rat race or miserable, unstable hierarchies. Me personally, as a girl from the Eastern Europe living among people pretty adamant that an astronomer is a rocket passenger or worse - earns a living by writing horoscopes - appreciated this multicultural embracement as second to none.</p>
+
+<p>Three weeks seem to be a lot, however, hardly anybody is aware of how quickly the time flies through our fingers. Days turn into seconds when it comes to saying goodbye. The desperate act of chasing the bus that we know is not turning back, this clever thought of the moment to run through the crops down the hill in your slippers just to overtake the van and look at those sad faces glued to the window for the last time – it seems like madness but not to somebody who experienced the closest possible bounds between people from all over the world.</p>
+
+<p><em>A thousand miles seems pretty far</em></p>
+
+<p><em>But they’ve got planes and trains and cars</em></p>
+
+<p><em>I’d walk to you if I had no other way…</em></p>
+
+<p>At the very beginning of everything I smirked at the cheerful greetings and affectionate hugs with a little of understanding. It became clear with time that the warm embraces so-called ‘group hugs’ as much as massages given by certain people were like a social habit into which I fell in a twinkling of an eye. Probably it’s the case of exchanging positive energy or just satisfying our deeply hidden needs of socializing, nonetheless I find it simply magical, bringing warm light into our hearts.</p>
+
+<p>When I discovered my room consisted of two beds, while group ones opened much more door to girlish parties, I felt a bit disappointed and believe me, I couldn’t be more wrong. My attitude changed as soon as I met a Mexican, crazy-wild-beast-roommate, who transformed into my very best-snoring-friend, and also as I learned that the only purpose of the rooms existence is not even to have a place to sleep, but rather to keep your personal things in one place.</p>
+
+<p>It’s not true that being a scientist (or a person aiming at being a scientist) equals turning into a geeky, non-social monster laughing at jokes about Windows. I mean, you still roll on the floor when somebody gets a virus on her/his computer and you’re the only one that does not, since you were growing up with linux and regard windows people (like half-me) as idiots, but still - you’re not a hairy, pale/green creature going out only late at night. No, no, no. You have fun, dance at the Sangria party with others from dusk to dawn, dash yourself and your friends every single day, walk through wild, silent woods without a torch listening to your heartbeat, holding hands, ignoring the dire perils of the night… Then you greet the rising sun in the observation tower eating cucumbers from a jar, barely holding your legs on – surely experiencing an adverse effect of sleepless nights…</p>
+
+<p>You may ask yourself – what do I need a sleeping bag for when the pillows and covers are provided by the staff in the house? That’s the question for which I was looking an answer and the clear nights brought it really quickly – a soccer field turned into an observation field and poor grass had to sustain a layer of mattresses, devices, boots, bodies… In the entire world, I swear to God, words of comparison do not exist. Magnificent sky, shooting stars, the sound of opening beer bottles and crunch of delicious cookies… The smell of fresh ground. Risky mixture, like the most desirable recipe for unforgettable moments worth dying for – just you, your lifetime love shining over you, outburst of laugh and people screaming: ‘shut up’… That’s when I learned to count in Italian.</p>
+
+<p>Life at the camphouse might become tiring after some time because of all-night parties and a lack of sleep, therefore I found a way to deal with it as a clever and active participant, who checked carefully that hiding in bed doesn’t belong to the practical options as it tempts your leaders to shower you on purpose every single morning. My advice for everybody suffering in silence from the same lazy-bastard’s disease is to ask your roommate to bring you breakfast which you’ll devour during working group sessions, and then grant yourself with a priceless hour of sound sleep. Of course, you can pay back with doing the same. But come on, not very often…</p>
+
+<p>Undoubtedly, Non Astronomical Programme, a daily part of entertainment is definitely worth mentioning. It requires remarkable social skills to gather sixty people and lead them wisely, so that they have tremendous fun and are longing to play infinite number of creative games with each other, even though they still cannot recall some people’s names. Imagine a treasure hunt in the surrounding woods, entrusting strange people guiding you through the whole building while being blind-folded… Moreover, the countless workshops created by the participants about acting, martial arts, yoga, drawing or rubiks cube, they all bring a fresh breeze of experience to your life, so when you leave the IAYC, you’re not the same person any more.</p>
+
+<p>And what about love, love, love..? Could there exist more perfect conditions for so-called ‘constellations’ than those after moving into a different reality without sadness and deep troubles, into a paradise, a dream, an oblivion? Romantic, natural environment, 24h/21days together in one camp house, having fun and using your youth in the summer beams of the sun… You don’t think about anything but this brilliant innocence, a pristine feeling which, if worth it, can withstand a long distance and surmount every formidable obstacle. Of course, that’s what I heard from the others^^</p>
+
+<p>Summing up, what is the IAYC all about? Friendship, science, fun, exploring the world, overcoming your fears, experiencing something new, learning independence? Naturally, but I find in all of this something more.</p>
+
+<p>We come from all over the globe from different societies, religions, laws. History brought dark ages for many nations, which ushered in hatred or nursing a grievance against each other. Times change, forgiveness and forgetting move slowly towards us but it’s a long process and we don’t have that much time to wait for a miracle to occur. We build the world we live in, everything is in our hands.</p>
+
+<p><em>It’s the same old theme since nineteen-sixteen.</em></p>
+
+<p><em>In your head, in your head they’re still fighting,</em></p>
+
+<p><em>With their tanks and their bombs,</em></p>
+
+<p><em>And their bombs and their guns.</em></p>
+
+<p><em>In your head, in your head, they are dying…</em></p>
+
+<p>IAYC, a source of wisdom, teaches you tolerance. You discover that Poles, Czechs, Slovaks, Serbs, Hungarians, Turks, Germans, Spanish and more – we share the same virtues, sometimes we understand each other in our own languages or laugh because of the similarity of the sense of humour. We may not agree in some dilemmas but still – we can feel the only thing that divides us is an artificial BORDER. Despite that, we are all the same, we’re human. I always stated I’m not a citizen of Poland but of one world. People kept saying that little did I know since I had no proof. Now, owing to IAYC, I obtained an absolute proof.</p>
+
+<p><em>Those were the days my friend</em></p>
+
+<p><em>We thought they’d never end</em></p>
+
+<p><em>We’d sing and dance forever and a day</em></p>
+
+<p><em>We’d live the life we choose</em></p>
+
+<p><em>We’d fight and never lose</em></p>
+
+<p><em>For we were young and sure to have our way</em></p>
+
+<p>And our ways come across in Třemešek in 2011. For sure.</p>
+
+    </article>
+  </div>
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

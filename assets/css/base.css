@@ -1,0 +1,308 @@
+/* ========================================
+BASE STYLES & DESIGN SYSTEM
+======================================== */
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@font-face {
+  font-family: "CS Gordon";
+  src: url("../fonts/CS Gordon Regular.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@theme {
+  --color-dark-purple: #473476;
+  --color-dark-red: #9a0f22;
+  --color-dark-green: #1e3e1e;
+  --color-dark-blue: #2c3968;
+  --color-blue: #4f8cff;
+  --color-light-purple: #decff8;
+  --color-light-red: #dc9f98;
+  --color-light-green: #c9d5c8;
+  --color-light-blue: #ced6e4;
+  --color-dark-dark-blue: #171b3e;
+  --color-dark-dark-green: #172715;
+  --color-light-gray: #d2d2d2;
+  --color-gray: #6c757d;
+  --color-dark-gray: #343a40;
+  --font-title: "CS Gordon", sans-serif;
+  --font-primary: "Figtree", sans-serif;
+  
+  --navbar-height: 4rem;
+}
+
+/* Site defaults */
+html {
+  @apply text-gray-200;
+  background-color: var(--color-dark-dark-blue);
+}
+
+/* Global font assignments */
+body,
+p,
+div,
+a {
+  @apply font-primary;
+}
+
+/* Page titles - much larger and more prominent */
+h1,
+h2,
+h3 {
+  @apply font-title hyphens-auto text-wrap;
+}
+
+h1 {
+  @apply text-3xl sm:text-5xl font-bold text-light-purple mt-12;
+}
+
+h2,
+.prose h1 {
+  @apply text-2xl sm:text-3xl font-bold text-light-purple mt-10;
+}
+
+h3,
+.prose h2 {
+  @apply text-lg sm:text-xl font-bold text-light-blue mt-8;
+}
+
+/* ========================================
+PROSE TYPOGRAPHY CUSTOMIZATION
+======================================== */
+
+.prose {
+  @apply text-light-gray max-w-full;
+}
+
+/* Ensure prose doesn't overflow on mobile */
+@media (max-width: 640px) {
+  .prose {
+    @apply max-w-full px-0;
+  }
+}
+
+.prose a {
+  @apply text-blue-300;
+}
+
+.prose strong {
+  @apply text-light-red;
+}
+
+.prose blockquote {
+  @apply text-light-gray;
+}
+
+/* Wrap code block text */
+.prose pre, pre {
+  @apply text-wrap;
+}
+/* Link styles for paragraph text */
+p a,
+li a,
+ul a,
+ol a {
+  @apply text-blue underline hover:text-light-red active:text-light-red transition-colors  ease-in-out;
+}
+
+/* ========================================
+PROSE TABLE STYLING
+======================================== */
+
+/* Center tables in prose content. */
+.prose table {
+  @apply mx-auto mb-8 w-auto max-w-fit border-collapse;
+}
+
+/* Style table headers. */
+.prose th {
+  @apply py-2 px-4 text-center text-light-gray bg-dark-purple;
+}
+
+/* Style table cells. */
+.prose td {
+  @apply py-2 px-4 text-center;
+}
+
+/* Alternate row background for even rows. */
+.prose tr:nth-child(even) {
+  @apply bg-dark-purple/30;
+}
+
+/* ========================================
+MENU COMPONENTS
+======================================== */
+/* Navbar links */
+.navbar-item {
+  @apply hover:text-white active:text-white font-medium;
+}
+
+/* Menu toggle button */
+.menu-button {
+  @apply cursor-pointer z-40 flex items-center justify-center hover:text-white active:text-white transition-all;
+}
+
+/* Menu panel styles plus in-menu scrollbar style */
+.menu-panel {
+  @apply bg-dark-blue rounded-lg p-2 transition-all  overflow-y-auto overflow-hidden max-h-[calc(100vh-6rem)];
+  @apply [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-gray-400/50  [&::-webkit-scrollbar-thumb]:rounded-full;
+}
+
+/* Navigation links */
+.menu-panel a {
+  @apply no-underline block py-2 px-4 text-light-purple hover:text-white active:text-white hover:bg-dark-red active:bg-dark-red transition-colors;
+}
+
+/* Plain text for menu headers */
+.menu-panel p {
+  @apply block pt-6 pb-2 px-4;
+}
+
+.menu-panel ul,
+.menu-panel li {
+  @apply list-none m-0 p-0;
+}
+
+/* ========================================
+CARD COMPONENTS
+======================================== */
+
+/* Base card styling with common patterns */
+.card {
+  @apply rounded-xl p-6 transition-all  flex flex-col h-full shadow-md shadow-black;
+}
+
+/* Card hover effects */
+.card:hover {
+  @apply -translate-y-0.5;
+}
+
+/* ========================================
+IMAGE LAYOUT CLASSES
+======================================== */
+
+/* Images as flex items */
+.image-flex {
+  @apply object-cover flex-1 overflow-hidden mt-0 mb-0 min-w-0;
+}
+
+/* Flexbox container for images on the same line */
+p:has(.image-flex) {
+  @apply flex gap-4;
+}
+
+/* On mobile, enable wrapping and make images full width */
+@media (max-width: 640px) {
+  p:has(.image-flex:not(:only-child)) {
+    @apply flex-wrap;
+  }
+  p:has(.image-flex:not(:only-child)) .image-flex {
+    @apply flex-none w-full;
+  }
+}
+
+/* Center single images in the paragraph. */
+p:has(.image-flex:only-child) {
+  @apply justify-center;
+}
+
+/* Set width of single images to 100%. */
+p:has(.image-flex:only-child) .image-flex {
+  @apply flex-none w-full;
+}
+
+/* Center iframes and make them full width*/
+iframe {
+  @apply block mx-auto w-full;
+}
+
+/* ========================================
+FORM ELEMENTS
+======================================== */
+
+
+/* Add more spacing between form fields */
+label {
+  @apply mt-4;
+}
+
+input, select, textarea {
+  @apply py-2 bg-white/5! border-2! border-white/20! rounded-lg w-full max-w-full box-border;
+}
+
+textarea {
+  @apply px-4;
+}
+
+/* Get rid of the chevron messing up select boxes. */
+select ~ .pointer-events-none {
+  @apply hidden;
+}
+
+/* Make select boxes look like regular inputs with custom dropdown arrow */
+select {
+  @apply appearance-none rounded-lg;
+  @apply px-4 pr-10;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ced6e4' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-position: right 0.75rem center;
+  background-size: 0.75rem;  background-repeat: no-repeat;
+}
+
+fieldset {
+  @apply bg-dark-blue/20 border-2! border-white/10! rounded-lg px-4 sm:px-12 pt-4 pb-12 my-8 box-border max-w-full overflow-x-hidden;
+}
+
+legend {
+  @apply font-title! px-4! text-light-blue!;
+}
+textarea[data-count] {
+  @apply w-full rounded-lg;
+}
+input[type="radio"] {
+  @apply h-4 w-4 mr-2;
+}
+
+/* Checkbox styling */
+div:has(input[type="checkbox"]) {
+  @apply flex flex-wrap items-center;
+}
+
+label:has(~ input[type="checkbox"]),
+label:has(input[type="checkbox"]){
+  @apply flex mt-0! mb-0! mr-4! items-center;
+}
+input[type="checkbox"]{
+  @apply h-4 w-4 mr-2 flex order-first;
+}
+
+/* File input styling */
+input[type="file"] {
+  @apply px-4 py-2 cursor-pointer;
+}
+input[type="file"]::file-selector-button {
+  @apply bg-white/10 px-2 py-1 rounded-lg cursor-pointer;
+}
+
+/* Style help text lists (used by crispy forms for password requirements, etc.) */
+
+small[id*="_helptext"],
+.helptext {
+  @apply text-light-gray!;
+}
+
+/* Reusable button styling*/
+.button,
+input[type="submit"]
+{
+  @apply bg-dark-red! hover:brightness-150 active:brightness-150 text-white! py-3 px-6 my-4 rounded-lg transition-colors max-w-fit! w-auto! box-border;
+}

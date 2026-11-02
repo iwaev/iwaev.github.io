@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>Frequently Asked Questions</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/faq/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    <h1 class="mb-2 mt-4 text-4xl font-bold leading-relaxed text-light-purple">Frequently Asked Questions</h1>
+
+<!-- Display date, author, and meta if it is a post -->
+<p class="italic text-light-gray mb-6">
+	
+	
+	
+</p>
+
+<!-- Floating Table of Contents -->
+
+
+<article class="prose max-w-none">
+	<p>The info-service is working hard to answer all your questions. We have noticed
+that some information is requested very often so we want to give short answers
+here.</p>
+
+<h1 id="applying-for-the-camp">Applying for the camp</h1>
+
+<h2 id="what-is-the-camp-like">What is the camp like?</h2>
+
+<p>This is a hard question that can only really be answered by attending! To help,
+we have asked former participants to summarise their experiences. Have a look at
+the <a href="/impressions/">past camps</a> section!</p>
+
+<h2 id="does-the-camp-involve-camping">Does the camp involve camping?</h2>
+
+<p>The English word for camp might suggest tents and cooking stoves. The IAYC uses
+this word in a more general (international) sense. The IAYC is a cross between a
+summer school and a retreat, although it is very different to both. Participants
+stay in dormitories at the camp house usually a hostel or guest house which we
+book out for three weeks. Food and bedding will be provided.</p>
+
+<p>We suggest that participants bring sleeping bags and insulation mats because
+sitting outside all night with a telescope can get cold!</p>
+
+<h2 id="what-kind-of-working-groups-are-available">What kind of working groups are available?</h2>
+
+<p>Every year there will normally be at least an observing group, an imaging group,
+a programming group and a general astrophysics group. The remaining groups could
+be anything from robotics to astrochemistry depending on the leader team!</p>
+
+<h2 id="will-i-get-a-lower-chance-to-attend-if-i-apply-for-a-grant">Will I get a lower chance to attend if I apply for a grant?</h2>
+
+<p>Applying for a grant (financial support for the application fee) does not
+decrease your chances to be accepted for the IAYC. Camp applications and grant
+applications are treated separately. Therefore you might be accepted to the camp
+but you might not get a grant.</p>
+
+<h2 id="does-the-grant-include-travel-expenses">Does the grant include travel expenses?</h2>
+
+<p>No. Due to limited funding, the most we are able to offer is a grant that covers
+the camp fee. You are still financially responsible for making your way to the
+camp.</p>
+
+<h2 id="how-do-i-apply-for-a-grant">How do I apply for a grant?</h2>
+
+<p>The grant application is part of the main online application form. If you wish
+to apply for a grant, simply fill out the grant section <em>in full</em> and you will
+be considered.</p>
+
+<h2 id="what-is-included-in-the-camp-fee">What is included in the camp fee?</h2>
+
+<p>The camp fee covers full boarding, all organised programs (excursion day,
+working groups, NAP). All meals are served at the camp (3 per day). Please note,
+that the camp fee does not cover travel expenses such as flights.</p>
+
+<h2 id="can-i-attend-the-camp-if-im-not-16-or-over-24">Can I attend the camp if I’m not 16 (or over 24)?</h2>
+
+<p>In general, no, you can only attend the camp if you are aged between 16-24 <em>at
+the beginning of camp</em>. To clarify:</p>
+
+<ul>
+  <li>If you are aged 24 at the beginning of the camp and will turn 25 during camp,
+then this is fine you should expect a great party!</li>
+  <li>If you are currently 15 and you only turn 16 during the camp, you cannot
+attend the camp this year, but we look forward to your application next year.</li>
+</ul>
+
+<h2 id="do-i-need-to-know-plenty-of-physicsastronomy-to-attend-the-iayc">Do I need to know plenty of physics/astronomy to attend the IAYC?</h2>
+
+<p>Participants in the IAYC have very different levels of knowledge concerning
+astronomy and physics. All working group leaders therefore offer projects for
+all levels. The IAYC is a camp with the aim to bring together people interested
+in astronomy, no matter whether they are observing every night or have never
+seen a telescope before. More experienced participants and leaders are always
+happy to help and teach others.</p>
+
+<h2 id="but-im-not-even-studying-science">But I’m not even studying science</h2>
+
+<p>It doesn’t matter as long as you love astronomy! We often have participants who
+are not studying science-based subjects. As above, projects will be offered to
+suit all levels.</p>
+
+<h2 id="how-good-does-my-english-need-to-be">How good does my English need to be?</h2>
+
+<p>As the first info states, your English does not need to be perfect, but you
+should be able to have a conversation without needing to use a dictionary. In
+working group sessions, you may be given books and scientific papers to read
+which will normally be in English. This also means that the camp is a great
+opportunity to improve your language skills and everyone will do their best to
+help you if you’re struggling.</p>
+
+<h2 id="how-important-is-the-motivation-letter">How important is the motivation letter?</h2>
+
+<p>It is the most important part of your application. Application letters are
+anonymized in order to decrease bias in selecting participants. As such, the
+motivation letter is your chance to tell us who you are as a person, explain to
+us what you expect to get out of the camp, and why you want to attend. When
+writing your motivation, it is crucial that you address these points.</p>
+
+<h1 id="other-questions">Other Questions</h1>
+
+<h2 id="can-i-attend-part-of-the-camp">Can I attend part of the camp?</h2>
+
+<p>No. You must attend the camp in full and you must stay at the camp house for the
+entire 3 weeks unless you have a genuine emergency. There are a number of
+reasons for this decision, most of them are practical. Firstly, projects are
+normally completed in pairs or small groups, it would therefore be unfair to
+your project partners if you arrived late or left early. Secondly, the camp is
+like a big family, and it is disruptive for the camp atmosphere for people to be
+coming and going. The start and end of the camp are the most important both for
+project work and for bonding with other participants.</p>
+
+<h2 id="iayc-overlaps-with-my-academic-activity-what-can-i-do">IAYC overlaps with my academic activity, what can I do?</h2>
+
+<p>Unfortunately the camp is global and it’s likely that regardless of the camp
+dates, we will overlap someone’s exam season. We cannot accommodate those who
+need to take time during camp to participate in competitions, take exams, or
+leave for school. We would encourage you to apply another year.</p>
+
+<h2 id="can-i-visit-the-camp-if-im-not-a-participant">Can I visit the camp if I’m not a participant?</h2>
+
+<p>Unfortunately, we do not allow non-participants to visit while the camp is in
+progress. The IAYC should be considered a private event. This is for the benefit
+of the camp atmosphere and to safeguard participants and their belongings. For
+the same reason, we explicitly arrange with the house that we will be the sole
+occupants of the camp house. If you attempt to visit the camp house during the
+IAYC and you are not a participant, we will (politely!) ask you to leave. Please
+note this policy includes parents or guardians with the exception of
+arrival/departure day.</p>
+
+<h2 id="i-would-like-to-volunteer-at-the-camp-is-that-possible">I would like to volunteer at the camp, is that possible?</h2>
+
+<p>Due to the way the IAYC works, unfortunately we do not allow any volunteers
+other than the leader team during the camp. If you would like to support the
+IAYC, then we accept donations which will be put towards helping financially
+disadvantaged participants attend the camp.</p>
+
+<h2 id="do-you-offer-letters-of-support">Do you offer letters of support?</h2>
+
+<p>If you are accepted and need a letter of support, please contact us and we can
+provide one for you.</p>
+
+<h1 id="after-youve-been-accepted">After you’ve been accepted</h1>
+
+<h2 id="how-can-i-travel-to-the-camp">How can I travel to the camp?</h2>
+
+<p>The IAYC does not organize the travel to and from the camp location. There will
+be detailed information in the 2nd info about how to travel to the campsite,
+including information about the closest airports, train connections etc. You
+will receive the 2nd info after you have been accepted to attend the camp.
+Nowadays, participants are able to coordinate their arrival/departure via
+Discord (we organise a private server for each year) and travel together in
+groups. We may organise a shuttle bus service from a nearby station to the camp
+house itself, if we do, details will be in the second info.</p>
+
+<h2 id="what-should-i-bring-to-the-camp">What should I bring to the camp?</h2>
+
+<p>A list of items is provided in the 2nd info document, which you will be given a
+link to. The list is not exhaustive, but should give you an idea of what to
+take.</p>
+
+<h2 id="is-there-a-laundry-at-the-camp-house">Is there a laundry at the camp house?</h2>
+
+<p>We usually aim to provide participants with at least one laundry service partway
+through the camp. Smaller items like underwear and socks can be hand-washed. You
+should plan to bring enough clothes for 3 weeks.</p>
+
+<h2 id="will-there-be-internet-access-at-the-camp-house">Will there be internet access at the camp house?</h2>
+
+<p>No. We have found that being disconnected, the way camp traditionally has been
+since 1969, has a very positive impact on the camp atmosphere and participants’
+experiences. The camp operates in very remote places and mobile/cell reception
+is usually bad.</p>
+
+<p>We understand that some people may need to get in touch with schools or
+universities for registration and other important logistics. In <em>exceptional</em>
+cases like this, we will do our best to accommodate <em>if you contact us ahead of
+time</em>. If you do not give us a heads up, we cannot guarantee that you will be
+accommodated.</p>
+
+<p>You will have opportunities on excursion and free day to use the internet if you
+need it, but you should otherwise plan to operate without internet. Leaders will
+make sure that materials required for your project are available before you
+arrive.</p>
+
+<h2 id="but-i-have-mobile-data-on-my-phone-is-that-allowed">But I have mobile data on my phone? Is that allowed?</h2>
+
+<p>During scheduled activities (working group, NAP, etc.) you are not allowed to
+have your phones. While we can’t control what you do during free time, we
+strongly encourage all participants to limit phone usage while at the camp for
+the sake of inclusivity and a positive atmosphere.</p>
+
+<h2 id="can-i-at-least-take-pictures-with-my-phone">Can I at least take pictures with my phone?</h2>
+
+<p>If you are interested in taking pictures, we have camp cameras available for you
+to borrow. Before camp, everyone has the right to approve or deny consent to
+being photographed or videoed via the consent form. While this is a contract
+between the camp and participants, please be aware that different people have
+different comfort levels of being recorded by other participants as well. By
+using camp-provided cameras we can ensure data compliance and respect
+everybody’s privacy preferences.</p>
+
+<h2 id="do-i-need-a-sleeping-bag-or-an-insulation-mat">Do I need a sleeping bag or an insulation mat?</h2>
+
+<p>A sleeping bag is useful if you intend to do a lot of observing every night. We
+suggest you bring one, but people also manage with warm clothes. You should
+bring an insulation mat. A cheap foam one is fine!</p>
+
+<h2 id="what-local-amenities-are-available-near-the-camp-house">What local amenities are available near the camp house?</h2>
+
+<p>Our camp houses are often in remote locations and may not have nearby amenities
+like supermarkets/grocery stores, pharmacies, etc. We recommend using Google
+Maps or a similar website to look at what is near the camp house. In general,
+you should not assume that there will be stores or a pharmacy within walking
+distance. If you take medication, you should make sure that you can bring a
+3-week supply to the camp.</p>
+
+<h2 id="do-i-need-a-laptop">Do I need a laptop?</h2>
+
+<p>You will need a laptop to write your project report. It is usually possible to
+share with your project partner, but having your own laptop makes things easier!
+Most resources will be electronic (PDF), like scientific papers or ebooks. If
+your project is likely to require a laptop then your leader will tell you
+before the camp.</p>
+
+<h2 id="do-i-need-to-install-any-software-before-arrival">Do I need to install any software before arrival?</h2>
+
+<p>Yes. At camp, everybody will use LaTeX to write their reports. Those who do
+programming projects will likely use Python. The specific software needed will
+be sent out during second info, but they are typically the latest editions of
+TeX Live and Anaconda Distribution. Make sure your antivirus software is up to
+date!</p>
+
+<h2 id="can-i-bring-my-telescope">Can I bring my telescope?</h2>
+
+<p>Yes! Please do. We will arrange a secure storage room where you can safely keep
+any astro equipment that you bring. Make sure you label anything you bring to
+the camp so that you (and others) know it’s yours. Note that we cannot be liable
+for any damage that is caused to any equipment brought to the camp that does not
+belong to IWA.</p>
+
+</article>
+
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

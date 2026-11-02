@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>About the IAYC</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/program/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    <h1 class="mb-2 mt-4 text-4xl font-bold leading-relaxed text-light-purple">About the IAYC</h1>
+
+<!-- Display date, author, and meta if it is a post -->
+<p class="italic text-light-gray mb-6">
+	
+	
+	
+</p>
+
+<!-- Floating Table of Contents -->
+
+
+<article class="prose max-w-none">
+	<p>The International Astronomical Youth Camp (IAYC) is a three-week long summer camp aiming to promote knowledge of astronomy and astronomy related sciences in a unique international atmosphere. Every year the IAYC takes place somewhere in Europe. About seventy people from a wide range of different countries live together for three weeks. Participants are between 16 and 24 years old and share a common interest: <strong>Astronomy</strong>.</p>
+
+<p><img src="/assets/images/about/hahaha.jpg" alt="Participants laying back in the grass with their heads touching." class="image-flex" />
+<img src="/assets/images/about/blurry-telescope.jpg" alt="A short timelapse of participants around a telescope." class="image-flex" />
+<img src="/assets/images/about/guitar.jpg" alt="People laughing around a picnic table with a guitar." class="image-flex" /></p>
+
+<p>The IAYC is different from most other astronomical camps for two reasons: the international character and the fact that you will have the chance to carry out your own small research project. You will not just accept facts, but you will discover them yourself or working together with other people. The IAYC is therefore not like staying in a hotel and attending a summer school.</p>
+
+<p>Every participant, with his or her own cultural background, forms an integral piece in the complex puzzle that is camp life. Therefore the success of the camp will also depend on your contribution!</p>
+
+<h1 id="participants">Participants</h1>
+
+<p>To participate in the IAYC you must be between 16 and 24 years old. As all the participants come from many different countries, English is the camp language. Therefore you will need to speak English not only during working group activities and the non-astronomical programme, but throughout the entire camp. The aim of this is also to encourage people from different countries or language groups to spend their time together. The IAYC offers you a great opportunity to make friends from lots of different countries. You should not worry though. Your English does not need to be perfect, however, you should be able to have a normal conversation without a dictionary.</p>
+
+<p>The IAYC is an astronomy camp, therefore you should obviously be interested in science and astronomy. You should also be willing to carry out a small research project on your own, though of course your leader will always be there to support and help you.</p>
+
+<p><img src="/assets/images/about/hug.jpg" alt="Group hug" class="image-flex" />
+<img src="/assets/images/about/national-evening.jpg" alt="A participant presenting on his country." class="image-flex" />
+<img src="/assets/images/about/dancing.jpg" alt="Participants dancing in a line." class="image-flex" /></p>
+
+<h1 id="what-is-life-at-an-iayc-like---the-iayc-experience">What is life at an IAYC like? - The IAYC Experience</h1>
+
+<p>An IAYC day starts with <strong>breakfast at noon</strong> (12:00), which should allow you to get enough sleep after a long night out on the observation field. After breakfast, the first of two daily working group sessions starts at one o’clock (13:00). The first working group session lasts for two and a half hours and the second one for two.</p>
+
+<p>After the first working group session you have <strong>free time</strong> where you can participate in sports activities and workshops that are organised by other participants. If you feel like organising something yourself with other participants, that’s great, go for it! Free time ends with <strong>lunch at half past five</strong> (17:30) in the afternoon.</p>
+
+<p>Doing nothing else but astronomy for three weeks would be too much. To loosen things up a bit we have the <strong>Non-Astronomical Programme</strong> (NAP) after lunch every day. The NAP is compulsory anything-but-astronomy time where activities are organised for the entire camp. The NAP leader will explain more about this in the “Working Group” section of the First Info (available under “Next Camp” in December).</p>
+
+<p><img src="/assets/images/about/race.jpg" alt="A three-legged race." class="image-flex" />
+<img src="/assets/images/about/evolution.jpg" alt="A highly intensive rock-paper-scissors contest." class="image-flex" />
+<img src="/assets/images/about/construction.jpg" alt="Participants building something out of craft supplies." class="image-flex" /></p>
+
+<p>After NAP, at ten o’clock in the evening, the second working group session takes place. The final scheduled event of the day is a <strong>light meal served at midnight</strong>. After this, if the sky is clear, it’s time to join the fun outside on the observation field and do what everyone at this camp loves to do: <strong>Observe</strong>!</p>
+
+<h1 id="daily-schedule">Daily Schedule</h1>
+
+<p>The following shows a typical daily schedule at the IAYC.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11:30</td>
+      <td>Waking up service</td>
+    </tr>
+    <tr>
+      <td>12:00</td>
+      <td>Breakfast</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Free time</td>
+    </tr>
+    <tr>
+      <td>13:00 - 15:30</td>
+      <td>First working group session</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Free time</td>
+    </tr>
+    <tr>
+      <td>17:30</td>
+      <td>Lunch</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Free time</td>
+    </tr>
+    <tr>
+      <td>19:30</td>
+      <td>NAP</td>
+    </tr>
+    <tr>
+      <td>22:00 - 24:00</td>
+      <td>Second working group session</td>
+    </tr>
+    <tr>
+      <td>24:00</td>
+      <td>Dinner</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Free time / Observations</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Although most days during the camp are like the one described above, there are a few special days. The first Thursday of the camp is reserved completely for a special programme: the <strong>Excursion Day</strong>. The second Thursday will be <strong>Free Day</strong> which you can spend any way you want. Go on a trip with some IAYC friends, catch up on some sleep, go hiking or swimming etc.</p>
+
+<p><img src="/assets/images/about/volleyball.jpg" alt="Playing volleyball." class="image-flex" />
+<img src="/assets/images/about/singing.jpg" alt="Singing under the moon with red lights." class="image-flex" />
+<img src="/assets/images/about/party.jpg" alt="A party conga line." class="image-flex" /></p>
+
+<h1 id="working-groups">Working Groups</h1>
+
+<p>During <strong>working group sessions</strong>, you will work on the project of your choice. Every working group is based on a different topic and has between seven and nine participants plus a leader, who is responsible for the group. Collaboration between participants is encouraged as projects aren’t usually carried out alone.</p>
+
+<p><img src="/assets/images/about/telescope-intro.jpg" alt="Participants gathered around a telescope indoors." class="image-flex" />
+<img src="/assets/images/about/outdoor-work.jpg" alt="A participant hunched over a leader at a laptop on the dirt ground in dim evening light." class="image-flex" />
+<img src="/assets/images/about/messy-tables.jpg" alt="A daytime working group session indoors with participants gathered around a table messy with papers and laptops." class="image-flex" /></p>
+
+<p>You and your project partners will work independently on your project. This means you will read up on the topic by yourselves, explain things to each other, carry out necessary observations, calculations, measurements etc… In short, you should <strong>not expect a school-like environment</strong> where a teacher provides all the information and tells you what to do. But don’t worry, even though you’re working on your own your leader will still always be there to help if you get stuck.</p>
+
+<p>Every working group will <strong>offer projects at all levels</strong>, from high school to university level research topics. At the end of the camp you are expected to <strong>write a report</strong> documenting your project. Everybody’s reports will be collected and compiled into a report book, which will be sent to you after the camp. The report book will enable you to find out more about the other projects that were done at the camp.</p>
+
+<h1 id="observing">Observing</h1>
+
+<p><img src="/assets/images/about/torch-people-outline.jpg" alt="A red torch exposure picture outlining people in the frame." class="image-flex" />
+<img src="/assets/images/about/moon.jpg" alt="A closeup of the surface of the moon." class="image-flex" />
+<img src="/assets/images/about/hunchers.jpg" alt="Participants hunched over operating a telescope at night." class="image-flex" /></p>
+
+<p>Usually a field just a few minutes’ walk away from the camp house is used as an <strong>observation field</strong>. We always try to find places with low light pollution and a wide view of the sky.</p>
+
+<p>You can either observe during working group time as part of your project or join the crowd outside after midnight meal when we get out the telescopes for everyone. Catch a glimpse of a celestial object through a telescope or lie down in your sleeping bag and enjoy the view.</p>
+
+<p>If you don’t have any experience observing that won’t be a problem either. You can learn from the leaders and other participants who are always happy to explain things to you. No matter if it is about constellations, how to use a telescope or how to take astro-pictures.</p>
+
+<p>At the beginning of the camp we will also offer a <strong>telescope introduction</strong> which should help you get a feeling for the basics of how to handle a telescope on your own.</p>
+
+<p>Furthermore there will also be a Dark Room available at the camp. As far as astro-pictures are concerned this means you will have the possibility to take analogue pictures and develop them yourself in the Dark Room.</p>
+
+<p>You are most welcome to bring your own telescope or binoculars. The IAYC also provides several telescopes which are suitable for observing and the taking of astro-pictures. There will also be a CCD available to use with the telescopes. If you want to know more about our equipment, please check out our <a href="/equipment/">equipment</a> page.</p>
+
+<p><img src="/assets/images/about/nebula.jpg" alt="A nearby nebula." class="image-flex" />
+<img src="/assets/images/about/clear-telescope.jpg" alt="A participant looking through a telescope." class="image-flex" />
+<img src="/assets/images/about/diamonds.jpg" alt="A composite stacked photo of a galaxy." class="image-flex" /></p>
+
+<p><img src="/assets/images/about/blue-campfire.jpg" alt="The Pleiades among trees." class="image-flex" />
+<img src="/assets/images/about/pic-that-goes-hard.jpg" alt="A participant standing on a platform looking into the sky at twilight." class="image-flex" />
+<img src="/assets/images/about/camphouse-startrails.jpg" alt="Star trails above a camphouse." class="image-flex" /></p>
+
+</article>
+
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2012</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/impressions/2012/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+
+  
+  
+
+  <div class="max-w-4xl mx-auto p-4">
+    <!-- Title Section with Navigation -->
+    <header class="mb-8">
+      <!-- Navigation Arrows -->
+      <div class="flex items-center justify-between">
+        <div>
+          
+          <a href="/impressions/2011"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              <i
+                class="fas fa-chevron-left flex items-center justify-center group-hover:-translate-x-1 transition-all "></i>
+              2011
+            </span>
+          </a>
+          
+        </div>
+
+        <div>
+          
+          <a href="/impressions/2013"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              2013
+              <i
+                class="fas fa-chevron-right flex items-center justify-center group-hover:translate-x-1 transition-all "></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Title and Info -->
+      <div class="text-center">
+        <h1 class="mb-4 text-4xl font-bold text-light-purple">
+          IAYC 2012
+        </h1>
+        <div class="flex items-center justify-center space-x-2 text-light-gray italic">
+          <span>Eichendorf, Germany</span>
+          <span>•</span>
+          <span>Lucía Prada Zambrano (Spain)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="prose max-w-none">
+      <p>Thinking about the IAYC now that I am at home with all these pictures of us smiling and laughing, now, without the noise of 80 people talking and making jokes all the time, like a soundtrack, now, in a room by myself so far from Eichendorf - sometimes I think that this period of time that we spent at the camp together was just like a dream. We had loads of fun and did so many interesting things, I am sure that everyone (including the leader team) learned a lot (about much more than just astronomy). However, like when you are eating a delicious chocolate cake, enjoying every minute of it, time passed by really fast. So fast that now that I am back home where everything is still the same - just like before I left for camp… nothing has changed, things can be found in the same places where they always used to be… It seems that the IAYC took place in a different world, where neither time, distance nor different ages, levels of skill, nationalities or race matter. There really is a good atmosphere at the camp, it’s almost as if you were on holidays, with friendly young people from all over the world who are interested in the same things you are interested in. Everyone who joins the IAYC seems to be a special person with a lot of energy and good mood to make us smile with their kind way of saying ‘good morning’. For me IAYCers are people who like to read interesting books, who care about science, who enjoy spending their free time observing the night sky, and most importantly: they’re great people to hang out with, who will do everything they can to make a party very lively after a long day of hard work and research with their projects.</p>
+
+<p>In the beginning I felt a bit weird, but sincerely that feeling could only last for a short moment. Some people seemed to have known each other for a long time, and some others, like me, seemed a bit lost. There were people from all over the world. Everybody from a different place, and everybody with a story of a journey to tell. We began getting to know each other from the very beginning and in just three weeks it was as if you had known them for years. We did almost everything you can imagine. We laid on the grass under amazing skies, we did our first scientific projects, we had deep conversations until quite late in the night, we saw some of the greatest sunrises of my life…</p>
+
+<p>Participants at the camp are between sixteen and twenty-four years old. Sometimes when people think about young people interested in science, they make the mistake of thinking that you cannot have any fun with them. But I can claim that this is not true! Staying at the camp, we learned a lot about other cultures, living together for three weeks. In fact, while staying at the IAYC you get the feeling that borders do not really exist. The IAYC is an amazing opportunity to get to know loads of different people with hobbies similar to your own, and you know what? At the camp people are just people and everyone is treated like equals. I did not feel alone for a second while staying at the camp and I had the opportunity to learn a lot of physics and astronomy. I learned a lot about constellations, which are commonly liked very much at the IAYC, and I also got to know myself a bit better.</p>
+
+<p>But what exactly was the IAYC like? The International Astronomical Youth Camp couldn’t be described by me with words fairly - because the IAYC is mainly formed of feelings and knowledge, of very much effort from astronomy lovers and it is formed of a lot of stars in the dark. You have to be able to stay in the dark to appreciate the beauty of the stars and that is something that not everyone can do. People usually try not to be ever in the dark, and they do not feel the same experiences that an IAYCer can do. Therefore, that is one of the reasons why people-who-love-astronomy are so happy when meeting people-who-love-astronomy, because we can understand what do you feel while spending hours laying down on the grass and feeling yourself insignificant and tiny in front of that beautiful huge sky. There are a lot of things to learn, there are loads of places to visit, and there are millions of different people to meet, and these three things are something that I’ve learnt in my first IAYC, as they are strongly present in the camp life.</p>
+
+<p>In my case, all the hope of the world erupted in the time I received the email that said: “we are glad to tell you that you have been ACCEPTED to our camp”. That feeling of excitement, enthusiasm, and pride that I felt in my body is indescribable, this whole story began at that exact moment. And I have said story instead of ephemeral coincidence experience, because as I have told many times, I just know that this is the very small start of something new.</p>
+
+<p>This camp has been more than fun, we have enjoyed every minute of it, we have laughed until we started crying in our spare time, we have worked hard researching and experimenting about many topics related to astronomy, physics, astrophysics, maths, biology, technology or informatics. The camp schedule is done so you can stay observing at night until very late. We have seen some really beautiful night sky views. We have been lucky with the weather, as it has been quite hot, and not cloudy at nights! When I first looked for an astronomical camp on the web, I never imagined that something as similar as I sought could exist. I was just so amazed when I found out about the existence of the IAYC that I really looked forward to it from the moment my trip started. I met two fellow nationals by facebook, and one of them has been at last years IAYC, and she only told me that it had been the best thing that she had ever done, she described the camp with so much enthusiasm, that I was just amazed. She told me that she had spent a really good time there, that she had known amazing people from all over the world, and she told me that the first year is told to be the best for everyone, as everything seems new for you. She told me something very beautiful which was that the IAYC was like a really big family, in which, once you’ve entered it is very difficult to exit. That was something which I realized very soon as oldies seemed to be relatives instead of friends with all the other oldies and also the leader team, which was really young, friendly, involved in all the activities, which gave the camp such a charming and cozy atmosphere.</p>
+
+<p>Another thing that I really liked about the camp was that we were like a bit isolated from the world, without wifi internet access, television, or radios, something which could have been thought to be boring, but in fact, when you realize that you do not really need it, is really comfortable! It gives the participants the freedom of having to be caring about nothing from outside the camp, neither carrying electronic devices, even though some of the participants like to use them to work, take photos or listen to music.</p>
+
+<p>Everyone speaks really good English there, and it made me improve my skills in that language very much, as everyone is the whole day speaking in an informal and natural way, while playing cards, having meals and always. I wonder what would have happened if I had never typed into google these words in that really hypothetic way, and I would not have gone to Eichendorf, I would not have known all those amazing people, with stories to tell, funny words in their language to teach and parties with lots of dancing. Also, I am strongly grateful because loads of people who knew a lot about constellations, were very kind and they explained to me how to see some of them, and their names, and also their legend. It is true that we learn a lot just talking between participants, as we have different levels in astronomy, and I really enjoyed to stay quiet and listen what people were talking about.</p>
+
+<p>We had one amazing excursion-day to the German city Munich and to the German Aerospace Center DLR in Oberpfaffenhofen. We were given some talks about what is done there by astrophysicists and astronauts, with rockets, satellites, and we were shown the amazing rooms with screen which show the satellites moving live. Then, we went and saw a lot of different airplanes and lots of things about them were explained to us. DLR Space Operations is the central institution for spaceflight operations in Germany. This responsibility includes satellite missions for Earth observation, communication and reconnaissance missions as well as for the exploration of the solar system and human spaceflight missions. Furthermore, Astronauts are trained, space experiments are prepared and sounding rockets are developed and launched from sites around the world. Eventually, DLR works on new technologies, such as on-orbit-servicing in order to master even the most difficult space projects of the future.</p>
+
+<p>To sum up, this camp is very old and traditional, with lots of surprises for the newbies, games, singing, and observing with professional equipment like telescopes and lots of things, which is awesome, and more than half of the participants had been to the camp before, so they were reliving this experience, which means that they had a great time at IAYC. Personally, I have spent an amazing time there, I do not think that I could have been in any other better place than this for my holidays, I have enjoyed meeting people from so many different nationalities, it makes you feel that you have loads of opportunities in life, as Earth is as big as it is, and the most most most important thing: the night sky. It is one of the best things that I have ever seen, it was awesome! Stargazing is nothing compared to when you do it with more people that love to do this or even understand and know things about it, who are interested in astronomy and enjoy sharing their knowledge with you. The leaderteam consisted of the working group leaders, taking care of the 7 working groups, the NAP leader, and the general: Martin, Javier, Alex, Sebastian, Eva, Florian, Kieran, Balazs, and Josh.</p>
+
+<p>One of the most beautiful things I have heard during these three weeks, was on the very last day, minutes before saying goodbye my wonderful friend and working group leader at the train station, whom I asked the differences between being an astronaut and an astrophysicist, and then, I asked how had he known about the existence of the International Astronomical Youth Camp, so after explaining it to me, he finished his words by saying “… and it completely changed my life”.</p>
+
+<p>..</p>
+
+<p><em>Take me to the magic of the moment
+On a glory night
+Where the children of tomorrow dream away
+In the wind of change</em></p>
+
+<p>..</p>
+
+<p><em>Forever trusting who we are
+and nothing else matters</em></p>
+
+<p>..</p>
+
+<p><em>Country roads, take me home
+To the place I belong</em></p>
+
+<p>..</p>
+
+<p><em>Morning has broken, like the first morning
+Blackbird has spoken, like the first bird</em></p>
+
+<p>..</p>
+
+<p>I really wish I can see most of you guys, my IAYC friends, next year!</p>
+
+<p>I just cannot find words to express the huge pride I feel of have been chosen to write this essay.</p>
+
+<p>Thank you very much.</p>
+
+    </article>
+  </div>
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

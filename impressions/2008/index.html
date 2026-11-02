@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2008</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/impressions/2008/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+
+  
+  
+
+  <div class="max-w-4xl mx-auto p-4">
+    <!-- Title Section with Navigation -->
+    <header class="mb-8">
+      <!-- Navigation Arrows -->
+      <div class="flex items-center justify-between">
+        <div>
+          
+          <a href="/impressions/2007"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              <i
+                class="fas fa-chevron-left flex items-center justify-center group-hover:-translate-x-1 transition-all "></i>
+              2007
+            </span>
+          </a>
+          
+        </div>
+
+        <div>
+          
+          <a href="/impressions/2009"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              2009
+              <i
+                class="fas fa-chevron-right flex items-center justify-center group-hover:translate-x-1 transition-all "></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Title and Info -->
+      <div class="text-center">
+        <h1 class="mb-4 text-4xl font-bold text-light-purple">
+          IAYC 2008
+        </h1>
+        <div class="flex items-center justify-center space-x-2 text-light-gray italic">
+          <span>Sayda, Germany</span>
+          <span>•</span>
+          <span>Ana Dishlieska-Mitova (Macedonia)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="prose max-w-none">
+      <p>Sixty five travellers through the world and through life, and passionate lovers of the starry night skies have met in the centre of the world for those three weeks from 22.07-09.08, Sayda - Germany. For a newbie that I was, this was an unforgettable experience that I tried to catch as much as possible with all the senses, the heart, the soul and the mind. At the start, I think as everyone who comes from far away to a place that he/she doesn’t know with people that are still strangers to him/her, I was kind of afraid about (not) fitting in. At the beginning you feel like being dragged out of your home and your habitual everyday life, and put in an environment not familiar to you, but for sure till the end of the camp you will feel it more yours than many others at your homeland. The main reason for this is the people you meet there. Each of them was a world waiting to be discovered. I felt honored to be among so many different people, people from variety of backgrounds who have so many colorful ideas and each of them is unique in his/her own way. Together we made a land without borders in which we lived in piece and love those three extraordinary weeks, and we proved that although there were so many differences that made this experience so colorful and rich, there was just one feeling of unity that outran them all and connected us in the IAYC created world.</p>
+
+<p>During those three weeks I felt as life was going much faster than in the ordinary everyday life and experiences were intensifying as the time progressed. It was a compression of life that made you flooded with emotions and impressions that made so hard the returning in the equilibrium state of our everyday’s lives long time after the camp finished. Even the time for sleeping was sacrificed in order to share the energy while singing, dancing, talking, laughing and working together in the long starry nights. I will never forget the nights spent together with Petar’s, Luis’s or Theo’s guitars and the incredible feeling you get when everyone is being connected through the same songs. It was like singing them in one voice, and that, for sure, was the voice of the hearts. “The Lemon Tree”, “Those were the days”, “La Bamba”, “The lion sleeps tonight” and… “Libar”! We even sang some reggae version of it played by Petar! And some of you might remember the song composed there and the night we were singing it all together. It went something like this: “Sun rises every morning again, I’m still composing with my friends, It’s never too late to change your life, To change your life… Don’t be afraid, take a chance… Sun goes down every night, It happens also with my heart, It’s never too late to try again, to try again… It hurts to know that we’ll never be the same… We felt free singing loudly in the corridors of the hostel that was placed in the middle of nowhere. And Kometa which was sang by Marja and Ondrej… While I am talking about the nights spend with the gentle sound of the guitar, let’s not forget our parties! The Sangria party as a usual way of partying among the IAYC people was incredible. We all jumped on Nirvana’s “Smells like teen spirit” and the so loved “Kalasnjikov”. Also the singing evening in the cozy candle atmosphere of the cafeteria on which it seemed as we were competing with ourselves how long and how loud we can last singing “Those were the days” together. That is a song that I think every IAYCer will remember forever. The performance and poetry evening was something really special. Maybe we didn’t understand the language of the poems read by the others, but we could feel them through the one’s reading. The evening culminated with the performances. Luis’s “Angel”, Mireia and her piano, Marja’s and Mireia’s unforgettable blues improvisations with piano and sax, the traditional Basque songs with Irati’s flute and Aitor’s voice, Georgia’s piano… and yes, the crazy stuff me, Marja, Mireia and Fucsia did with the Jet song. An evening that should be also not forgotten is the one of the groups WG parties. We were dancing together in few square meters in the narrow corridor enjoying the music and the friends around us. Because I mentioned the WGs, I want to say something about them as well, just in case if there is someone to think that this was only a party camp! I loved so much the idea behind them.</p>
+
+<p>There were 8 different WGs starting from those exploring the basics of astronomy, two practical ones, one that was reviving the beginnings of astronomy in the ancient civilizations and three that were discussing cosmological questions and were doing astrophysics. Each group was amazing in its own way, and together we’ve worked on many amazing projects, observing, measuring, experimenting, discussing and discovering astonishing facts about the Universe! I won’t forget Anci’s “OD”-ing us to relax us from all the reading and working in the WGs. And Scheuer’s reaction to it! :) We were lucky to observe together the partial solar eclipse from Sayda and capture it on photos. Everyone was near the telescopes that morning, although we were all tired from the free day used to maximum. Pepe was there too! :)Whenever we caught a clear night we went to the observation field for stargazing, observing with our telescopes and doing astrophotography. Photos we made really manage to capture the beauty of the gems of the sky we observed! What was also really great was learning how to develop pictures in the darkroom from Burgel, and Norbi’s very interesting lecture that captured our attention.</p>
+
+<p>The NAP… That’s a story that is an irreplaceable part of the IAYC experience. We started our sessions with learning each others names while still being complete strangers (some people had the chance to learn them all at once - greetings Petar:) ), we continued with games for gaining trust (for example the blind-dog game with all its funny consequences made purposely by the “beloved and trustful” dogs), we emphasized the team spirit in the funny sports games, we laughed together a lot (sometimes while unsuccessfully trying to make some others laugh…Mihai:) ), being creative in the adds (the one that the girls did for Balazs was so great!) or the construction game (the way in which the group of Marcos won was so unique:) ), running on the quest for the “treasure” deciphering Ondrej’s riddles, the water balloon fights and the love being expressed to those who were trying unsuccessfully to break the team spirit and escape being showered(yes…this time greetings to me Scheuer:) ), the chain showering games during the time spent in the camp and, of course, showering our leader Ondrej in the fountain after almost every NAP. It was incredible how, after so many times, he could still have the smile on his face while complaining on the continuous lack of clothes :). And the morning chant! That was a real live show. Each time something new, something that made your waking up so extraordinary special. I kind of missed it the first days at home :) And let’s not forget the task we were given to accomplish in our groups: the reversed film making which we saw together in the end of the camp. It was a one-of-a-kind experience that made our creativity to be visualized and shared with the others.</p>
+
+<p>A special part of the IAYC were the workshops. They were done by some of the willing participants to share their knowledge in something and while doing that to have fun together with the others. This year we had Salsa workshop done by the salsa master Ekin, yoga done by me, the truly unforgettable massage workshop done by Theo during which Burgel claimed that it was hard to be the general while receiving massage from six people:), the Juggling one done by Fucsia and Martin, The Chinese by Yixin, the Basque from Irati and Aitor, and Jacopo’s Java workshop. Also an important part of the IAYC spirit were the sports. There were many competitions held on the courts near the hostel: chess, ping-pong, football, tennis… And some unusual ones, as the swimming competition done on the lake which was won by Fucsia. One other thing we enjoyed was sharing the charm of the places we came from on the National Evenings. We had so much fun in the NAP dome that became a scene for “theatrical” performances such as the German one of the modern adapted story by the brothers Grim, the Polish one about the (mis)construction of the road connecting the North and the South of Poland, the Slovak show about the magical effect that beer has on improving a relationship and Georgia’s unique monologue that made us all laugh! The dome also became a place for musical shows as the traditional dance performance of the Romanians, the Spanish irony of Chiki-Chiki or the Austrian song that we all learned :); a big cuisine with the English tea and cookies and a historical scene with the Turkish people! But the craziest “national” evening of all surely was the Vegetarian one! :)</p>
+
+<p>During these three weeks we had two, so called, special days. On the excursion day this year, besides the hike, we had a tour in a vineyard with a chance to taste the wines being produced there. Afterwards we went to Dresden, which we could not see properly because we were, as Georgia said, showered by God! :) In the end, it didn’t count for the showering game! :) The other was the one we were free to organize by ourselves. Groups of people were made to visit different places or to finally rest in the beds of the hostel after so many sleepless nights. The group I was with, decided to fulfil the crazy idea of going to Czech Republic by foot. It was something that people who were part of this adventure will never forget. After walking so many kilometers and “passing 7 lakes and 7 mountains”, we had a picnic in a quiet atmosphere in a village in Czech Republic.</p>
+
+<p>One more atmosphere or scene I will never forget is the one in the cafeteria the last night while writing the traditional cup messages. Everyone was overflowed with the sad feeling of having to leave his friends the day after and get used to, what was before, his normal way of life… The hope that we’ll meet again, maybe even next year, makes the sad feeling and the missing endurable during the time that follows. The month after the camp finished and each of us was back in our own world and life, was spent in a constant quest of rediscovering our own place, because IAYC is an experience that changes people. It makes you broaden your horizons, deepen your thoughts; it makes your soul become richer, enlightens your heart with the people you have met and the friendships you have made (or maybe the love you left behind), and overall I would say an experience that makes you be more yourself or closer to who you deeply are. For me the best thing about this camp was learning from all the people that created this experience together. My expectations, and I am sure that everybody would agree, were more than fulfilled. I couldn’t even imagine this before coming in Sayda and becoming a part of the IAYC “Holy church” (whose basics Ondrej so nicely explained during the opening! :) ) or the IAYC family. Such a well-rounded experience that covered so many colors of life made us live together 24/7 those three weeks as a big family. The leaders were exceptional and I really have no words that will be good enough to describe them and their significance in creating that beautiful atmosphere that surrounded us all and their preparedness to help us each time we needed it. They were part of the team that made possible this well directed but also spontaneous play to happen, in which every aspect of our personalities was satisfied and we were made happier and richer people in such a short time. IAYC is much more than just an astronomy camp.</p>
+
+<p>It is a creative workshop and an event that inspires and moves you with its serenity; it is a rare place that instead of just celebrating diversity, celebrates unity as well; an experience that makes you grow up and move the horizons of your sight, emotions and thoughts further; a freedom, passion for life, dream waiting to be realized next year and truthful friendships that will last forever. It is an endemic species of people with the eyes directed to the sky and still with love for the ground beneath their feet lost in the starry night. The world we made had no boundaries; the world we all created was connecting instead of dividing; the world we lived in those three weeks was ONE even though celebrating diversities that made it even more beautiful and truly UNFORGETTABLE. IAYC is a one-time experience that demolishes walls and builds bridges between people. It is something that although I am trying my best, is hard to describe with the limited human language, because it is one of the things that you must experience and feel on your own. Thank you IAYC!</p>
+
+    </article>
+  </div>
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

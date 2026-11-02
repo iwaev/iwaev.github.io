@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC | International Astronomical Youth Camp</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main><!-- Calculate the latest camp year by getting the latest "campyear" field in posts.-->
+
+
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img src="/assets/images/home/pano.jpg" alt="IAYC panoramic view"
+      class="w-full h-full object-cover object-bottom brightness-60" />
+  </div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+    <h1 class="font-bold text-light-purple leading-tight mb-8 mt- sm:mt-4 drop-shadow-md drop-shadow-black">
+      International<br>Astronomical<br>Youth Camp
+    </h1>
+    <p class="text-xl mb-8">
+      A three-week long summer camp aiming to promote knowledge of astronomy and
+      related sciences in a unique international atmosphere.
+    </p>
+    <!-- Hero Buttons-->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/nextcamp/"
+        class="bg-dark-purple text-white hover:brightness-175 active:brightness-175 font-bold py-4 px-8 rounded-full transition-all  text-lg flex items-center justify-center gap-2">
+        <i class="fas fa-meteor"></i> IAYC 2027
+      </a>
+      <a href="https://apply.iayc.org"
+        class="bg-dark-red text-white hover:brightness-150 active:brightness-150 font-medium py-4 px-8 rounded-full transition-all  text-lg flex items-center justify-center gap-2">
+        <i class="fas fa-rocket"></i> Apply Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Latest News and Updates section -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 z-0 bg-dark-dark-blue"></div>
+  <div class="relative z-10 mx-auto p-8 max-w-6xl">
+    <h2 class="text-center my-8 !text-light-blue">
+      Latest News & Updates
+    </h2>
+
+    <!-- News Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+      
+      <a href="/2026/09/21/iayc-2027-announcement.html" class="group card bg-dark-blue">
+        <p class="text-sm italic group-hover:text-white group-active:text-white transition-colors ">
+          Sep 21, 2026 • Dara
+        </p>
+        <h3
+          class="break-words text-lg text-light-blue mt-3 mb-3 group-hover:!text-white group-active:!text-white transition-colors ">
+          IAYC 2027 Announcement
+        </h3>
+        <p class="leading-relaxed group-hover:text-white group-active:text-white transition-colors ">
+          The next IAYC will be held in Germany at the Eichsfelder Hutte, St.Andreasberg, from August 8th to 28th!
+        </p>
+      </a>
+      
+      <a href="/2025/12/31/iayc-2026-first-info.html" class="group card bg-dark-blue">
+        <p class="text-sm italic group-hover:text-white group-active:text-white transition-colors ">
+          Dec 31, 2025 • Andrés
+        </p>
+        <h3
+          class="break-words text-lg text-light-blue mt-3 mb-3 group-hover:!text-white group-active:!text-white transition-colors ">
+          IAYC 2026 First Info
+        </h3>
+        <p class="leading-relaxed group-hover:text-white group-active:text-white transition-colors ">
+          Details of the IAYC 2026, check out this year's working groups and apply online!
+        </p>
+      </a>
+      
+      <a href="/2025/12/08/iayc-2026-announcement.html" class="group card bg-dark-blue">
+        <p class="text-sm italic group-hover:text-white group-active:text-white transition-colors ">
+          Dec 8, 2025 • Andrés
+        </p>
+        <h3
+          class="break-words text-lg text-light-blue mt-3 mb-3 group-hover:!text-white group-active:!text-white transition-colors ">
+          IAYC 2026 Announcement
+        </h3>
+        <p class="leading-relaxed group-hover:text-white group-active:text-white transition-colors ">
+          The next IAYC will be held at El Albergue Solanillos in Spain, from August 2nd to 22nd!
+        </p>
+      </a>
+      
+    </div>
+
+    <!-- Follow Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mt-8 mb-8">
+      <!-- View all news button -->
+      <a href="/news/"
+        class="text-white font-medium text-base px-5 py-2.5 border-2 border-light-blue rounded-full bg-dark-dark-blue hover:brightness-200 active:brightness-200 transition-all  flex items-center gap-2">
+        <i class="fas fa-newspaper"></i>
+        <span class="hidden sm:inline">View all news</span>
+      </a>
+
+      <!-- Newsletter signup button -->
+      <a href="https://forms.gle/unQnRQoMVyR4mX7K7" target="_blank"
+        class="text-white font-medium text-base px-5 py-2.5 bg-dark-red border-2 border-dark-red rounded-full hover:brightness-150 active:brightness-150 transition-all  flex items-center gap-2">
+        <i class="fas fa-envelope"></i>
+        <span class="hidden sm:inline">Newsletter</span>
+      </a>
+
+      <!-- Facebook button -->
+      <a href="https://www.facebook.com/IAYC.astro" target="_blank"
+        class="text-white font-medium text-base px-5 py-2.5 bg-blue-600 border-2 border-blue-600 rounded-full hover:brightness-320 active:brightness-160 transition-all  flex items-center gap-2">
+        <i class="fab fa-facebook-f"></i>
+        <span class="hidden sm:inline">Facebook</span>
+      </a>
+
+      <!-- Instagram button -->
+      <a href="https://www.instagram.com/iayc_astro/" target="_blank"
+        class="text-white font-medium text-base px-5 py-2.5 bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-800 rounded-full hover:brightness-160 active:brightness-160 transition-all  flex items-center gap-2">
+        <i class="fab fa-instagram"></i>
+        <span class="hidden sm:inline">Instagram</span>
+      </a>
+    </div>
+    <!-- LightWidget WIDGET -->
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <iframe src="https://cdn.lightwidget.com/widgets/30692fbcb61f57e6be7f408b58f9b6f7.html" scrolling="no"
+      allowtransparency="true" class="lightwidget-widget"></iframe>
+  </div>
+</section>
+
+<!-- About section -->
+<section class="relative overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img src="/assets/images/home/stars.png" alt="IAYC stars background"
+      class="w-full h-full object-cover object-center" />
+  </div>
+
+  <div class="relative z-10 mx-auto p-8 max-w-5xl">
+    <h2 class="text-center mt-8 mb-16 !text-light-purple">About the IAYC</h2>
+
+    <!-- First chunk: Image left, text right -->
+    <div class="grid grid-cols-1 gap-12 items-center my-8 md:grid-cols-2">
+      <div class="order-2 md:order-1">
+        <img src="/assets/images/home/observation-field.jpg"
+          alt="Participants, illuminated by red lights, gathered around a telescope on the observation field in front of a cluster of trees."
+          class="w-full h-64 object-cover object-bottom rounded-lg border-2 border-dark-purple/50" />
+      </div>
+      <div class="order-1 md:order-2">
+        <p class="leading-8">
+          The IAYC is an experience unlike any other; a place for unforgettable
+          memories and lifelong friendships. Young and enthusiastic students
+          come together from all corners of the world, aged between 16 and 24.
+          The camp hosts around 65 participants for three weeks in a remote
+          location, with access to some of the most spectacular skies you may
+          have ever seen.
+        </p>
+      </div>
+    </div>
+
+    <!-- Second chunk: Text left, image right -->
+    <div class="grid grid-cols-1 gap-12 items-center my-8 md:grid-cols-2">
+      <div>
+        <p class="leading-8">
+          The amount of knowledge to be gained from the IAYC is limitless. You
+          can learn to use telescopes, create incredible astro-photographs, and
+          most of all work on a project of your own, guided by a leader who will
+          help you to make some amazing discoveries. No previous astrophysical
+          knowledge is required; all that is needed is a passion for astronomy
+          and the night skies!
+        </p>
+      </div>
+      <div>
+        <img src="/assets/images/home/telescope-smiley.jpg"
+          alt="A participant smiling next to a telescope while holding a laptop."
+          class="w-full h-64 object-cover rounded-lg border-2 border-dark-purple/50" />
+      </div>
+    </div>
+
+    <!-- Third chunk: Image left, text right -->
+    <div class="grid grid-cols-1 gap-12 items-center my-8 md:grid-cols-2">
+      <div class="order-2 md:order-1">
+        <img src="/assets/images/home/working-group-time.jpg" alt="Camp life"
+          class="w-full h-64 object-cover rounded-lg border-2 border-dark-purple/50" />
+      </div>
+      <div class="order-1 md:order-2">
+        <h3 class="mb-4 mt-6">Get to know us</h3>
+        <p class="leading-8">
+          You can find more information about what camp is like on the
+          <a href="/program/" class="text-blue-300!">Program</a> page of our website.
+          <span class="mb-4 block"></span>
+          We invite you to read the
+          <a href="/impressions/" class="text-blue-300!">Camp Impressions</a> page
+          where previous participants have written about their experiences at
+          their first camp.
+        </p>
+      </div>
+    </div>
+
+    <!-- Fourth chunk: Text left, image right -->
+    <div class="grid grid-cols-1 gap-12 items-center my-8 md:grid-cols-2">
+      <div>
+        <h3 class="mb-4 mt-6">Ready to join us?</h3>
+        <p class="leading-8">
+          If you would like to apply to the next IAYC, please visit the
+          <a href="/nextcamp/" class="text-blue-300!">IAYC 2027 First Info</a>
+          page where details about the next camp can be found. Applications
+          typically open in January and close in March.
+        </p>
+      </div>
+      <div>
+        <img src="/assets/images/home/washing-machine.jpg" alt="Working group collaboration"
+          class="w-full h-64 object-cover rounded-lg border-2 border-dark-purple/50" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Donate section -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 z-0 bg-dark-dark-green"></div>
+  <div class="relative z-10 mx-auto p-8 max-w-6xl">
+    <h2 class="text-center my-8 !text-light-green">
+      Support the IAYC
+    </h2>
+    <p class="text-center mt-8">
+      IAYC is a non-profit organisation run by volunteers. Your donations
+      directly benefit camp participants and help keep the IAYC affordable for
+      everyone.
+    </p>
+    <!-- Donation Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+      <!-- PayPal  Card -->
+      <div class="card bg-dark-green text-center">
+        <i class="fab fa-paypal text-5xl text-light-green"></i>
+        <h3 class="text-lg leading-tight mt-6 mb-4 break-words !text-light-green">PayPal</h3>
+        <p>
+          Make a one-time or monthly donation to help us keep camp fees low,
+          purchase new equipment, and provide grants to participants in need.
+        </p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=treasurer@iayc.org&item_name=Help us promote astronomy to young people from around the world!&currency_code=EUR"
+          target="_blank"
+          class="inline-flex items-center justify-center flex-grow bg-dark-red text-white font-medium text-base my-4 py-2.5 px-5 rounded-full transition-all  no-underline hover:brightness-150 active:brightness-150">
+          Donate via PayPal
+        </a>
+        <p class="text-xs h-6 flex items-center justify-center">Tax-deductible in many countries.</p>
+      </div>
+
+
+      <!-- Sponsorship Card -->
+      <div class="card bg-dark-green text-center">
+        <i class="fas fa-satellite text-5xl text-light-green"></i>
+        <h3 class="text-lg leading-tight mt-6 mb-4 break-words !text-light-green">GoFundMe</h3>
+        <p>
+          Help us update our equipment ahead of the 60th IAYC and solar eclipse! Our wishlist can be found on
+          the campaign page below.
+        </p>
+        <a href="https://www.gofundme.com/f/help-the-iayc-to-buy-new-equipment-pfx8k"
+          class="inline-flex items-center justify-center flex-grow bg-dark-red text-white font-medium text-base my-4 py-2.5 px-5 rounded-full transition-all  no-underline hover:brightness-150"
+          target="_blank">
+          Donate via GoFundMe
+        </a>
+        <p class="text-xs h-6 text-center">
+          For equipment donations, contact us at <a href="mailto:sponsorship@iayc.org"
+            class="text-blue-300!">sponsorship@iayc.org</a>.
+        </p>
+      </div>
+      <!-- Donorbox Card -->
+      <div class="card bg-dark-green text-center">
+        <i class="fas fa-sync-alt text-5xl text-light-green"></i>
+        <h3 class="text-lg leading-tight mt-6 mb-4 break-words !text-light-green">Donorbox</h3>
+        <p>
+          Set up monthly or yearly recurring donations to help us plan for the
+          future and support ongoing operations. Leave us a message on our donor
+          wall!
+        </p>
+        <a href="https://donorbox.org/support-the-iayc" target="_blank"
+          class="inline-flex items-center justify-center flex-grow bg-dark-red text-white font-medium text-base my-4 py-2.5 px-5 rounded-full transition-all  no-underline hover:brightness-150 active:brightness-150">
+          Donate via Donorbox
+        </a>
+        <p class="text-xs h-6 text-center">
+          Easy recurring donations with automatic receipts.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Our Supporters section -->
+<section class="relative overflow-hidden h-screen">
+  <div class="absolute inset-0 z-0">
+    <img src="/assets/images/home/torchpic-gradient.jpg" alt="IAYC torch picture background"
+      class="w-full h-full object-cover object-bottom brightness-75" />
+  </div>
+  <div class="relative z-10 mx-auto p-8 max-w-6xl">
+    <h2 class="text-center my-8 !text-light-purple">
+      Our Supporters
+    </h2>
+    <p class="text-center">
+      We are grateful to our supporters who help make the IAYC possible.
+    </p>
+
+    <!-- Supporters Grid -->
+    <div class="flex flex-wrap justify-center items-center gap-4 my-8">
+      
+      <!-- IWA -->
+      <a href="/about-iwa/" class="flex items-center justify-center">
+        <img src="/assets/images/supporters/iwa_logo.png" alt="IWA Logo"
+          class="max-h-24 max-w-48 h-full brightness-0 invert opacity-80 hover:opacity-100 active:opacity-100 transition-opacity" />
+      </a>
+
+      <!-- DFET -->
+      <a href="https://www.faulkes.com" target="_blank" class="flex items-center justify-center">
+        <img src="/assets/images/supporters/dfet.png" alt="DFET Logo"
+          class="max-h-24 max-w-48 h-full brightness-0 invert opacity-80 hover:opacity-100 active:opacity-100 transition-opacity " />
+      </a>
+
+      <!-- MIOC Zaklada -->
+      <a href="https://www.mioc.hr/alumni/" target="_blank" class="flex items-center justify-center">
+        <img src="/assets/images/supporters/mioc_zaklada.png" alt="MIOC Zaklada Logo"
+          class="max-h-24 max-w-48 h-full brightness-0 invert opacity-80 hover:opacity-100 active:opacity-100 transition-opacity " />
+      </a>
+      
+      <!-- Patchion -->
+      <a href="https://www.embroidered-patches.co.uk" target="_blank" class="flex items-center justify-center">
+        <img src="/assets/images/supporters/patchion.png" alt="Patchion Logo"
+          class="max-h-24 max-w-48 w-full brightness-0 invert opacity-80 hover:opacity-100 active:opacity-100 transition-opacity" />
+      </a>
+
+      <!-- WEH -->
+      <a href="https://www.we-heraeus-stiftung.de/english/" target="_blank" class="flex items-center justify-center">
+        <img src="/assets/images/supporters/wilhelm_foundation.svg" alt="WEH Logo"
+          class="max-h-24 max-w-48 w-full brightness-0 invert opacity-80 hover:opacity-100 active:opacity-100 transition-opacity" />
+      </a>
+
+      <!-- Würzburg -->
+      <a href="https://www.uni-wuerzburg.de/en/" target="_blank" class="flex items-center justify-center">
+        <img src="/assets/images/supporters/wurzburg.png" alt="Würzburg Logo"
+          class="max-h-24 max-w-48 w-full brightness-0 invert opacity-80 hover:opacity-100 active:opacity-100 transition-opacity" />
+      </a>
+    </div>
+  </div>
+</section></main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

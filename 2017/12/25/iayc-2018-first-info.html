@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2018 First Info</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/2017/12/25/iayc-2018-first-info.html">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    <h1 class="mb-2 mt-4 text-4xl font-bold leading-relaxed text-light-purple">IAYC 2018 First Info</h1>
+
+<!-- Display date, author, and meta if it is a post -->
+<p class="italic text-light-gray mb-6">
+	Dec 25, 2017
+	 • Alex 
+	
+</p>
+
+<!-- Floating Table of Contents -->
+
+<!-- TOC Toggle Button -->
+<button id="toc-toggle"
+	class="menu-button fixed
+	w-12 h-12 bottom-4 right-4 bg-violet-700 text-white hover:brightness-150 active:brightness-150 rounded-full shadow-[0_0_16px_4px] shadow-violet-700/50 z-70"
+	aria-label="Toggle Table of Contents">
+	<i id="toc-icon" class="fas fa-list-ul text-xl"></i> </button>
+
+<div id="toc-panel" class="menu-panel fixed bottom-4 right-20 shadow-xl shadow-black invisible z-70 ">
+	<ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#first-info---iayc-2018-29th-july---18th-august">First Info - IAYC 2018 (29th July - 18th August)</a></li>
+<li class="toc-entry toc-h2"><a href="#about-the-iayc-2018">About the IAYC 2018</a></li>
+<li class="toc-entry toc-h2"><a href="#a-few-facts-about-the-united-kingdom">A few facts about the United Kingdom</a></li>
+<li class="toc-entry toc-h2"><a href="#observing">Observing</a></li>
+<li class="toc-entry toc-h2"><a href="#participation">Participation</a></li>
+<li class="toc-entry toc-h2"><a href="#choosing-your-working-group">Choosing your working group</a></li>
+<li class="toc-entry toc-h2"><a href="#your-application-for-the-iayc-2018">Your application for the IAYC 2018</a></li>
+<li class="toc-entry toc-h2"><a href="#applying">Applying</a></li>
+<li class="toc-entry toc-h2"><a href="#travel-to-the-iayc">Travel to the IAYC</a></li>
+<li class="toc-entry toc-h2"><a href="#any-questions">Any questions?</a></li>
+</ul>
+</div>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+
+<article class="prose max-w-none">
+	<h2 id="first-info---iayc-2018-29th-july---18th-august">First Info - IAYC 2018 (29th July - 18th August)</h2>
+
+<p><strong>Please note the online application system is undergoing maintenance and is not yet open. We expect the service to be up in early January 2018, so for now think long and hard about your working group choice and your motivation letter!</strong></p>
+
+<p>The International Astronomical Youth Camp (IAYC) is a three-week long summer camp aiming to promote knowledge of astronomy and related sciences in a unique international atmosphere. It is organised by an international team of students and young scientists, all members of IWA e.V.</p>
+
+<p><img src="nettlecombe_jcrocker.jpg" alt="Nettlecombe Court" class="image-flex" />
+<em>Nettlecombe Court (Image with kind permission of John Crocker)</em></p>
+
+<p>More detailed information about the IAYC in general, participants, the daily schedule and obsvering during the IAYC can be found in the About the IAYC section. We recommend all prospective participants read this section as well as the First Info carefully!</p>
+
+<h2 id="about-the-iayc-2018">About the IAYC 2018</h2>
+
+<p>The IAYC 2018 will be taking place in the UK for the second time. It will be at <a href="https://www.field-studies-council.org/locations/nettlecombecourt/">Nettlecombe Court</a>, a 16th century manor house located in the <a href="https://www.exmoor-nationalpark.gov.uk">Exmoor National Park</a>, Somerset. This area was also named the first <a href="https://darksky.org/">International Dark Sky</a> site in Europe! Somerset is located in the South of the country and the house is very close to the coast.</p>
+
+<p>Nettlecombe Court serves as the Leonard Wills Field Centre, as a part of the <a href="https://www.field-studies-council.org/">Field Studies Council</a>. There are 15 dormitory rooms and four well-equipped teaching rooms. In addition, there is a student common room which has a pool table, a piano,arcade games, and table football. There is also plenty of space outside for games and activities, an observation field, as well as a stream, woodlands, grasslands, and a river only a short walk away.</p>
+
+<p>A virtual tour of the house is available <a href="https://www.field-studies-council.org/locations/nettlecombecourt/">here</a>.</p>
+
+<p><img src="nettlecombe_valley.jpg" alt="Nettlecombe Court" class="image-flex" />
+<img src="nettlecombe_dining.jpg" alt="Dining room" class="image-flex" />
+<img src="bedroom_nettlecombe.jpg" alt="Bedroom" class="image-flex" /></p>
+
+<p><em>Nettlecombe Court is nestled in the beautiful rolling hills of Exmoor. (Image by Mark Robinson CC Licensed).</em></p>
+
+<p><strong>Address:</strong></p>
+
+<p>Nettlecombe Court,<br />
+Williton,<br />
+Taunton,<br />
+TA4 4HT<br />
+England</p>
+
+<p><strong>Coodinates:</strong></p>
+
+<ul>
+  <li>Latitude: 51° 7’ 51.6” N</li>
+  <li>Longitude: 3° 21’ 0” W</li>
+</ul>
+
+<p><strong>Altitude:</strong>~ 100 m</p>
+
+<p><img src="nettlecombe_ents.jpg" alt="Games room" class="image-flex" />
+<img src="nettlecombe_classroom.jpg" alt="Class room" class="image-flex" />
+<img src="nettlecombe_classroom2.jpg" alt="Class room" class="image-flex" /></p>
+
+<p>The nearest small town is Williton (3 miles/5 km) and the largest nearby town is Taunton (16 miles/26 km) where there is a train and a bus station. The nearest cities include Bristol (55 miles/90 km) and London (167 miles/270 km).</p>
+
+<div style="width: 100%"><iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278107.1163950837!2d-3.064587303233266!3d51.01877688350415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486def557b500cc3%3A0xd8ae36e922a6667d!2sField+Studies+Council!5e0!3m2!1sen!2suk!4v1450265028599" allowfullscreen=""></iframe></div>
+
+<p>For more information, you can explore the map above or contact info@iayc.org.</p>
+
+<h2 id="a-few-facts-about-the-united-kingdom">A few facts about the United Kingdom</h2>
+
+<p><strong>Area:</strong> 130 395 km²</p>
+
+<p><strong>Population:</strong> ~ 64 Million (2013)</p>
+
+<p><strong>Capital:</strong> London</p>
+
+<p><strong>Bigger cities</strong>: Birmingham, Leeds, Glasgow</p>
+
+<p><strong>Official Language:</strong> English</p>
+
+<p><strong>Currency:</strong> Pound (GBP) £</p>
+
+<p><strong>International Dialling Code:</strong> +44</p>
+
+<p>Travelling in Europe in general (and in England in particular) is very safe. You should have no problem finding English speakers!</p>
+
+<h2 id="observing">Observing</h2>
+
+<p>Nettlecombe Court is located in an area of very little light pollution. These conditions will be ideal for observing, which takes place during working group time as part of your project, or outside after midnight meal when the telescopes are available for everyone. Catch a glimpse of a celestial object through a telescope or lie down in your sleeping bag and enjoy the view.</p>
+
+<p><img src="Startrails.jpg" alt="Startrail" class="image-flex" />
+<em>Startrails over Nettlecombe Court</em></p>
+
+<p>It’s not a problem if you don’t have any experience observing, the leaders and other participants are always happy to help. It doesn’t matter if it’s about constellations, how to use a telescope or how to take astro-pictures. At the beginning of the camp we will offer a telescope introduction to help you get a feel for the basics of how to use a telescope on your own.</p>
+
+<p><img src="Observing.jpg" alt="Participants observing in 2017" class="image-flex" />
+<img src="observing_2.jpg" alt="Participants observing in 2009" class="image-flex" /></p>
+
+<p>Furthermore, there’ll be a photographic darkroom available. This means that you can take black and white (film) photos and develop them yourself. You are also welcome to bring your own telescope or binoculars. We will have available several telescopes and CCD cameras suitable for observing and the taking of astro-pictures.</p>
+
+<p>For further information, contact <a href="mailto:daniel@iayc.org">daniel@iayc.org</a> or <a href="mailto:alejandro@iayc.org">alejandro@iayc.org</a>. You can also check out the <a href="/equipment/">equipment</a> page.</p>
+
+<p><img src="iayc_esac.jpg" alt="Participants visiting the European Space Astronomy Center in 2017" class="image-flex" />
+<em>Participants visiting the European Space Astronomy Center in 2017 near Madrid, Spain</em></p>
+
+<h2 id="participation">Participation</h2>
+
+<p>To participate in the IAYC you must be <strong>16 to 24 years old</strong> (16 and 24 included). The participation fee for timely applications is <strong>690 EUR</strong>. This applies to applications submitted before the
+<strong>7th of April 2018</strong>. You will also require to sign a consent form and post it by regular mail before this date (the post stamp date counts!).</p>
+
+<p>Later applications will be considered if places are still available, with an increased fee of <strong>750 EUR</strong>. Timely applicants will be notified about the outcome of their application at the end of April. If accepted, you will need to transfer the applicable participation fee <strong>within 7 days of receiving the acceptance e-mail.</strong></p>
+
+<p>You can withdraw your application at any time before we receive the participation fee. If you want to drop out after that, and if we manage to fill up your place, we will refund you the full participation fee less an <strong>administration fee</strong>. This administration fee is <strong>50 EUR</strong> if you drop out before the <strong>19th of July</strong> and <strong>100 EUR</strong> if you do it after (19th of July included). In the unlikely case we don’t manage to fill up your place the participation fee is <strong>non-refundable</strong>.</p>
+
+<p>If financial reasons keep you from applying, then we encourage you to seek support from our limited grant programme. Contact info@iayc.org to obtain instructions about the grant application procedure. In order to apply for a grant, you need to fill in both the normal application and the grant application (grant applications will only be accepted together with the normal application, i.e. you cannot apply for a grant after you have already been accepted to attend the camp).</p>
+
+<p>Applicants to the grant programme will be asked to prepare a short video (maximum of 5 minutes) answering a questionnaire which will be provided together with the grant application form. Grant applications need to be sent to info@iayc.org. The deadline for sending in a grant application is the <strong>31st of March 2018</strong>.</p>
+
+<h2 id="choosing-your-working-group">Choosing your working group</h2>
+
+<p>In the following section you can find the abstracts of the 10 working groups offered at the IAYC 2018. On the application form you will need to indicate which working group you want to participate in. In addition to the working group overviews the Non-Astronomical Programme leader and the General Coordinator will also introduce themselves.</p>
+
+<p>Remember that the projects offered in each working group are open to discussion. We also want to encourage you to ask for more information about them or even to propose related projects to the working group leader.</p>
+
+<div class="flex flex-col gap-12">
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">ACE - AstrophysiCs with intErferometers </h3>
+      <p><em>Tags: Observational, Interferometry, Data, Resolution, Optics</em></p>
+
+<p>Astronomers have always wanted bigger and bigger telescopes and as it turns out this isn’t just because of some superiority complex, there are two very good reasons why! The first is to be able to gather more light, allowing detections of fainter objects. In my opinion this for a long time has been the main drive in the demand for larger telescopes. This is only half the story however, a larger telescope also allows you to resolve smaller patches of sky, letting you see things that were too small to see before.</p>
+
+<p>Long story short the maximum resolution of a telescope is inversely proportional to the mirror size. A mirror twice as big as another telescope can resolve things two times smaller on the sky. With that in mind, the Hubble space telescope has a mirror size of 2.4 meters, the largest existing optical telescopes are around 10 meters in diameter and the next generation will be a massive 39.3 meters but that won’t come online until 2024. What if I told you, however, that there are already telescopes operating today with the resolution of a 300 meter optical mirror? Welcome to the world of interferometry and this working group!
+Interferometry opens up entire new areas of research, from imaging the surface of other stars to observing gaps in circumstellar disks which are potentially due to forming planets</p>
+
+<p>In ACE we will be exploring all things interferometry, potential projects include carrying out our own interferometric measurements at camp, analysing data from an interferometer such as the VLTI or even building our own table top LIGO (though I wouldn’t hold your breath for detecting gravitational waves!).</p>
+
+<p>I hope we’ll have an ACE time, and if you have any questions or ideas for projects you’d be interested in please feel free to get in touch with me!</p>
+
+<p>See you in (hopefully) sunny Nettlecombe!</p>
+
+      <p class="mb-1"><strong>Dan</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Dan.jpg" alt="Dan" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>This british fellow has been to the camp since 2012, joined the leader team in 2015, making the IAYC 2018 his 4th camp as a leader. If you haven’t talked with this young man yet, make sure you do during the next camp. Ask him about his cold days in Canada or about his new life as a PhD student in Cambridge working on interferometers. When he is not occupied with going to lectures held by famous people like Stephen Hawking or Ian McKellen, he is either running, watching TV series, listening to podcasts, going on photography trips or practising calligraphy. If that isn’t enough to talk about, you can also have a great talk about Star Wars or a discussion about his addiction to Austrian cuisine and Maki. If you are fortunate enough to be in his working group, you’ll be sure to have an amazing time!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:daniel@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">ARTEMIS - AstRophysical ThEory and siMulatIonS</h3>
+      <p><em>Tags: Data analysis, Programming, Theoretical, Simulations</em></p>
+
+<p>“Astronomy compels the soul to look upwards and leads us from this world to another”, according to Plato. Astrophysics, on the other hand, compels us to use the laws of physics to explain what we see when we look upwards. It’s the discipline that underpins our modern understanding of the universe, helping us to describe anything from the motion of the smallest asteroids to the energetics of the brightest quasars.</p>
+
+<p>Inspired by Artemis, the Greek goddess of the hunt, wilderness and the Moon, in this working group we will investigate some of the wildest and most extreme phenomena in the universe. During the camp, we’ll try to answer questions such as: Why do variable stars vary, and why do pulsars pulse? What makes a star go supernova? Can you calculate the distance to the Andromeda galaxy using a handful of images? How many black holes are there in the Milky Way, and how can we detect them? What connects the Earth’s aurorae, Saturn’s moon Pan and active galactic nuclei? We will use a combination of raw images and data from space telescopes, theoretical models, programs we’ll write during the camp and concepts from physics and astronomy to answer these questions.</p>
+
+<p>If you’re completely new to physics and programming, or if you can solve the n-body problem in your sleep, I can guarantee you’ll find enjoyable and challenging projects in ARTEMIS. All you need to bring is your enthusiasm, and I’ll bring a plentiful supply of tea and biscuits.</p>
+
+<p>See you at Nettlecombe!</p>
+
+      <p class="mb-1"><strong>Nikki</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Nikki.jpg" alt="Nikki" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Nikki first appeared on IAYC’s scene in 2014 and she hasn’t missed a camp since. She will attend the IAYC 2018 for the first time as a leader, but don’t be fooled, she has a lot of experience! She is the creator and president of the Astronomy Society in the University of Warwick, where she’s working on her master about x-ray irradiation and evaporation of exoplanets. Doesn’t that sound cool enough? Wait to hear about her multiple hobbies!
+Apart from astrophysics she really enjoys music, Nikki plays the clarinet and the ukulele and she even composes her own music! Don’t miss the chance to sing along with her while looking for shooting stars in the observation field! Or to start a conversation about photography, sci-fi or her activism for the LGBT+ community.
+You’ll be lucky if you find yourself in ARTEMIS! Nikki will never gonna give you up, never gonna let you down, never gonna run around and desert you! (♪) plus, as any Brit worth their salt, she’ll always have plenty of tea for you ;)</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:nikki@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">DRAGON - DR2, Astrometry from Gaia and computatiON</h3>
+      <p><em>Tags: Astrometry, Gaia, Programming, Simulations</em></p>
+
+<center><em>
+♫ Night sky turned into fire, like Saxon funeral pyres
+Melting away the ice, with heat from solar light
+Throughout our destiny, this star has been the key
+Too late we find the truth, that's lost within our youth
+
+Through solar winds, the comet lives
+Bringer of war, torch of The Gods
+The Dragon Star ♪
+</em></center>
+
+<p>If you are into the latest discoveries and investigations, you probably heard of Gaia before. It’s a spacecraft designed and launched by ESA that will provide us with the most precise astrometry from stars we have so far. This means that we will get more accurate positions and proper motions of over a billion stars! Pretty sweet, right? The upcoming Gaia second data release (Gaia DR2) will bring us new and exciting information about many of these stars, including photometric data, radial velocities and effective temperatures.</p>
+
+<p>In DRAGON we will explore this catalogue and learn how to interpret the data to parameterise stars. We will use Topcat to understand and investigate each column and crossmatch Gaia DR2 with other useful catalogues. We will also use Python (a very useful programming language commonly used in astronomy) to analyse data and run some simulations. There are a wide variety of projects that can be done: from very basic understanding and playing around with different coordinate systems to calculating the PSF of a certain region, simulating the dynamics of nearby clusters, etc… But that will depend on the knowledge and interest of our DRAGONs and will be decided later. If you have any cool ideas for projects or have any questions do not hesitate to contact me, I won’t spit fire… In fact, I’ll be there for you anytime you need help and I will also make sure there are always enough cookies, crisps and obviously: tea!</p>
+
+<p>See you in shiny England!</p>
+
+<center><em>♪ A message from The Gods, the Cycle carries on
+Life passes to be born, in yet a higher form
+This is the way of life, as day must turn to night
+The Star shall fade away, as we must all one day
+
+Through solar winds, the comet lives
+Bringer of war, torch of The Gods
+The Dragon Star ♫</em></center>
+
+      <p class="mb-1"><strong>Irati</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Irati.jpg" alt="Irati" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>This Dino, sorry, epic dragon of the Basque Draconis kind was first observed 10 years ago in Germany. She hasn’t missed a camp since then and we had the honour of being under her rule last year. There are rumours that you can currently spot her somewhere in Vienna working hard on her PhD studies. The Basque Draconis are unique species, despite being shy at first contact with strangers, it’s a really sociable and kind creature. There are not records that these dragons spit fire but beware my friend, never make angry one them as their fury is famous all over the world. Instead, if the Basque Draconis is happy will embrace you with its wings and in some occasions will spit some “Muxus”. The Basque Draconis are also famous for their dancing and singing abilities (some people said that they can hypnotise with these skills). So don’t think it twice and surrender to the red Dragon!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:irati@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">FORCE - Foundations of ORbits and Celestial Equations</h3>
+      <p><em>Tags: Celestial mechanics, Orbits, Theoretical, Computer simulations</em></p>
+
+<p>“Ever since Plato, all of them: Aristarchus, Hipparchus, Ptolemy … they have all, all tried to reconcile their observations with circular orbits. But what if another shape is hiding in the heavens? - Another shape? There is no shape more pure than the circle. - I know, I know, but suppose, just suppose! The purity of the circle has blinded us from seeing anything beyond it! What if we dared to look at the world just as it is. Let us shed for a moment every preconceived idea. What shape would it show us?”</p>
+
+<p>The Ptolemaic astronomy based on deferences and epicycles was the first attempt to solve the mistery of the apparent retrograde movement of the planets. As a first approximation it solved the problem, but as better observations were obtained the model was unable to fit them. A solution at the time was to introduce more epicycles, but how could one explain such a complex orbits? It took more than a millennium to discover the hidden shape. In 1609 when Johannes Kepler proposed the elliptical orbits (a circle with two centres) it meant a whole revolution in astronomy. For the first time the theory matched the observations, the laws that rule the motion of the planets were unraveled.</p>
+
+<p>In this WG we will study the basics of classical celestial mechanics. We can start understanding Kepler’s laws of motion of planets. Too easy? What about pretending to be an ESA engineer a design a space mission to Mars or help sending a space probe to the outer space with the gravity assist of Jupiter? Do you prefer a project more ground to Earth, do you want to know more about tidal forces? or how to try to catch a satellite and resend it to the Earth? The list of possible projects is long, don’t hesitate to contact me if you have in mind a project you would like to develop in this WG</p>
+
+<p>Are you ready to enter the dark side of the FORCE? If the answer is yes, be ready to three weeks of equations, ellipses and simulations. If after the camp you hate all the conic curves I will be more than satisfied ;) I cannot guarantee that the simulations will work, but I can guarantee a nice working atmosphere, with music and cookies. See you all in Nettlecombe!</p>
+
+<p>May the FORCE be with you</p>
+
+      <p class="mb-1"><strong>Aitor</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Aitor.jpg" alt="Aitor" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Zaunka, zaunka! What’s that noise? Oh! That’s the sound of Aitor barking in his native language! This 28 year old physicist from the cold far lands of Baskenland will never stop surprising you. Either he will show you the craziest memes or youtube videos, including the silliest songs and also the most melancholic ones; or he will jump around shouting “spaceship!” or “where is the poop?”, if you’re lucky enough not to be followed by him with a “shame bell” ;)
+Aitor’s first camp was back in 2008, and although he missed a couple of IAYCs since, this will be his 9th camp, 5th as a leader. He is currently doing his PhD in climate science in the also cold Stockholm (Sweden), so if you want to know anything about climate change, he’s your man! He definitely is one of the nicest people you’ll ever find at camp, he’s the most understanding and trustworthy person, and a really good friend, so be sure to be nice to him if you don’t want see his disapproving face and end up in his “Littlefinger blacklist”.</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:aitor@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">HOST - Hypothesizing Origin and Structure Together</h3>
+      <p><em>Tags: Cosmology, Theoretical, Programming, Research, Galaxies</em></p>
+
+<p>This year’s working group will focus on cosmology. Not to be mistaken as the study of beauty and makeup, we will be studying the origin and development of the universe, which is beautiful in a whole different way. Though there’s arguably no well-constrained subfield in astronomy, modern cosmology is constantly changing and growing to accommodate new research. Some discoveries confirm century old theories – such as gravitational waves confirming Einstein’s early 20th century equations – while others send us back to the drawing board time and again – such as the mystery of dark matter (is it a particle? A field? Black holes?). In HOST, you will be tasked with suggesting, confirming, and rejecting various hypotheses about the universe.</p>
+
+<p>To do so, your tools will include Planck data of the cosmic microwave background, simulated data of dwarf galaxies and dark matter halos, LIGO data of gravitational waves, Python, and a whiteboard and pen. You will each learn valuable independent research skills by working with and analyzing real datasets. You will be able to answer questions such as, “how does this discovery fit into the larger framework of astronomy? What problems or questions are raised as a result of this discovery or theory? What conclusions can be drawn from these data?” By the end of three weeks, you may even be able to speak confidently about your topic or theory – though in cosmology, don’t be surprised if your findings quickly become outdated!</p>
+
+<p>There is no prior cosmology knowledge or research experience required – only an interest in the topics presented here. Although basic programming skills will be helpful, they are not necessary. There will be plenty of resources to help you while you’re here, and it is my goal for all participants to gain not only knowledge but also transferrable skills in HOST. If you have a related idea you want to pursue, don’t hesitate to reach out to me at melanie@iayc.org even before applications are due. I’m happy to discuss them with you and tailor projects to individual interests!</p>
+
+<p>See you in England!</p>
+
+      <p class="mb-1"><strong>Melanie</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Mel.jpg" alt="Melanie" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Welcome to the party because with Melanie around you can expect to see everyone smiling and having a good time. Mel brings a contagious enthusiasm and joy to everything she does and you only need to look at how far she travels to IAYC to see her dedication. Like all the leaders Mel is well versed in astronomy but you could try asking about her additional degree in German, even though she’ll probably deny that she can speak it. IAYC 2018 will be Mel’s 4th camp and her second as a leader. Quick to make her mark you’ll probably hear rumours and stories quite quickly about Mel’s talk, I won’t spoil what it’s about though. Don’t be shy about introducing yourself, Mel’s got a gem of advice about practically any subject you can imagine and she’s always happy to help educate people. Suffice to say that you’ll almost certainly count Mel as one of the unforgetable lifelong friends you will make at IAYC.</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:melanie@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">OH MY! - OH Marvellous relativitY!</h3>
+      <p><em>Tags: Theoretical, Special Relativity, General Relativity, Particle Physics, Electrodynamics</em></p>
+
+<p>Since Einstein published his theories of relativity in 1905 and 1915 many areas of physics have changed. From radioactive decay and particle accelerators to relativistic electrodynamics and gravitational lensing, many phenomena have been explained by it. The recent discovery of gravitational waves is a further victory for Einstein’s theories of relativity.</p>
+
+<p>In OH MY! you will be spending a lot of time thinking about how relativity plays a part in many fields of physics. If you are interested in particle physics, you will learn about the large variety of different particles and accelerators, for example you will calculate decays and scattering processes. You will also learn more about different experiments and ways of detecting particles.</p>
+
+<p>If you are more interested in the mathematics behind the theory of relativity, you will learn about lorentz and poincaré transformations, tensors, four vectors and potentially apply them to the maxwell equations to see how the electromagnetic field transforms when changing inertial systems. If you like a challenge, then a project in general relativity is the perfect fit for you.</p>
+
+<p>Another kind of project could be the study of gravitational lensing, gravitational waves or about the theories of the expanding universe including dark matter and dark energy.</p>
+
+<p>If you have any questions about the projects or if you have your own project ideas regarding relativity, don’t hesitate to contact me.</p>
+
+<p>Are you excited for the camp now? I am for sure and I can’t wait to meet you all at Nettlecombe. I’ll make sure you’ll always have cookies and coffee, as well as tea (since we are in the UK there will be a lot).</p>
+
+<p>Clear Skies!</p>
+
+      <p class="mb-1"><strong>Evi</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Evi.jpg" alt="Evi" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Who is this young Austrian? This is Evi, Evi originally hails from the small region of Steyr-land (and no, it isn’t the name of a theme park sadly). Now living in Vienna and about to wrap up her bachelors of Physics in record time when not contemplating the fundamental building blocks of our universe you’ll find her solving jigsaw puzzles, running, or taking incredible photographs of everything from insects to far flung galaxies. Want to strike up a conversation with her? Try asking her about what it’s like to run birthday parties for kids at the planetarium, or how she won a bag of pasta for her beautiful photo of her home town at night. Having been around since 2014 you can rest assured that Evi knows her way around the IAYC and will do her upmost to make you feel welcome from day one.</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:eva-maria@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">RAIDERS - Rotations, Atmospheres, Interiors, and Destinies; Exoplanet ResearcherS!</h3>
+      <p><em>Tags: Planets, Astrophysics, Geomorphology, Exobiology</em></p>
+
+<p>Ever looked around yourself and wondered if this is all there is in the world? Have you considered what else is out there in the world just waiting for you to discover and all the experiences you can claim. For millenia now people have been exploring and uncovering the secrets of the Earth, but a brave few have looked beyond these confines to distant shores. Astronomers and planetary scientists have studied the alien worlds that lie beyond what we know, from humble asteroids to ice moons and misterious exo-planets.</p>
+
+<p>If you have the spirit of an adveturing explorer of old then join RAIDERS as we embark on our voyage of discovery and write a new saga. Together we will face the unknown, we will learn what makes planets tick, and what it takes for life to survive in space. We may find ourselves face to face with strange creatures unlike what we know on Earth, learning about how life can work out there. We might keep our distance and gather information about these far off lands to learn what we can before we send our explorers to investigate. Perhaps we will discover how so many worlds come to be and what decides their natures. Some of us will search for new worlds to study and explore while others think of new ways to find and understand them.</p>
+
+<p>One thing is for certain we will never be bored or wanting for things to do as we forge iron bonds of friendship and feast heartily together. Fear not if you are inexperienced in adventuring and exploration as your companions will always be ready to come to your rescue and offer support. As the captain of our voyage I’ll always be available when you need me.</p>
+
+<p>So if you’re ready to set sail, join RAIDERS!</p>
+
+<p>See you at the Court of Nettlecombe!</p>
+
+      <p class="mb-1"><strong>Cillian</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Cillian.jpg" alt="Cillian" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Have you ever met an Irishman with a Viking beard who speaks fluent Spanish with a Mexican accent? Dear reader, meet Cillian. This charming man of many talents joined IAYC for the first and second times in 2015 and 2017, where he fell in love with all that IAYC has to offer. As one of the sweetest guys you’ll ever meet, you can count on Cillian for anything, be it a helping hand while cleaning the NAP hall to a cheerful attitude and a hug if you’re having an off day. Even though he’ll have his blackbelt in ninjutsu by IAYC 2018, he wouldn’t hurt a fly – but he’s happy to teach you a thing or two if you ask. You’ll love his contagious energy and enthusiasm, and he’s excited to meet you too!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:cillian@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">SAPPHO - SpAce through PhotograPHy and Observations</h3>
+      <p><em>Tags: Astrophotography, Observational astronomy, Practical astronomy, Art</em></p>
+
+<center>
+<strong>The Moon hath left the sky;&lt;/br&gt;
+Lost is the Pleiads‘ light;&lt;/br&gt;
+It is midnight,&lt;/br&gt;
+And time slips by</strong>
+
+Sappho, 570 BC
+
+</center>
+
+<p>The hypnotic and overwhelming beuty of the night sky sets us in the limits of science and art. In SAPPHO we’re going to focus on those limits, and we are going to do it through practical astronomy and images.</p>
+
+<p>Armed with telescopes, cameras and even paper and pencils we will capture photons that have been travelling, in some cases, for millions of years:</p>
+
+<p>We will work on astrophotography: Either if you’re interested into deep-sky imaging, timelapses, panoramas, planetary photography, or even film photography, then SAPPHO is your working group! Astrophotography will help us detect details in different regions of the night-sky that cannot be seen with our eyes, revealing aswell the color-palette of the universe. We will also play with the results of your pictures, processing them with different softwares.</p>
+
+<p>If you are more classic, you can work on a more traditional part of practical astronomy too, such as astro-sketching. Even though our eyes are not the most powerful or trustful tools, they allow us to understand astronomical objects our own way, as we see them through the eyepiece. Astronomical drawings are unique memories of our observations, if you don’t trust me, just check out these blogs: https://vangestel.de/astro/en/sketch-galleries, https://www.deepskywatch.com/astronomy-sketches.html, …</p>
+
+<p>But our journey won’t finish here: Space telescopes and probes like HST or Juno have sharpened our view of the universe and other worlds. They were mainly thought for investigating, but their legacy will go way further, these probes are revealing us textures, geometries and compositions that we would have never thought of. Most of the material is not as visually attractive as it could be, and we’re going to exploit its full potential processing it, interpreting their data our own way.</p>
+
+<p>These are just some of the ideas, which are, of course, open to discussion. If you have any other similar projects in mind, they will be very very welcome as well! :) Don’t hesitate to contact me (mara@iayc.org) if you have any doubts or suggestions!</p>
+
+<p>In any case, if you’re one of those people who think “an image is worth a million words” and either you like playing around with telescopes, photography, sketching or you’re simply looking for the beauty of our universe, then SAPPHO is your working group! :)</p>
+
+      <p class="mb-1"><strong>Mara</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Mara.jpg" alt="Mara" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>If you’ve not yet had the pleasure of meeting Mara, you’re in luck! This lovely Spaniard is back for her 2nd camp as leader, having never missed a camp since 2015. When she’s not studying physics at the Complutense University of Madrid, you’ll find Mara making beautiful astrophotos and astro-sketches, dancing the Lindy Hop, or writing about science and art on her blog. Don’t hesitate to talk to her if you want to learn about astrophotography, historical women of astronomy, or if you want to gain an amazing new friend! She’s never short of energy, enthusiasm or kindness, so if you are fortunate enough to be in her group, you’re going to have an incredible three weeks!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:mara@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">T-REX - Training Robots to EXplore</h3>
+      <p><em>Tags: Programming, Robotics, Computer vision, Rovers</em></p>
+
+<p>Does space fill you with <em>Curiosity</em>? Are you interested in the <em>Spirit</em> of space exploration, and the <em>Opportunity</em> that it brings? Unfortunately the puns stop there because NASA didn’t care to give the rest of their space probes more convenient names.</p>
+
+<p>In T-REX we will learn all about robotic space exploration using planetary rovers. Rovers are awesome. Using them we’re able to analyse the soil on Mars, sniff the toxic atmosphere of Venus and even take photos from the surface of comets (yes, I know Philae was a lander). Although rovers often carry different payloads depending on the mission (spectrometers, lasers, drills, etc), virtually every system has a bunch of cameras to give us eyes on an alien world. We can use images to navigate, reconstruct 3D models of terrain, identify interesting geology and help the rover avoid obstacles. Plus, of course, we can take pretty panoramas.</p>
+
+<p>Let’s build one and explore Nettlecombe! But what will we actually <em>do</em>, I hear you ask? How about:</p>
+
+<ul>
+  <li>Planning and carrying out a robotic mission, deciding how to achieve a science goal when time and power are against you</li>
+  <li>Mapping an environment in 3D, localising the rover in the environment and overlaying sensor data</li>
+  <li>Using computer vision/machine learning to locate, classify and analyse objects in images</li>
+  <li>Understanding how we control systems that are very far from Earth</li>
+</ul>
+
+<p>This is a great opportunity to get involved with hardware hacking, computer vision and machine learning. We will be using Python for pretty much everything. Don’t be afraid if you know nothing (Jon Snow), you will learn!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env python
+import random
+benefits = ['caffeine', 'food', 'good music', 'Josh', 'memes']
+
+print("Don't worry, there will be {} to keep you going!")
+	.format(random.choice(benefits))
+</code></pre></div></div>
+
+      <p class="mb-1"><strong>Josh</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Josh.jpg" alt="Josh" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Josh, Joshito or currently Dr. Josh is one of camp’s favorite dinosaurs leaders. He’s been around for 9 years already! His first appearance was in 2009, and ever since he’s been an indispensable piece in the IAYC-puzzle. He fulfills every room with his ecliptic personality, though shy at start, very funny when you get to know him. He has a very spicy sense of humor and interesting remarks on almost anything you can think of. He loves riddles and he is passionate about photography (ask him to show you some of his astro-pics for instance!). He did his PhD studies at the UCL Mullard Space Lab, where he worked on 3D imaging and rovers. So you guessed rightly he is the perfect guy to rock the T-Rex group. And despite of his “T-Rex” condition, he holds the title of being the king of massages! If you get into his WG, you should not miss the opportunity to get on of those, it will certainly make you roar!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:josh@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">YETI - astrophYsics Experiments wiTh partIcles</h3>
+      <p><em>Tags: Astroparticles, Physics, Experiments, Detectors</em></p>
+
+<p>As mysterious and hidden as this legendary being from the mountains – the YETI – are dark matter, majorana neutrinos and some other astroparticles. YET theorIsed, they have never been detected. The nature of dark matter, for example, remains a mystery. Therefore, its detection is crucial to unravel its nature and with it, being able to understand much more about our Universe. This triggered the existence of Astroparticle Physics to study and detect the elementary particles coming from astronomical origin.</p>
+
+<p>Also consider this: the largest part of the Universe does NOT emit light! Consequently, a branch of astronomy is required to study what happens with this 96% of energy in our universe that is unseen. At this point, technology plays an important role in the development of different and ingenious detectors and telescopes. Such as the amazing IceCube telescope at the South Pole! This telescope searches for neutrinos from the most violent astrophysical sources: events like exploding stars, gamma-ray bursts, and cataclysmic phenomena involving black holes and neutron stars. Or the CRESST experiment, in which I am involved, that aims the detection of dark matter from its elastic scattering off nuclei. And all of this at temperatures as low as 20 mK!!!</p>
+
+<p>If you would like to learn more about this field, this is definitely your group. I have prepared for you some projects where you’ll be able to approach this field through really cool experiments. We are not only going to build a cloud chamber, but also we are going to work with it to grasp all the possible information about the behaviour of the detected particles. You will also have the possibility to get involved in a real astroparticle experiment by doing data analysis, for instance. Another crazy experiment I have in mind for those of you who love working on a good challenge is to build your own supernova just with water and few more things.</p>
+
+<p>Are you ready to roll up your sleeves and get into matter? Yes? then you are very welcome here!!! From my side, I promise you an amazing atmosphere and, of course, some tea to carry out all these projects in the lovely England! So, my dear YETI, it’s time for you to shave all that fur and get ready for the greatest summer ever imagined, I am so looking forward to meet you at the IAYC2018!</p>
+
+      <p class="mb-1"><strong>Eli</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Eli.png" alt="Eli" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>If looking at things you can’t see is what you’re interested in, then Eli is who to find. She’s studying at the Technical University in Munich, researching detector development for neutrinos and dark matter using the CRESST experiment.
+Eli is easy to spot: she’s perpetually smiling and is always eager to talk to you about interesting things like how to figure out if a pill contains poison, or the best way to get three people across a bridge in the dark. Whether it’s astroparticle physics, logic puzzles, or debating the best recording of Beethoven’s Symphonies, get Eli talking and you’ll be glad you did!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:eli@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">NAP - Non-Astronomical Program</h3>
+      <p>So you are after an night full of observing, right until the Venus rises. What is the first thing that you need after dinner? That’s right, a NAP.</p>
+
+<p>So grab a blanket and get ready to sleep, right? Haha, not so fast. Grab a blindfolding device, an isomat and get ready to have great fun!
+That’s right NAP is going to be all but sleeping. The Non-Astronomical Programme will cater for your non-academic needs. We shall get to know each other, play silly and slightly-more-serious games, laugh, run, cooperate and compete!</p>
+
+<p>But wait, there’s more! In the NAP you will also have a chance to get to know other cultures and represent your own country through the world-famous national evening! Is that all? No, the fun never stops! Can you dance, sing, do magic tricks or tame wild animals? NAP has you covered with the performance evening where you can show your skills and watch other people do amazing stuff. On top of that we shall also have a poetry evening and a singing evening, as not everything can be expressed with a mathematical formula.</p>
+
+<p>So, do I have you on board? Great! Remember to pack these essentials so that you don’t miss out: a blindfolding device, i.e. something to cover your eyes (e.g. a scarf, but do get creative). Shoes and clothes that you will be comfortable running in. Any instruments or equipment that you need to perform. Your favourite poem. Anything you think could help people know your country/culture better. And most importantly - good sense of humour and openness to others. Don’t worry about bringing a smile, we will make sure you get a huge one.</p>
+
+<p>Don’t hesitate to drop me an email if you have any questions and concerns regarding probably the best part of your day (other leaders might disagree slightly).</p>
+
+<p>See you all in Nettlecombe!</p>
+
+      <p class="mb-1"><strong>Mike</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Mike.jpg" alt="Mike" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>This is Mike and as you can see, he loves to be handosme in photos. Coming from Poland and currently studying Electronic and Computer Science at the University of Edinburgh; he is full of surprises and really enjoys electronic gadgedts and programming. Maybe in the future he might conquer the world with little arduino robots. You will also find in Mike a person to talk about anything for hours, try it, he is a good listener and one of the best people I’ve ever known. This will be his fifth camp and second as a leader, so he is quite a experienced member of the IAYC and as the next NAP leader I can guarantee you that fun will be constant during the entire camp. Brace yourselves, NAP is coming!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:mike@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">GEN - General Coordinator</h3>
+      <p>“O General my General! What’s your duty, my General?”</p>
+
+<p>Good question, fellow iaycer, as the General Coordinator my duty is keeping the camp running smoothly making these three weeks to experience that you’ll never forget.</p>
+
+<p>Do you want more details? During the camp I’ll be the one talking with the house staff, making sure, among other things, that you have enough breakfast and coffee (or tea) to begin the day with. I’ll make tons of announcements about the daily schedule, pay attention if you want to know when you can wash your clothes or what were the last adventures of Tim, the house ghost. Before that I’ll arrange the transport so you can arrive safely to the camp and then I’ll make sure nothing bad happens during these weeks, and in the case that something happens, I’ll take care of it. Other daily duties will be buying snacks for your working group sessions, making sure your rooms are clean or collecting money from you merchanising shopping.</p>
+
+<p>Remember that I’m here for you. Do not hesitate about coming to me if you need something or just want to talk about life, the universe and everything else. Everything I’ll ask for is common sense! But first of all, you’ve got a friend in me. We will spend three weeks together in an incredible atmoshpere of science and cultural exchange where, most probably, your opinion about the world that surround us, will change.</p>
+
+<p>See you at the green fields of Nettlecombe Court!</p>
+
+      <p class="mb-1"><strong>Alex</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2018/leader_images/Alex.jpg" alt="Alex" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>All hail the GEN! With Alex at the helm, you have no need to worry! With 4 camps under his belt and the experience running an astronomy club at the Complutense University of Madrid he knows what is what and how to get things done. And the mixture of Spanish and Colombian blood makes a really strong character to back it up! And as you will see for yourself, Alex is just an awesome guy overall. He is super-friendly and you can strike up a conversation with him any time! Studying astrophysics, he is very passionate about the space, space travel, rockets, DIY, 3D printers and 3D-printed spacecraft, you name it. If you can’t find him, he will probably be out on the observation field, taking some of his truly amazing astro-pictures. Seriously, you need to see them. Aspiring to be the next IAYC dinosaur, Alex has all you need to make your summer even better!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:alejandro@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<p><img src="nap_1.jpg" alt="NAP" class="image-flex" />
+<img src="nap_2.jpg" alt="NAP" class="image-flex" />
+<img src="nap_3.jpg" alt="NAP" class="image-flex" /></p>
+
+<h2 id="your-application-for-the-iayc-2018">Your application for the IAYC 2018</h2>
+
+<p>If you want to participate in the IAYC 2018, fill in the online application (open soon), print the consent form, sign it and send it to us as soon as possible by <strong>regular post</strong>. If you are not yet 18 (21 in some countries) your legal guardian (usually a parent) has to sign the form as well. Please do not forget to attach a <strong>recent picture</strong> to your profile.</p>
+
+<p>Make sure you have read the terms and conditions on the consent form carefully. Please note that <strong>you are obliged to have health insurance, which is valid in England, for the duration of the camp</strong>. If we decide to accept your application you will need to send a copy of your insurance certificate to us (e.g. travel insurance certificate, European Health Insurance Card, etc.).</p>
+
+<p>You must be able to attend the entire camp, from the first Sunday evening to the last Saturday morning. We do not make exceptions to this rule. The IAYC experience is not like a summer school or conference with ‘optional’ sessions. The beginning and end of the camp are amongst the most important both for project work/report writing and for bonding with your fellow participants. We want all our participants to enjoy the full camp experience!</p>
+
+<h2 id="applying">Applying</h2>
+
+<p>To complete your application procedure, please send the consent form generated by the online application <strong>by regular post</strong> to:</p>
+
+<p><strong>IAYC 2018</strong><br />
+c/o Irati Larreina<br />
+Elterleinplatz 1/9a<br />
+1170 Wien<br />
+AUSTRIA</p>
+
+<p>Please note that we will only consider applications if we have received the signed consent form via regular post.</p>
+
+<p>If you apply before the 7th of April 2018 (post stamp date counts), you will be informed about your acceptance by the end of April. Later applications will be considered if places are still available.</p>
+
+<p>If accepted, you will need to transfer the applicable participation fee within <strong>7 days of receiving the acceptance email</strong>.</p>
+
+<p>If you need to apply for a <strong>VISA</strong> to enter England please contact the <a href="https://www.gov.uk/government/world/organisations">British embassy or foreign office</a> <strong>in your country</strong> as soon as possible to find out what documents you will need.</p>
+
+<p>Please make an appointment for your visa application <strong>for the end of April</strong>, even if your application has not yet been accepted. Organise this ASAP!</p>
+
+<p>Once you have been accepted to the IAYC we will provide a <strong>letter of invitation</strong> if necessary – please find out what details this letter should contain and contact us <strong>at least 2 weeks before</strong> your appointment at the embassy! Apart from the letter of invitation, obtaining a visa is <strong>your responsibility</strong>.</p>
+
+<h2 id="travel-to-the-iayc">Travel to the IAYC</h2>
+
+<p>Please note that we cannot make travel arrangements for individual participants. <strong>Travel to and from the camp is the sole responsibility of the participant.</strong> You will however upon acceptance receive a link to the Second Info brochure. It will contain more detailed information on how to travel to the camp. Additionally, you will receive a list with the contact details of all the other participants attending the IAYC 2018. This will enable you to contact other participants and arrange travel to the camp together. We will be arranging for coaches to take participants from London to the camp house on the arrival day. This also applies for departure. More details will be available after acceptance.</p>
+
+<h2 id="any-questions">Any questions?</h2>
+
+<p>If you have any questions that are not answered by this page, then we have an information service, info@iayc.org, that you can email. This is the same address that you should send your scans to. We will try to answer you within a couple of days - usually it’s sooner!</p>
+
+<p><strong>Before emailing info, please make sure you have read the First Info thoroughly. Please also read the <a href="/faq/">FAQ</a> which answers some of the more common questions that you might have.</strong></p>
+
+<p>Clear skies from all of us!</p>
+
+<p><em>Aitor, Alex, Cillian, Dan, Eli, Evi, Irati, Josh, Mara, Mike, Mel and Nikki.</em></p>
+
+<p>–</p>
+
+<p><img src="lagoon_nebula.jpg" alt="Lagoon Nebula" class="image-flex" />
+<img src="moon_venus.jpg" alt="Moon and Venus" class="image-flex" />
+<img src="Constellation.jpg" alt="Constellation Map" class="image-flex" /></p>
+
+</article>
+
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

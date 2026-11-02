@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2014</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/impressions/2014/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+
+  
+  
+
+  <div class="max-w-4xl mx-auto p-4">
+    <!-- Title Section with Navigation -->
+    <header class="mb-8">
+      <!-- Navigation Arrows -->
+      <div class="flex items-center justify-between">
+        <div>
+          
+          <a href="/impressions/2013"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              <i
+                class="fas fa-chevron-left flex items-center justify-center group-hover:-translate-x-1 transition-all "></i>
+              2013
+            </span>
+          </a>
+          
+        </div>
+
+        <div>
+          
+          <a href="/impressions/2015"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              2015
+              <i
+                class="fas fa-chevron-right flex items-center justify-center group-hover:translate-x-1 transition-all "></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Title and Info -->
+      <div class="text-center">
+        <h1 class="mb-4 text-4xl font-bold text-light-purple">
+          IAYC 2014
+        </h1>
+        <div class="flex items-center justify-center space-x-2 text-light-gray italic">
+          <span>Weyer, Austria</span>
+          <span>•</span>
+          <span>Livia Stark (Poland)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="prose max-w-none">
+      <p>1 The Bubble-Universe</p>
+
+<p>2014 is my third camp here in the IAYC. When I first applied I was expecting your everyday science camp that is more like a summer school than a place to go to and have fun, but it turned out to be so much more.</p>
+
+<p>When you arrive, you are greeted by strange, new faces. Some of them are nervous, a little bit afraid, they don’t know what is going on. They are “Newbies”, just like you. Others are wearing cheery smiles, excitement radiating from them, greeting each other with hugs. Many of them are mixing with the newbies, speaking reassuring words (yet sometimes mysterious, really confusing ones), telling them what a great decision they made by coming to IAYC. “Oldies” they are called. As the camp progresses you get to know the traditions, games, and you finally understand what the Oldies were talking about earlier. Your working group becomes your family but the whole camp is open and accepting. To quote one of my fellow oldies from his first year “Everyone is just so unexpectedly nice, it’s a bit surreal.” Then deadline passes. Three weeks flied away as fast as never before and you find yourself at home, sitting on your bed, reading cup messages. Everything you see reminds you of the camp and all the great memories. ’Those were the days’ have never been so sad before. Even months after the camp you miss the people you met there and whenever you start talking about your experiences a huge grin appears on your face. People ask what was the camp like, but you don’t know the answer, it cannot be described by words. There is one thing you know for sure: you want to go back.</p>
+
+<p>You are back. You are greeting everyone with smiles and hugs, exited for another three weeks of magic. Because that is what this camp is. There are many new faces while others are missing. But because this is IAYC everything falls into place. You get used to the new voice waking you up, make new friends and get even closer to old ones. You are not clueless anymore, and you find yourself smirking when an Oldie makes a reference to a tradition not spoken of outside the camp, or looking for constellations not only on the night sky. You work on your project, socialize and time passes by even faster (if it’s possible). The camp is coming to an end again and the thing constantly on your mind is “ I don’t want to leave!” But you are home again. You are already familiar with the IAYC hangover, but it doesn’t make it any easier. Whenever you say “The camp” everyone around you knows you are talking about IAYC. Thinking about not being able to go back is a heartbreak in itself, so you try everything in your power to be there the next year.</p>
+
+<p>At the train station, you see many strange, new faces. Some of them are nervous, a little bit afraid, they don’t know what is going on. Newbies. You see your friends wearing cheery smiles, excitement radiating from them. You go and greet them with hugs. You remember the time you were a Newbie and how nervous you were, so you go and talk to them, reassure them what a great decision they made by coming to the camp. You are an Oldie now, you are the one saying those mysterious words that confuse them. There are many events you are looking forward to. You are already speculating about where are you going on excursion day, what will be the colour of the camp T-shirt or what will be the theme for the movie game, even tough only a few days have passed. You know how fast time flies, so you throw yourself into camp life with all you have. Sleep is overrated, you don’t want to miss a second of the camp. You appreciate all the short moments of silences and even mornings can be bearable when you have waking up service. You find yourself singing Country Roads and thinking about how every country road should lead to IAYC</p>
+
+<p>IAYC feels like home, a place where we all belong.</p>
+
+<p>“IAYC is a bubble, a world of its own”, where it doesn’t matter where are you from, what do you do outside of the camp. You shut out the outside world and make the camp happen with the others. As I’ve said before, no-one outside of IAYC can understand what this camp is, what it means to its participants. While at the camp everything feels to be in perfect order in the world.</p>
+
+<p>2 The Sciency parts</p>
+
+<p>My primary reason for coming to the IAYC had been the chance to work on a scientific project. I found the idea of working on a project individually or in small groups with the leaders only supervising and not telling us what to do exactly a little bit scary, but still promising. I came to the camp because I wanted to test myself, to see if scientific work is really what I want to do. That had been two years ago. It turned out, all my fears were unfounded. The working groups are like families, always helping each other. Whenever we are struck, the working group leaders always help and guide us until we are on track again. The projects I’ve done in IAYC and the camp itself inspired me to do many things. It gave me the push I needed to decide for good that I wanted to be a scientist. It also gave me enough confidence in my scientific English skills and myself, that I decided to go to a university in England.</p>
+
+<p>This year I have been working on an awesome project, Irati made sure everyone was happy with the project they were doing. We encountered many problems, but we proved to be able to solve them, leaving me with a feeling of achievement. With all the experiences and sense of community IAYC gives, sometimes I feel like projects are not getting the recognition they deserve, but it doesn’t mean they are any less significant. They taught me so much in the past years about working morale, time management (“Lets have a short moment of panic!”) and working in a group despite possible personality clashes. This year was no exception, learning a coding language and coding was a nice challenge, even tough working with only one computer that could run IPython Notebook proved to be a challenge in itself.</p>
+
+<p>3 How does IAYC compare?</p>
+
+<p>I have been to several camps beside IAYC, sciency and none sciency as well (tough none of them had been international). None of the other camps I have been to have been on par with this one. IAYC has a special atmosphere that makes it unique. No other places had this many fun traditions. The leaders there were more like teachers, while here this year we had leaders I met first as fellow participants. They are also our friends, people like us. Without all the amazing leaders it would be far cry from what the camp really is. The fact that IAYC had been hosted by so many countries and had participants from even more makes it a great place to get to know more about other cultures. Coming to the camp and seeing so many different customs and people can be a bit overwhelming, but after the culture shock passes you realize they are all the same as you; friendly, nice people who love science.</p>
+
+<p>4 Conclusion</p>
+
+<p>Writing this statement I had many difficulties. It is difficult to only write about IAYC 2014, when I have been to 2 other ones as well. I cannot view them separately, they are each part of the big IAYC experience. It is also quite hard to write about the camp, tell my opinion, my feelings about it in a few short paragraphs. I don’t think it is possible to describe the camp and do it justice, even if I had a whole book to do so. I still have a feeling while writing the 3rd page in LateX that I have missed out something really important. So, to sum up my statement I am going to quote Daniel:</p>
+
+<p>“So, basically write about if the camp gives you a warm and fluffy feeling.”</p>
+
+<p>Does it?</p>
+
+<p>It definitely does.</p>
+
+    </article>
+  </div>
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

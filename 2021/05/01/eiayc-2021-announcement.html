@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>First Info – eIAYC 2021</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/2021/05/01/eiayc-2021-announcement.html">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    <h1 class="mb-2 mt-4 text-4xl font-bold leading-relaxed text-light-purple">First Info – eIAYC 2021</h1>
+
+<!-- Display date, author, and meta if it is a post -->
+<p class="italic text-light-gray mb-6">
+	May 1, 2021
+	 • IAYC Leadership Team 
+	
+</p>
+
+<!-- Floating Table of Contents -->
+
+
+<article class="prose max-w-none">
+	<p><strong>The eIAYC successfully ran in 2020 and 2021 as a response to the global COVID pandemic. This page is no longer current and we are not planning any eIAYCs at the moment.</strong></p>
+
+<p>It is with great sadness that we had to cancel another IAYC, but all is not lost, as we are delighted to announce two new eIAYC activities this summer: an online seminar series and a hackathon. Both former participants and the general public are welcome to participate!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Dates and times</th>
+      <th>Sign up</th>
+      <th>Poster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Seminar Series</td>
+      <td>Thurs 7pm CEST, biweekly, starting 10th June</td>
+      <td><a href="https://forms.gle/jEPPiJb2wKZjgaMf6">Link</a> (deadline 31st May)</td>
+      <td><a href="poster_seminar_series.pdf">Poster</a></td>
+    </tr>
+    <tr>
+      <td>Hackathon</td>
+      <td>Sat 17th 11am to Sun 18th 11pm July CEST</td>
+      <td><a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfR6d4OneRCNVRxxDsNs1GWkQ5NDZZi32cvNVBVrWh4RnZn-g/viewform">Link</a> (deadline 20th June)</td>
+      <td><a href="poster_hackathon.pdf">Poster</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="online-seminar-series">Online seminar series</h2>
+
+<p>The online seminar series will feature more than 10 different talks by past and present IAYC leaders, followed by informal discussions.</p>
+
+<p>The talks will cover a great variety of astronomy-related topics, ranging from new and exciting research in exoplanets, binary stars, instrumentation, to cosmology, neutrino astrophysics, as well as art, culture, and sustainable development. Please note that the content of the talks will be pitched at a high school science level.</p>
+
+<p>The series will begin on the <strong>10th of June 2021 at 7pm CEST time</strong>, and occur <strong>every two weeks until September 2021</strong>. Each session will feature two talks and last for one hour, followed by a social event. The talks will be livestreamed onrecorded and shared on YouTube and available to watch afterwards.</p>
+
+<p>The seminars will be given by the following leaders: Carys, Cillian, Dan, Eli, Evi, Finnbar, Hannah, Josh (live from the South Pole), Klaus, Mara, Mel, and Nikki.</p>
+
+<p>If you are interested in attending any of these sessions, please <em>sign up <a href="https://forms.gle/jEPPiJb2wKZjgaMf6">here</a> by 31st May 2021</em>.</p>
+
+<h2 id="hackathon">Hackathon</h2>
+
+<p>The hackathon will be a 36-hour event, running from <strong>17th 11am to 18th 11pm July CEST</strong>. Anyone can participate, and should aim to be present for the beginning and end of the hack (sleep in between is allowed!). The hack will take place on gather.town, and we will have plenty of (coffee) breaks for games and problem solving. There are prizes to be won for the best and most innovative projects!</p>
+
+<p>Hackathons are a great opportunity to learn new skills, and enhance existing ones. This event will be a bit different compared to typical hacks – we won’t be giving you a specific problem to solve, or a dataset to work with – instead, we want you to come up with a project yourself, based on what you are most interested in learning.</p>
+
+<p>You may already have an idea of what skills you want to develop, but if not, we are here to guide you – the signup form already includes a number of ideas for you to explore. We encourage you to think outside of the box and go outside of your comfort zone – skills could be anything from coding to knitting! You’ll also have the option to work together in groups, or alone if you wish.</p>
+
+<p>There will be a small fee of <strong>3 euros</strong> to participate, which will cover some of the costs of running this event. If the fee poses a barrier to your participation, we have a limited number of waivers available – please email us at <a href="mailto:info@iayc.org">info@iayc.org</a> to discuss this.</p>
+
+<p>If you are interested in attending the hackathon, please <em>sign up <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfR6d4OneRCNVRxxDsNs1GWkQ5NDZZi32cvNVBVrWh4RnZn-g/viewform">here</a> by 20th June</em>. We will contact you by the end of June regarding your participation.</p>
+
+<h2 id="leader-team">Leader Team</h2>
+
+<p>This eIAYC is brought to you by 11 lovely leaders, learn more about them below.</p>
+
+<h2 id="carys">Carys</h2>
+
+<p><img src="Carys.JPG" alt="Carys" /></p>
+
+<p>Carys is a real veteran, taking part in the IAYC since 2014! She is very bright in physics and ecoding, but can also enlighten you with music, calligraphy and jujitsu! Most importantly she is very good at making friends, a weekend with her is guaranteed to be worth your time!</p>
+
+<h2 id="dan">Dan</h2>
+
+<p><img src="Dan.jpg" alt="Dan" /></p>
+
+<p>Who’s this charming fellow? It’s Dan! A permanent fixture at the IAYC since 2012, this selenophile is currently working towards his PhD at the University of Cambridge. Not only is he an award-winning astrophotographer, he’s a really friendly guy! Ask him about interferometry or his fountain pen collection.</p>
+
+<h2 id="evi">Evi</h2>
+
+<p><img src="Evi.jpg" alt="Evi" /></p>
+
+<p>We all need a triple A in our lives. What is that? An Awesome Austrian Astronomer, of course! I’d personally recommend Evi to you. She’s doing her PhD on exoplanets at Warwick university and she is, objectively, the sweetest person on Earth. You’ll definitely not regret adopting her as your triple A.</p>
+
+<h2 id="finnbar">Finnbar</h2>
+
+<p><img src="2020_LT_Finnbar.jpg" alt="Finnbar" /></p>
+
+<p>Finnbar, the fair-headed one, is an Irishman you will never forget. He has not one but two Masters (one in creative writing and the other in wind power) as well as a bottomless bucket filled with enough energy to create a supernova. Please welcome Finnbar for his first time as leader at the IAYC!</p>
+
+<h2 id="gabi">Gabi</h2>
+
+<p><img src="Gabi.jpg" alt="Gabi" /></p>
+
+<p>Gabi first joined the IAYC in 2016 and has stuck around ever since. He’s got a degree in engineering and is working as a factory supervisor, doing all kinds of mechanical, electronic-related things. Make sure to talk to him as this Espanish guy is incredibly good at solving a Rubik’s cube or other puzzles, while he sure does love Astronomy!</p>
+
+<h2 id="hannah">Hannah</h2>
+
+<p><img src="Hannah.jpg" alt="Hannah" /></p>
+
+<p>Meet Hannah, the oldest Dinosaur on the block. Her first camp was in the Triassic period (2011), becoming a leader in the Cretaceous (2014), and she’s now living in Namibia working on astronomy for development. You’ll never meet a more warm and genuine person, so start up a conversation about camps of old or 90’s music (her taste is impeccable)!</p>
+
+<h2 id="mara">Mara</h2>
+
+<p><img src="Mara.jpg" alt="Mara" /></p>
+
+<p>Mara is one of the most genuine and caring people you will meet at IAYC. She studies physics in Madrid where she’s currently doing her final project on atmosphere dynamics, and is interested in the arts, books, swing dancing, and practical astronomy. She makes everyone feel loved and radiates happiness, so make sure you don’t miss meeting this wonderful person.</p>
+
+<h2 id="nikki">Nikki</h2>
+
+<p><img src="Nikki.jpg" alt="Nikki" /></p>
+
+<p>Ever wished you knew someone who could help you measure the temperature of a star very precisely while also playing you a soothing ukulele tune? Well, do I have the Nikki for you! Ever since 2014, Nikki has been a staple of the IAYC and is ready to do it all again at this year’s eIAYC!</p>
+
+<h2 id="roger">Roger</h2>
+
+<p><img src="Roger.jpg" alt="Roger" /></p>
+
+<p>The Radiant, the Reliable, the Rhythmic… _drum-roll _ ROGER! Not having missed a camp since 2017, this smiley and joyful Catalonian is coming for the first time as a leader! Don’t miss the chance to talk to him about his MSc on Multidisciplinary Research in Experimental Sciences, his movie likes or to sing along with him and his guitar!</p>
+
+<h2 id="ruurd">Ruurd</h2>
+
+<p><img src="Ruurd.jpg" alt="Ruurd" /></p>
+
+<p>We are thrilled to announce one of the new additions to the IAYC leader team is Ruurd! Ruurd first appeared at IAYC in 2018, and while we would love to have him at an in person camp, this will have to do. He is a very chill dude, with a great sense of humour. So come say “Hi” at the gather.town!</p>
+
+<h2 id="wanda">Wanda</h2>
+
+<p><img src="Wanda.jpg" alt="Wanda" /></p>
+
+<p>Wanda is an unstoppable German wonder with very broad interests: she majored in Biology and is currently studying Physics! Wild and with a peaceful soul, she is a nature-loving and heart-warming person, with a passion for sports, and an acute taste for the arts, currently involved in theatre play with physics experiments. She will tell you everything about our planet!</p>
+
+<h2 id="sponsors">Sponsors</h2>
+
+<p>We are very grateful to the following organisations for their sponsorship towards these events and the IAYC in general. If you are interested in sponsoring us and would like your organisation to be listed here, please contact us at <a href="mailto:sponsorship@iayc.org">sponsorship@iayc.org</a>.</p>
+
+<p><a href="https://gather.town/" class="image-flex"><img src="logo-name-dark-gray.png" alt="Gather logo" /></a>
+<a href="https://www.nature.com/natastron/" class="image-flex"><img src="Nature-Astronomy-CMYK.png" alt="Nature Astronomy Logo" /></a>
+<a href="https://www.astro4dev.org/" class="image-flex"><img src="iauoadlogo.jpg" alt="OAD Logo" /></a>
+<a href="https://www.copernicus.org/" class="image-flex"><img src="logo_copernicus_org_rgb.png" alt="Copernicus" /></a>
+<a href="https://www.planetarium-wien.at/" class="image-flex"><img src="maxresdefault.jpg" alt="Wien" /></a></p>
+
+</article>
+
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

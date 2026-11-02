@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2025 First Info</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/2024/12/31/iayc-2025-first-info.html">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    <h1 class="mb-2 mt-4 text-4xl font-bold leading-relaxed text-light-purple">IAYC 2025 First Info</h1>
+
+<!-- Display date, author, and meta if it is a post -->
+<p class="italic text-light-gray mb-6">
+	Dec 31, 2024
+	 • Ruurd 
+	
+</p>
+
+<!-- Floating Table of Contents -->
+
+<!-- TOC Toggle Button -->
+<button id="toc-toggle"
+	class="menu-button fixed
+	w-12 h-12 bottom-4 right-4 bg-violet-700 text-white hover:brightness-150 active:brightness-150 rounded-full shadow-[0_0_16px_4px] shadow-violet-700/50 z-70"
+	aria-label="Toggle Table of Contents">
+	<i id="toc-icon" class="fas fa-list-ul text-xl"></i> </button>
+
+<div id="toc-panel" class="menu-panel fixed bottom-4 right-20 shadow-xl shadow-black invisible z-70 ">
+	<ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#about-the-iayc-2025">About the IAYC 2025</a></li>
+<li class="toc-entry toc-h1"><a href="#a-few-facts-about-the-netherlands">A few facts about The Netherlands</a></li>
+<li class="toc-entry toc-h1"><a href="#observing">Observing</a></li>
+<li class="toc-entry toc-h1"><a href="#participation">Participation</a></li>
+<li class="toc-entry toc-h1"><a href="#grants">Grants</a></li>
+<li class="toc-entry toc-h1"><a href="#diversity">Diversity</a></li>
+<li class="toc-entry toc-h1"><a href="#choosing-your-working-group">Choosing your Working Group</a></li>
+<li class="toc-entry toc-h1"><a href="#your-application-for-the-iayc-2025">Your application for the IAYC 2025</a></li>
+<li class="toc-entry toc-h1"><a href="#travel-to-the-iayc">Travel to the IAYC</a></li>
+<li class="toc-entry toc-h1"><a href="#any-questions">Any questions?</a></li>
+<li class="toc-entry toc-h1"><a href="#supporters-of-the-iayc">Supporters of the IAYC</a></li>
+</ul>
+</div>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+
+<article class="prose max-w-none">
+	<p><strong>Applications are now closed.</strong></p>
+
+<p><a href="FirstInfo2025.pdf">Download the First Info as a PDF here.</a></p>
+
+<p><a href="iayc2025_poster.pdf">Download the application poster here.</a></p>
+
+<p>The International Astronomical Youth Camp (IAYC) is a three-week long summer
+camp aiming to promote knowledge of astronomy and related sciences in a unique
+international atmosphere. It is run by an international team of students and
+young scientists and organised by the
+<a href="/about-iwa/">International Workshop for Astronomy e.V.</a>.</p>
+
+<p><img src="1.png" alt="De Klonie Youth Hostel" class="image-flex" /></p>
+
+<p>More detailed information about the IAYC in general, participants, the daily
+schedule and observing during the IAYC can be found in the
+<a href="/program/">About the IAYC</a> section. We strongly recommend all
+prospective participants read this section as well as this First Info carefully!</p>
+
+<h1 id="about-the-iayc-2025">About the IAYC 2025</h1>
+
+<p>The IAYC will be held in the Netherlands for the first time in 50 years! The
+location will be at <a href="https://www.klonie.nl/nl/">de Klonie</a>, in the northeast
+province of Drenthe. The house is 30 km from the border of Germany and located
+in the hamlet of Ellertshaar.</p>
+
+<p>The camphouse itself is a group accommodation, designed for hosting large events
+and camps. It consists of four large bedrooms (20-36 beds), as well as a few
+smaller rooms (2-8 beds). In addition, there are several spaces available for
+various working groups and free-time activities, and a host of common rooms for
+socialising.</p>
+
+<p>The house has plenty of space for many outdoor activities, including a
+volleyball court, basketball court, football field, a pingpong table and a
+campfire site. In addition the campsite has a private beach next to the lake of
+Vossenmeer, suitable for swimming. The area is beautiful for hiking and has a
+lot of small ponds and creeks. Within 300 m of the camphouse there is a horse
+farm for horse riding!</p>
+
+<p><strong>Dates:</strong> 1st - 21st August (Camp runs from Friday evening to Thursday
+morning)<br />
+<strong>Camphouse:</strong> De Klonie - Ellertshaar<br />
+<strong>Address:</strong> Ellertsweg 4, 9535 TA Ellertshaar, Netherlands<br />
+<strong>Latitude:</strong> 52° 53’ 33” N<br />
+<strong>Longitude:</strong> 6° 44’ 15” E<br />
+<strong>Altitude:</strong> 18 m<br />
+<strong>Bortle scale:</strong> 4</p>
+
+<div style="width: 100%">
+  <iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=de%20Klonie+(My%20Business%20Name)&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+</div>
+
+<p><img src="3.png" alt="Camp house exterior" class="image-flex" /> <img src="4.png" alt="Camp house interior" class="image-flex" /></p>
+
+<p><img src="5.png" alt="Camp facilities" class="image-flex" /> <img src="6.png" alt="Camp common areas" class="image-flex" /></p>
+
+<h1 id="a-few-facts-about-the-netherlands">A few facts about The Netherlands</h1>
+
+<p><strong>Area:</strong> 41850 km²<br />
+<strong>Population:</strong> ~18 Million (2022)<br />
+<strong>Capital:</strong> Amsterdam<br />
+<strong>Major Cities:</strong> Rotterdam, Utrecht, Den Haag<br />
+<strong>Official Language:</strong> Dutch<br />
+<strong>Currency:</strong> Euro (EUR) €<br />
+<strong>International dialing code:</strong> +31 / 0031</p>
+
+<p>Travelling in Europe in general, and in the Netherlands in particular, is very
+safe. More than 90% of the Dutch population are fluent in English, so
+communicating with the locals will not pose a problem.</p>
+
+<p><img src="7.png" alt="Camp surroundings" class="image-flex" /> <img src="8.png" alt="Camp outdoor area" class="image-flex" /></p>
+
+<h1 id="observing">Observing</h1>
+
+<p>We will use the large pasture next to the camphouse as our observation field.
+Ellertshaar is located in a region of several natural reserves and has one of
+the lowest light pollution levels in the Netherlands! Observing takes place
+during working group sessions as part of your project, or after midnight when
+the telescopes are available for everyone. Catch a glimpse of a celestial object
+through a telescope or lie down in your sleeping bag and enjoy the view! Don’t
+worry if you’ve never observed before, the leaders and other participants are
+always happy to show you how it’s done and offer support. Everyone has the
+chance to learn how to use a telescope.</p>
+
+<p>Last but not least, we’ll also have a <strong>Dark Room</strong>. This means you’ll have the
+opportunity to take film pictures and learn to develop them yourself. You’re
+also welcome to bring your own telescope or binoculars. Take a look at our
+<a href="/equipment/">equipment list</a> to see a list of the
+<strong>telescopes and CCD cameras</strong> we have available.</p>
+
+<p><img src="9.jpg" alt="Observation field" class="image-flex" /> <img src="10.jpg" alt="Telescope setup" class="image-flex" /></p>
+
+<p><img src="11_alternative.jpg" alt="Night sky observation" class="image-flex" /> <img src="12.jpg" alt="Astronomical equipment" class="image-flex" /></p>
+
+<h1 id="participation">Participation</h1>
+
+<p>To participate in the IAYC you must be
+<a href="/faq/">16 to 24 years old (16 and 24 included)</a> at the
+start of camp.</p>
+
+<p>The participation fee is <strong>1130 EUR</strong> and the application deadline is <strong>9th of
+March 2025</strong>. Applicants will receive an outcome <strong>by the end of April</strong>. If
+accepted, you will need to transfer 350 EUR within seven days, and the remainder
+of the fee within the following 14 days. The participation fee is therefore
+fully paid at most 21 days after your notification of acceptance. Letters of
+support for visas will only be supplied after the participation fee is paid in
+full.</p>
+
+<p>You can withdraw your application at any time before we receive the
+participation fee. After that, we will refund you <strong>minus an administration fee
+of 50 EUR</strong> if you drop out before the <strong>1st of July</strong>, and <strong>100 EUR
+afterwards</strong>. Since the accommodation is paid for ahead of time, we will be
+unable to refund dropouts (including visa rejections) if we are unable to find a
+replacement by the beginning of the camp.</p>
+
+<p><img src="14.jpg" alt="Group activities" class="image-flex" />
+<img src="11.jpg" alt="Learning activities" class="image-flex" /></p>
+
+<h1 id="grants">Grants</h1>
+
+<p>If financial reasons are keeping you from applying, we encourage you to seek
+support from our (limited) grant programme. Our grant program can cover up to
+1080 euros of the participation fee. Note this means you must still cover other
+expenses such as cost of travel to and from the camp by other means. You can
+fill out the grant form as part of the regular online application process.</p>
+
+<p>This year we are able to offer three different types of grants:</p>
+
+<ul>
+  <li>The usual IAYC grants. This is open to anyone from any background and
+nationality and available to both new and previous participants.</li>
+  <li>The Wilhelm and Else Heraeus (WE-H) Foundation grants. This is open to German
+citizens and/or residents (for example if you are a foreign student living in
+Germany, or a German studying abroad), as well as new and previous
+participants. We may ask for proof that you fulfil the eligibility
+requirements.<img src="heraeus-foundation.jpg" alt="Heraeus Foundation" class="image-flex" /></li>
+  <li>The Zaklada MIOC Alumni grant. Open to students at the XVth Gymnasium in
+Zagreb, Croatia. This is a fully funded grant.</li>
+</ul>
+
+<p>If you are interested in applying for one of the above grants, please complete
+the additional grant section on your online application. As part of the grant
+application you will need to send in a <strong>2-3 min long video</strong> introducing
+yourself, your motivation to join IAYC and why you require a grant. Please send
+your video to <a href="mailto:info@iayc.org">info@iayc.org</a> via the cloud service
+<a href="https://wetransfer.com">wetransfer.com</a> with the title “Grant video [Your
+Name]”. If accepted, you will also be required to write a <strong>1-page report</strong>
+after the camp outlining your personal impressions, and lessons and skills
+learned from attending the camp. This will be anonymised (if you wish) and
+shared with the organisation which funded you.</p>
+
+<p>To improve your chances of receiving funding, you should try to find support
+from other organisations like the
+<a href="https://ras.ac.uk/awards-and-grants/grants-for-studies">Royal Astronomical Society</a>,
+<a href="https://eps.org/what-we-do/grants/">European Physical Society</a> or
+charitable agencies (e.g. Polish Children’s Fund, Swedish Astronomical Youth
+Association) that support young people doing research. Your school, university
+or workplace may also fund extra-curricular activities. If you can think of
+other ways or organisations that could support you, please try to explore them,
+as unfortunately our grant program is limited and we are unable to fund
+everyone.</p>
+
+<p>If you have questions about the grant programs, please contact
+<a href="mailto:info@iayc.org">info@iayc.org</a>.</p>
+
+<p><img src="12.jpg" alt="Grant recipients" class="image-flex" /> <img src="13.jpg" alt="Scholarship program" class="image-flex" /></p>
+
+<p><img src="14.jpg" alt="Diversity and inclusion" class="image-flex" /> <img src="20.jpg" alt="International participants" class="image-flex" /></p>
+
+<h1 id="diversity">Diversity</h1>
+
+<p>We are dedicated to making the camp accessible to all, and especially welcome
+applications from those belonging to minority groups. If you require time away
+from the schedule for prayers, or if you have any questions about accessibility
+or dietary concerns, please do not hesitate to get in touch via
+<a href="mailto:info@iayc.org">info@iayc.org</a>.
+<a href="/diversity/">You can read more on our policy on diversity here.</a></p>
+
+<p><img src="16.jpg" alt="Working groups" class="image-flex" /> <img src="17.jpg" alt="Research projects" class="image-flex" /></p>
+
+<p><img src="23.jpeg" alt="Camp community" class="image-flex" /> <img src="18.jpg" alt="Final activities" class="image-flex" /></p>
+
+<h1 id="choosing-your-working-group">Choosing your Working Group</h1>
+
+<p>In the following section you can find the abstracts of the eight working groups
+offered at the IAYC 2025. On the application form you will need to indicate
+which working groups you want to participate in. The NAP, GEN and Info will also
+introduce themselves.</p>
+
+<div class="flex flex-col gap-12">
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">BRAT SUMMER 2 - Big-data Research And Telescopes: Studying the Universe with Modern Machine lEaRning of 2day</h3>
+      <p><em>Tags: machine learning, image processing, observational, data pipelines, programming</em></p>
+
+<p><em>I’m everywhere, I’m so big data, ah ah a-a-ah</em></p>
+
+<p>Every day, observational instruments worldwide collect petabytes of data imaging the night sky, and that number is only increasing as our tools become more powerful. With so much raw information to handle, how do we process it all? How do we study such massive sources? What do the astronomical discoveries of today look like compared to when we lived in a small-data world? And how do we know where to look for them in a data landscape denser than a crowd in a boiler room?</p>
+
+<p><em>You wanna guess the color of this galaxy, you wanna know what’s its exact velocity</em></p>
+
+<p>In BRAT SUMMER 2, we will learn about the exciting modernities of observation and astronomy that have developed in the data-driven age. You can implement the machine learning algorithms that help detect anomalies hidden in giant datasets, identify element fingerprints in stars, or predict redshifts of supernovae. Try your hand at astrophotography and sharpen your own images by building a deconvolution pipeline to uncover subtle features in a celestial object’s structure. Maybe you’ll mine and analyse major sky surveys for the astronomical objects of your choice, using open-source tools for big data. Much like SOPHIE making her beats, we’ll see the extent of what computers can do for us in the modern era.</p>
+
+<p><em>I know its composition right to the core, from the stellar spectra passed through all the pipelines before</em></p>
+
+      <p class="mb-1"><strong>Zooey</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_zooey.jpg" alt="Zooey" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Let’s goooo! Zooey is officially here! This tech queen is taking a break from slaying in Silicon Valley to make her debut as a leader this year. She brings energy and enthusiasm wherever she goes, so whether you want to chat about the latest technological developments, discuss Vietnamese food, or exchange skincare tips, Zooey is an expert in yapping! Having been around at IAYC since 2018, she brings a wealth of experience and passion, so make sure you take the time to share a conversation or a bowl of pho with her, and get to know this lovely leader more!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:zooey@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">HAGGIS - Hunting and Analysing Growing Galaxies In Simulations</h3>
+      <p><em>Tags: galaxy formation, programming, simulation theoretical, cosmology</em></p>
+
+<p>“Space is big. Really big. You just won’t believe how vastly, hugely, mind-bogglingly big it is.”</p>
+
+<p>Space is so big in fact that it’s incredibly difficult to observe on the largest scales. So how do we have any sense of what the biggest objects in our universe look like? And how can we possibly tell how they formed in the first place?</p>
+
+<p>This is where the wonderful world of simulations comes in! Simulations allow us to recreate and investigate structures in our universe like galaxies and see how they were formed, as well as predict what might happen to them in the future. In HAGGIS, we’ll be exploring what goes into making a cosmological simulation, what kind of results they can produce, and what we can learn from this. There will be a range of projects on offer for all types of interest and experience. Want to get hands-on using real research code to see how simulations run? Wondering how galaxies even form in the first place and how we learn about that? Maybe you want to get your hands on some results and discover how we can make predictions with them?  Or maybe you want to throw out the rule book entirely and try and build your own brand new simulation code? Whatever area you’re interested in exploring, HAGGIS has a project for you!</p>
+
+<p>Whether you’re brand new to simulations or you’re ready to further your skills, I’ll be there to guide you through with lots of books, snacks, and moral support. So bring your enthusiasm, grab your rubber ducks, and I’ll bring a good helping of snacks, and let’s build some galaxies!</p>
+
+      <p class="mb-1"><strong>Sarah</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_sarah.jpg" alt="Sarah" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Misty mountains. Bagpipes. High-intensity rhythmic cardio. Sarah is on the horizon and we’re dancing like it’s the Scottish highlands! This IAYC veteran has turned leader. No sweat for someone getting a PhD in GPU computing and alternative dark matter models while simultaneously building entire theatre sets in a week. Come to Sarah for hilarious storytelling, musical discussion, her advice on wrangling misbehaving Python code. Like the warm coat of a HAGGIS, Sarah’s got you covered!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:sarah@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">LUCKY - teLescopes, fUn and a Clear sKY </h3>
+      <p><em>Tags: astronomy, observing, photography, data analysis</em></p>
+
+<p>For centuries, astronomers have looked up at the skies, staying awake for long hours, trying to decipher the secrets locked among the celestial bodies moving above their heads. However, one crucial element for fruitful astronomy research is out of the control of any dedicated scientist: the weather.</p>
+
+<p>But, don’t fear! In LUCKY we want to maximize our chances of accomplishing successful observing projects. That’s why we won’t limit our observations to the night time! In this working group we will focus our thirst for knowledge on our two biggest companions in the sky: the Sun and the Moon. Have you ever wanted to take nice pictures of the Moon and study its craters? Or look closely at the Sun without going blind and find out what is going on during a period of maximum activity? If you’d love to step into the shoes of great astronomers like Galileo or Tycho Brahe and replicate their work with the aid of modern technology, this is the group for you!</p>
+
+<p>It doesn’t matter if you’ve never observed or you like to take out your telescope every night, everyone is welcome to join! We’ll learn from each other, analyze our data, and get frustrated together during cloudy days. I’ll bring cool projects, telescopes and cameras, but bringing your own devices and ideas is encouraged!</p>
+
+<p>Don’t hesitate to get in touch if you have any questions or want to share your excitement, come join us in The Netherlands!</p>
+
+      <p class="mb-1"><strong>Maria</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_maria.png" alt="Maria" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>This lovely and cheerful person is María, and you’ll recognize her by how she lights up a room ! She is returning to IAYC for the fourth time this year after attending in 2022, 2023, and 2024, and this will be her second year as a leader (she’s got this whole thing down). María is studying astrophysics in Uppsala after completing her degree at USC in Spain, and has much to share! Don’t hesitate to ask her about the Swedish custom of fika, about her latest crocheting projects, or about what she’s currently reading: with María, you’re guaranteed to have great conversations and a good laugh!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:maria@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">SPARTA - Signal Processing, Antennas and Radio TrAnsceivers </h3>
+      <p><em>Tags: engineering, physics, DIY, practical, theoretical, programming</em></p>
+
+<p>Our modern civilization is built on communication technologies. They hold together economies, accelerate research endeavours and enable us to connect with people from all across the world. Each minute, more than 10 000 terabytes of data flow through undersea cables, communication satellites and wireless networks. So how did we get here? And how can we keep up with our ever-growing need for communication?</p>
+
+<p>In SPARTA we will try to answer these questions from a technical perspective: Maybe you want to come up with a data compression scheme or investigate how we deal with errors in our messages? Or how about intercepting the communications of a NOAA weather satellite to get satellite images and weather data from an object orbiting 800 km above our heads? You could also learn about soldering and build a morse transceiver or a little tabletop radio!</p>
+
+<p>No matter your expertise and background, I can guarantee that there will be an exciting project in SPARTA that fits you. So let’s strike a deal: You bring your enthusiasm for science and technology and I’ll bring coffee and tea to fuel our heroic quest for knowledge!</p>
+
+      <p class="mb-1"><strong>Joris</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_joris.jpg" alt="Joris" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Here lands Joris! The wonderful polymath oldies already know and love! Joris is joining the leader team for the first time and we couldn’t be more excited about having him. This German physicist, soon to finish his bachelor’s degree at Heidelberg University, is both kind and unimaginably clever. He can hold endless interesting conversations about almost any topic you can imagine, and will always be there to support you in your work and extra-curricular endeavours. Be it through physics, sci-fi, biochemistry, or metal, make sure to engage with this wonderful human being at camp!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:joris@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">STORYTIME - STars On the Radiant skY Truly Inspired Mythology on Earth </h3>
+      <p><em>Tags: cultural astronomy, mythology, archaeoastronomy, history, sociology</em></p>
+
+<p>Have you ever gazed at the night sky and felt your heart skip a beat in amazement? Or imagined your own constellations and stories about them?</p>
+
+<p>Imagine our ancestors hundreds and thousands of years ago looking up at the same stars and the awe they must have felt. They weaved the night sky into stories about their gods and built temples according to the path of the Sun or the Moon. Celestial objects are the center of countless myths and legends of creation, but they also played a more practical role in the history of humankind, be it in navigation or tracking the seasons with calendars.</p>
+
+<p>In STORYTIME, we’ll explore the relationship between astronomy and culture throughout history. From ancient Greek mythology which many of you might be familiar with, to stories of Aboriginal Australians (ever heard of the Big Emu?) and Inca legends, we will dive into different civilizations from around the world.</p>
+
+<p>Get ready to travel through time to the dawn of astronomy, with artefacts such as the Nebra sky disk, the oldest concrete depiction of the night sky, and structures like Stonehenge. We will also explore how people used the stars to find their way through a strange world. Who knows, maybe you will even get the chance to reconstruct ancient navigational instruments on your own?</p>
+
+<p>I promise you that we’ll spend hours underneath the stars, discussing stories and eating cookies. I will do my best to make sure you have a great time at the IAYC. Can’t wait to finally get to know you all in August!</p>
+
+      <p class="mb-1"><strong>Wanda</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_wanda.jpg" alt="Wanda" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>After two fantastic years as our GEN, Wanda is coming back for the fifth time as a leader! They’re one of the most genuine people you’ll meet at camp, sweet and down to earth. You can ask her about her Master in Global Change Ecology, or her degrees in biology and physics. Or about their slackline, their passion for heavy metal, or even their semester abroad in Nigeria! Full of interesting hobbies, stories and thoughts, her wisdom and knowledge are always guaranteed to make for an unforgettable conversation!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:wanda@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">YAPTOPIA - Young Academics Promoting Trust: cOllimating Philosophy with scIence and Astronomy</h3>
+      <p><em>Tags: social, theoretical, philosophy, psychology, astronomy</em></p>
+
+<p>‘Our planet is a lonely speck in the great enveloping cosmic dark.’ - Carl Sagan</p>
+
+<p>We’re constantly surrounded by fake news and unfounded statements. When empirical evidence and the scientific method are no longer trusted, how should we, as scientists, safeguard them? In YAPTOPIA, we’ll understand the conceptual and practical underpinnings of credibility in scientific findings, and how to make them within reach of everyone. In short, we’ll ask ourselves, why trust science?</p>
+
+<p>But this analysis becomes sterile if we ignore how our individualities deal with these concepts. What does it mean for you to know that you live in this pale blue dot? Do you feel scared or filled with wonder, when faced with fascinating and enormous concepts like the Big Bang, wormholes, parallel universes, quantum mechanics and the triple whopper?</p>
+
+<p>But wait, you may ask, when are we going to yap, if we have to think all the time? ‘This is where the fun begins.’ It’s the collective character of science that makes it so beautiful and incisive. This is why the heart of YAPTOPIA will be open discussions. You’ll be divided into subgroups, and after researching your topics, you’ll all bring to the table what you’ve learnt and what you think. We’ll discuss and keep notes of our thoughts, with mugs in our hands and yummy snacks by our side. You’ll discover, or appreciate even more, how refreshing and stimulating it is to discuss ideas and emotions with other human beings.</p>
+
+<p>So, what are you waiting for? Sail with me and dive into the YAPTOPIA!</p>
+
+      <p class="mb-1"><strong>Francesco</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_francesco.jpg" alt="Francesco" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Let me introduce: Francesco! With the brightest smile and warmest hug this lovely Italian will make your day. He first appeared on the IAYC stage in 2018 and quickly gained fame for his shenanigans. Now he is back as a second time leader and graduate in biomedical engineering, more precisely e-health. Aside from that, Chicco is also a Lord of the Rings and LEGO enthusiast (ask him about his collection) and has a great sense of humour. He is one of the kindest and most caring people I know and you can have great conversations with him, so don’t miss out!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:francesco@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">YEARN - quantifYing the ExpAnsion of the univeRse with distaNt objects</h3>
+      <p><em>Tags: data analysis, cosmology, programming, theoretical</em></p>
+
+<p>Have you ever pondered the mind-blowing vastness of the universe? Have you ever gotten dizzy during the mental exercise of pushing your awareness to the outermost reaches of space, deep into the past? Do you YEARN for the void? Well, look no further!</p>
+
+<p>In YEARN, we will use a mix of theoretical notions in the realm of cosmology, data analysis, and programming to study the large-scale expansion of the universe. Using data sets of both nearby and distant objects, we will aim to represent this expansion numerically. Then again, how do we even know the universe is expanding? Don’t just take my word for it - prepare to read and plot your hearts out! By analyzing different levels of redshifted spectra, we will travel as far as the absurdly distant quasars in order to quantify and compute the rate at which everything is moving away from us. Additionally, with some cheeky maths, we will attempt to understand both how it all began and what the end of the universe might look like (spoilers).</p>
+
+<p>Whether you’re new to these (profoundly cool) concepts and numerical tools or already quite comfortable with them, YEARN will offer you adaptable projects to satisfy your curiosity about what the heck is going on out there (and if you have your own ideas we can definitely explore them together).</p>
+
+<p>Bring a mug and your inquisitiveness, and I’ll meet you halfway with snacks, funky playlists, and as much support as you’ll need during your journey through deep space!</p>
+
+      <p class="mb-1"><strong>Dara</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_dara.jpg" alt="Dara" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Dara has been part of the IAYC family since 2019 and for the first time they are coming back as a leader! The coolest person of the camp is not only studying Physics in Lausanne, but also working as a bartender. During the three weeks of IAYC you can usually find her enjoying some floor time, chill talks under the stars or reading tarot cards. Invite them to a game of Monopoly or discuss how roller skates are much better than inline skates, and you’ll have guaranteed laughs for hours!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:dara@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">NAP - Non-Astronomical Program</h3>
+      <p>By now you must have read of all the wonderful working groups we have at the
+IAYC! After a long day of working on these exciting projects, you would of
+course need a nap. But at the IAYC we don’t just nap… we NAP!</p>
+
+<p>At 7:30 pm all the horses, birds and flying saucers within reach of Ellertshaar
+will start to hear peculiar noises. From whispering, to singing, to silly
+noises, to screaming from the top of your lungs! And many, many laughs!</p>
+
+<p>NAP is the camp’s Non-Astronomical Program! These daily sessions will be to get
+to know each other better, and to get away from the project code that is
+fuelling your imposter syndrome. We will be playing games, have lots of fun and
+bond as a group. And over the course of the camp, we will share our interests
+with performance evenings, our cultures with national evenings (bring
+traditional clothing and snacks if you can!) and our languages with
+poetry-evenings!</p>
+
+<p>Next to being the GEN’s right hand man, as NAP I will be in charge of camps
+non-academic activities. Aside from the daily NAP, you can expect me to organise
+your competitions, presentations and workshops into our schedule. Is your
+particle detector, morse transceiver or colleague not working? I will bring
+sticky tape and cookies. And I will try to trigger your wild side, spark the
+craziness in you and create some beautiful chaos that will make this camp an
+unforgettable experience!</p>
+
+<p>So bring your eye masks and your isomats, come with me, and get ready for a NAP!</p>
+
+      <p class="mb-1"><strong>Andrés</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_andres.jpg" alt="Andrés" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>Meet Andrés! This Bolivian particle physicist is returning to camp in his third year as a leader. Besides being a brilliant physicist, he conducts orchestras and is a huge Lord of the Rings nerd! On top of that, he is also an amazing speaker so you certainly don’t want to miss out on his talks on classical music or fundamental physics! With a contagious smile, a physics PhD and a tremendous talent for explaining things, every conversation with him will leave you feeling enlightened!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:andres@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="flex flex-col md:flex-row gap-6 items-start">
+    <div class="prose flex-2 min-w-0">
+      <h3 class="!font-primary !normal-case !text-2xl !font-semibold !text-light-purple">GEN - General Coordinator</h3>
+      <p>So you’re wondering what the General Coordinator of the IAYC does, right? It’s easy to miss how much work goes on behind the scenes to make sure camp runs smoothly and everyone has a great time.</p>
+
+<p>As the GEN it’s my job to make sure everything is working right from start to finish. You need hot food and all the tea and coffee you can lay your hands on when we get up at midday? I’ll be constantly keeping up with the staff of the house to keep us fed and watered. You can’t fit enough clothes for 3 weeks of camp into your suitcase (for some reason)? I’ll see to it that we can do at least some laundry during the camp, just don’t count on weekly washes.</p>
+
+<p>Aside from the day to day running of the camp it’s also my job to handle any problems that come up. Water not running, the heating/cooling is broken, your leader is missing/sick, and anything else you can think of. It’s up to me to deal with issues as they arise so that you don’t have to, and find solutions that keep things feeling seamless and smooth.</p>
+
+<p>During camp, you can come talk to me about anything, whether it‘s about your project not working, FOMO taking over or the fact that you haven‘t slept in 3 days because you stayed up observing all night – I‘m here for you. (But beware: if the last one applies, I will force you to go to bed!)</p>
+
+      <p class="mb-1"><strong>Marko</strong></p>
+    </div>
+    <div class="flex-1 min-w-0 text-left">
+      <div class="text-center mb-4">
+        <img src="/working-groups/2025/leader_images/iayc_2025_marko.jpg" alt="Marko" class="w-full md:w-full max-w-xs mx-auto md:max-w-none h-auto rounded-lg border-2 border-dark-purple" />
+      </div>
+      <div class="italic"><p>We’re no strangers to Marko! This Czech Spaniard has been with us since 2016, and this will be his third one as a leader! This engineer is incredibly kind, quick-witted and has a great sense of humour. In addition he is a polyglot, meaning he can listen to any concerns you may have in languages you have never even heard of. So have full faith in our GEN, we certainly do! This man is never gonna give you up, never gonna let you down. He is never gonna run around and desert you!</p>
+</div>
+      <div class="mt-4 text-center">
+        <!-- <p><a href="mailto:marko@iayc.org" -->
+            <!-- class="text-blue underline hover:text-light-red active:text-light-red">Contact</a></p> -->
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<h1 id="your-application-for-the-iayc-2025">Your application for the IAYC 2025</h1>
+
+<p><strong>The Deadline for applications is 9th March 2025, 23:59 CEST.</strong></p>
+
+<p>If you want to participate in the IAYC 2025, complete the
+<a href="https://apply.iayc.org">application form on our website</a>. Please read the
+instructions carefully. We will also require from you, or your legal guardian if
+you are not yet 18 (21 in some countries), to sign a consent form to download
+when finalising your application. <strong>Please do not forget to send us the consent
+form via email; without it your application is invalid!</strong></p>
+
+<p>Make sure you read the section “Participation” carefully and have a look at our
+<a href="https://iayc.org/privacy/">data protection agreement</a>. Please note that you are
+obliged to have <strong>health insurance which is valid in the Netherlands for the
+duration of the camp</strong>. If we decide to accept your application, you will need
+to send a copy of your insurance certificate to us (e.g. travel insurance
+certificate, European Health Insurance Card, etc.).</p>
+
+<p><strong>The consent form needs to be signed, scanned and sent by email to
+<a href="mailto:data@iayc.org">data@iayc.org</a>!</strong></p>
+
+<p>You will be informed about your acceptance by the <strong>end of April 2025</strong>. If
+accepted, you will need to transfer the applicable participation fee <strong>within
+seven days</strong> of receiving the acceptance email.</p>
+
+<p>If you need to apply for a <strong>visa</strong> to enter The Netherlands, please contact the
+Dutch embassy or foreign office in your country <strong>as soon as possible</strong> to find
+out what documents you will need. You should also make an appointment for your
+visa application by May, even if your application has not yet been accepted.
+Organise this ASAP!</p>
+
+<p>Once you have been accepted, we will provide a <strong>letter of invitation</strong> if you
+need one — please find out what details this letter should contain and contact
+us <strong>at least 2 weeks before your appointment at the embassy</strong>! Apart from the
+letter of invitation, obtaining a visa is <strong>solely your responsibility</strong>.</p>
+
+<p><img src="visa-info.jpg" alt="Visa information" class="image-flex" /></p>
+
+<h1 id="travel-to-the-iayc">Travel to the IAYC</h1>
+
+<p>Please note that we cannot make travel arrangements for individual participants.
+<strong>Travel to and from the camp is the sole responsibility of the participant</strong>.</p>
+
+<p>After acceptance, you will receive a link to the Second Info brochure. It will
+contain more detailed information on how to travel to the camp. Additionally,
+you will be able to contact other participants and arrange travel to the camp
+together.</p>
+
+<h1 id="any-questions">Any questions?</h1>
+
+<p>If you have any questions that are not answered by this page, please do not
+hesitate to contact <a href="mailto:info@iayc.org">info@iayc.org</a> or any one of us. We
+will try to answer you within a couple of days - usually it’s sooner!</p>
+
+<p>Before emailing info, please make sure you have read the First Info thoroughly.
+Please also read the <a href="/faq/">FAQ</a> which answers some of the
+more common questions that you might have.</p>
+
+<p>We look forward to receiving your application and to seeing you in Ellertshaar!
+Clear skies from all of us,</p>
+
+<p><em>Andrés, Dara, Francesco, Joris, María, Marko, Ruurd, Sarah, Wanda and Zooey</em></p>
+
+<p><img src="poster-image.jpg" alt="IAYC 2013 Poster" class="image-flex" /></p>
+
+<h1 id="supporters-of-the-iayc">Supporters of the IAYC</h1>
+
+<p>We are very grateful to the following organisations for their sponsorship
+towards the IAYC 2025. If you are interested in sponsoring us and would like
+your organisation to be listed here, please contact us at
+<a href="mailto:sponsorship@iayc.org">sponsorship@iayc.org</a>.</p>
+
+<ul>
+  <li>Wilhelm und Else Heraeus-Stiftung</li>
+  <li>Julius-Maximilians-Universität Würzburg, Faculty of Physics and Astronomy</li>
+  <li>Zaklada MIOC Alumni</li>
+  <li>Faulkes Educational Trust</li>
+</ul>
+
+</article>
+
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

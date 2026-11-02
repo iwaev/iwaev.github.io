@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2017</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/impressions/2017/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+
+  
+  
+
+  <div class="max-w-4xl mx-auto p-4">
+    <!-- Title Section with Navigation -->
+    <header class="mb-8">
+      <!-- Navigation Arrows -->
+      <div class="flex items-center justify-between">
+        <div>
+          
+          <a href="/impressions/2016"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              <i
+                class="fas fa-chevron-left flex items-center justify-center group-hover:-translate-x-1 transition-all "></i>
+              2016
+            </span>
+          </a>
+          
+        </div>
+
+        <div>
+          
+          <a href="/impressions/2018"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              2018
+              <i
+                class="fas fa-chevron-right flex items-center justify-center group-hover:translate-x-1 transition-all "></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Title and Info -->
+      <div class="text-center">
+        <h1 class="mb-4 text-4xl font-bold text-light-purple">
+          IAYC 2017
+        </h1>
+        <div class="flex items-center justify-center space-x-2 text-light-gray italic">
+          <span>El Solitario, Spain</span>
+          <span>•</span>
+          <span>Thinh Nguyen (Vietnam)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="prose max-w-none">
+      <p>To Irati, Klaus, Aitor, Dan and all the sponsors giving me the grant for the camp,</p>
+
+<p><em>Passengers, please tie your seat belt, we are going to land at Bajaras airport in the next few minutes…</em></p>
+
+<p>Never before have I felt so nervous like this time. This is the first time I have travelled to Europe, this is the first time I have travelled abroad alone, this is the first time I have participated in an International camp without knowing anyone in the camp. So many first time for one day.</p>
+
+<p><em>Thank you for using our airway, please check your baggage before leaving the airplane…</em></p>
+
+<p>I rapidly leave the plane, go through the security check and collect my baggage. My plane land off latest in the list, and there are four participants waiting for me. <em>Tik tok tik tok,</em> my suitcase finally appears; it is so slow and we can miss the shuttle bus. I feel so guilty now.</p>
+
+<p><em>Are you Thinh?</em></p>
+
+<p>Oh, that is Jade, I recognize her in the first time, we talked on Facebook before camp. Two other participants are Natalia and Shub, they are so friendly. We take the metro, have some talks, then reach to Ciudad University to meet all the campers. It is a little bit surprised since there are more people than I have imagined. Come on, be brave, Thinh, you have to talk.</p>
+
+<p><em>Week 1: starting with new cultural and IAYC tradition.</em></p>
+
+<p>The first thing I am very impressed is the strange time zone in the camp. In Vietnam, lunch is the camp’s breakfast, dinner is the camp’s lunch and breakfast is when all of us sleep. It’s weird, and in the first three day I have to go to bed really early (around 1 am, it’s very early compared to the time I go to sleep at the final week) since my eyes force me to close them (although I don’t want to); and get up really early too (around 9 am). I really miss many things during the first week.</p>
+
+<p><em>Morning has broken, like the first morning; black bird has spoken, like the first bird</em></p>
+
+<p>For IAYCers, this is so familiar that you gradually feel bored with this every morning. However, if you don’t hear it, you’re soon going to miss and try to find it by every means. Actually, Klaus is not so bad at singing the song, so sometimes people pretend to sleep to hear Klaus sing. I have downloaded the song to my phone, and for me, this tradition is pretty cool in IAYC.</p>
+
+<p><em>Can I have the short moment of silence?</em></p>
+
+<p>Yes, sure. Just kidding, it is the other tradition in IAYC. In Vietnam, it is mandatory to say “enjoy your meal” or invite everyone to eat; so it is not so strange for me. However, the interesting part is I can hear the word “enjoy your meal” in many different languages. It is really amazing. I also say it in Vietnamese in the fifth day of the camp, and after that people comment the Vietnamese is strange to hear. And I’m little bit happy when I hear that.</p>
+
+<p><em>Hello everyone, I’m Dan and welcome to DAFT</em></p>
+
+<p>My working group is DAFT (but it’s not daft, it is really awesome). I really love my project, which is about simulation on clusters kinematics using XHIP data. About my leader, the first word I</p>
+
+<p>would tell him is: admiration. I’m so grateful to Dan when he gives me a lot of materials, data, paper for my project; all of these are so amazing and I can’t wait to read all.</p>
+
+<p>In the third day of the camp, my partner leaves the camp because of some unknown reasons, so I am the odd one to do the project. Therefore, I have two options: joining with another group or doing the kinematics project alone. At this point, I greatly thank Dan since he let me do my project alone (since I really love that), and instruct me a lot in studying the materials. The camp have brought to me one of the greatest leaders I have ever had. He is my big inspiration. DAFT, DAFT, DAFT!</p>
+
+<p><em>Tomorrow is the excursion day</em>, <em>we will go the European Space Agency and Salamanca</em></p>
+
+<p>The European Space Agency (ESA) is so amazing. The models of four satellites greatly impresses me with the elaborateness in detail and appearance. How can they build such a complex machine like that hundred year ago? What do I need to learn to build a satellite like that? Just a moment I feel so little with the world, my knowledge is so tiny in the sea of the human knowledge. Study, study, study, the fire burn in my heart.</p>
+
+<p>Salamanca appears as an ancient city with a lot of vintage churches and houses that I only see in European-in-the-nineties movie. I travel with Hannah and Shub, visit the Salamanca Cathedral, Salamanca University and the Salamanca palace. Oh my god, this is the “real” Europe that I have always dreamed to come.</p>
+
+<p><em>Sangria Party!!!!!</em></p>
+
+<p>Now this is the weird part, I have never been to any dancing party before, especially the in-door party like this. At first, I dance really, really bad. Put my feet on the left, then put it to the right, then shake my head slightly, and that’s all. <em>sign</em> The Sangria drink is quite good, I really enjoy it. The party shows me a lot of popular music in Europe (which is not so popular in Vietnam), and it is a nice experience for me to learn European culture.</p>
+
+<p><em>Week 2: Home-sick, showering game and national evening</em></p>
+
+<p>After one week so excited with many new things, I get a slight homesick. Being unconnected in the camp encourages us to communicate more, but it also prevents me to talk with my family. The international call fee is quite expensive, so every time my parent call me, we just talked around 2 to 3 minutes, and then hurry say goodbye. One week no rice, no Vietnamese, it somehow affects me and makes the homesick worse…</p>
+
+<p><em>Spoiler, the showering game!!</em></p>
+
+<p>Fortunately, the busy camp program will immediately prevent you from being emotional. The most expected game of IAYC finally arrive, the showering game. It looks like the hunger game with smaller scale and less violent (but it is still an evil thing when you steal your victim reliability and make them change their clothes). Everyone get excited, working group starts to plan strategy, cups are hold, victim become nervous. It really heats the camp up.</p>
+
+<p>It’s sad to tell this, but I’m out of the game in the second day. I hate you, Julia.</p>
+
+<p><em>Friday is the next national evening. Countries that didn’t perform on Wednesday please prepare.</em></p>
+
+<p>The national evening is the second thing make me nervous after the working group project. I have prepared at home that I will sing some Vietnamese traditional song, but after the first national evening, I think that I will not do that. Just singing traditional songs doesn’t help anyone understand about your country, so I change my decision in the final hour. Making a speech about the special aspects of Vietnam and some differences between Vietnam and Europe. For me, the national evening is more than a normal presentation. I will represent Vietnam to introduce to friends around the world, so that I have to try my best, prepare every word with all the effort.</p>
+
+<p><em>Last but not least, Vietnam!</em></p>
+
+<p>Breath slowly, calm down, I take the stage and begin the presentation. Maybe you don’t know how much I sweat at that time; I’m so nervous that at some point I think I make some basic grammar errors. But, finally, I finish the presentation far from I expected. Patrick comes to me and says: “<em>Congratulation. That is a really good presentation”.</em> Patrick, I almost jump up when you said that.</p>
+
+<p><em>There will be no waking up service tomorrow</em></p>
+
+<p>The second Thursday in the camp we have a free day. It means free literally. You can choose whatever you want to do, such as going hiking, travelling to another camp, or simply spending all days at El Solitario sleeping. At first, Shub, Hannah and me plan to hang around the town’s local market to buy goods, and then go to the town’s college and souvenir shops. Unfortunately, things don’t happen like as we want, Hannah gets up late (although we try to wake her up three times), I forget the meeting location so Shub goes with another group. So sad with our group.</p>
+
+<p>I join with “Hiking with Viking group” to discover the bat cave on the mountain. It is actually not a cave, and there are also no bats in there, it’s just an old dark railway tunnel. But it doesn’t mean we’re upset about that. The scenery is so amazing, imagine you have a dark long old tunnel in the middle of forest, trees are swung by the winds creating the whisper of mother nature, and then like in a movie, you will see the mystical world of space and time, where your brain can’t perceive all things you see. We step in, everything darken, darken.</p>
+
+<p><em>Week 3: Report and Say goodbye.</em></p>
+
+<p>Pressure goes up, we have only five days to finish our projects and write our reports. For myself, I have finished the main part of my project, which is successfully plotting the cluster motion in 3D, and on the way analyzing it. The area in front of NAP hall is not crowded like the first two weeks, we just gather together in the NAP session; in the free time, we mostly stay in the working group room doing our project. What these busy days!</p>
+
+<p><em>It is twenty two hours before the deadline. Come on, guys.</em></p>
+
+<p>Those are Andres and Oz, they finish their reports early, so they run around and “update” the deadline situation. For me, it is not so annoying, it is funny somehow, and I often shout with them when they come to my working group room.</p>
+
+<p>Regarding my project, I have learnt so much after over two weeks researching and doing the project. Firstly, the most important skill is using Python. We start Python by two introduction lectures by Aitor, Mel and Javi; and then I teach myself through “Learn Python the hard way”, which is given by Dan. I read the book carefully, do each of the exercise step by step, and try to elaborate the code as much as I can. Python is so amazing, and I believe I’ve only reached the basic part in it. However, applying the sample code to my project isn’t that easy. I remember I have to ask Dan, Sameh and Cillian hundreds of time, spend my free time figuring how Python work, being angry and frustrated when the code doesn’t work the right way, and bursting into tear when I finally comply and the 3D figure appears properly. Python brings to me every emotion when using that; and further, helps me to step one step on the way to be an astronomer. Thank you IAYC for such an experience with Python.</p>
+
+<p>Secondly, Latex. I have some trouble installing it at first but when I get it in the computer, I completely get addicted with that. This is the first time I have written a scientific report, and the latex is so amazing in organize the text into professional and scientific format. The font, the equation, the order of the words are so beautiful in my project.</p>
+
+<p>Dan told us to give him the first draft two days before the deadline day. And you can imagine how my report is, Dan’s correction marks are all over the page. I didn’t really believe him when he said my report is good, but thank you Dan, your words are encouraging. I had many things to do with the first draft, such as the logical order of the context, using scientific and academics words, explaining some vague words and grammatical and typo problems. The second draft, fewer correction marks, but there are still some basic errors. And I only finish the report in the third draft of the report. That’s so satisfied, so delightful with the first scientific project done by myself. I remembered I scream so hard when Dan said: “The file works on my laptop, your project is finished”. Every night staying late to work, every effort reading the whole materials are now paid. Through the project, I learn a lot, from coding, working style, reading skill to setting up the telescope; and I understand that there are lots more to learn to become an astronomer.</p>
+
+<p>The project ends in happiness, but it is the mark of saying goodbye.</p>
+
+<p><em>Cup messages…</em></p>
+
+<p><em>Candles…</em></p>
+
+<p><em>Songs…</em></p>
+
+<p><em>And Love…</em></p>
+
+<p>All good things must come to an end. Three weeks are not a long time, but also not too short to make all the memory gone. We share our love together, we give our deepest feeling through a piece of paper in the emotional room. That moment when you feel all 73 members have the same heartbeat, you started to blame the time why it goes too fast, too fast that you realize in just the next twelve hours, you will not see them again. You start to remember the song that Klausi sings every day to wake you up. You start to remember the DAFTOITS with burning spirit. You start to remember when you sit in the dinner talking many things about your country. You start to miss the group hug. You start to want to shower Klausi like every evening. And then, you start to cry.</p>
+
+<p><em>Those were the days my friend</em></p>
+
+<p><em>We thought they’d never end</em></p>
+
+<p><em>We sing and dance forever and a day</em></p>
+
+<p><em>We live a life we choose</em></p>
+
+<p><em>We fight and never lose</em></p>
+
+<p><em>For we were young and sure to have our way.</em></p>
+
+<p>The song following the wind spread all the love of all IAYCers. I hope that we will meet again one day in the future. See you again, all my friends, I will never forget you.</p>
+
+<p>The IAYC adventure helps me to be more mature and I have learnt many things through this experience. I’d like to send my deep gratefulness to the leader team and all the sponsor that give me a grant so that I can have a chance to be one of an IAYCers. This three weeks bring me a clearer way to my future, and bring me some best friends I will never forget. The camp like just happened yesterday in my mind. For me, IAYC is more than a camp, it’s a home, a school, a crucial path to my future.</p>
+
+<p>See you again</p>
+
+<p>Clear skies</p>
+
+<p>Thinh Nguyen, 8th August 2017, Ho Chi Minh City, Vietnam</p>
+
+    </article>
+  </div>
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

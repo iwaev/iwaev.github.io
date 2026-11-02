@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>News</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/news/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    <h1 class="mb-2 mt-4 text-4xl font-bold leading-relaxed text-light-purple">News</h1>
+
+<!-- Display date, author, and meta if it is a post -->
+<p class="italic text-light-gray mb-6">
+	
+	
+	
+</p>
+
+<!-- Floating Table of Contents -->
+
+
+<article class="prose max-w-none">
+	<div class="max-w-6xl mx-auto">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+		
+		<a href="/2026/09/21/iayc-2027-announcement.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2026/09/21/eichsfelder_hutte.jpg" alt="IAYC 2027 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2027 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Sep 21, 2026 • Dara
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>The next IAYC will be held in Germany at the Eichsfelder Hutte, St.Andreasberg, from August 8th to 28th!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2025/12/31/iayc-2026-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2025/12/31/albergue-solanillos.jpg" alt="IAYC 2026 First Info"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2026 First Info
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 31, 2025 • Andrés
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2026, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2025/12/08/iayc-2026-announcement.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2025/12/08/albergue-solanillos.jpg" alt="IAYC 2026 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2026 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 8, 2025 • Andrés
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>The next IAYC will be held at El Albergue Solanillos in Spain, from August 2nd to 22nd!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2024/12/31/iayc-2025-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2024/12/31/1.png" alt="IAYC 2025 First Info"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2025 First Info
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 31, 2024 • Ruurd
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2025, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2024/09/17/iayc-2025-announcement.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2024/09/17/klonie-aerial.jpg" alt="IAYC 2025 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2025 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Sep 17, 2024 • Marko
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>The next IAYC will be held at de Klonie in the Netherlands, from the 1st August to the 21st August!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2023/12/22/iayc-2024-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2023/12/22/3.jpg" alt="IAYC 2024 First Info"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2024 First Info
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 22, 2023 • Ruurd
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2024, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2023/09/07/iayc-2024-announcement.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2023/09/07/klingenthal-hostel.jpg" alt="IAYC 2024 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2024 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Sep 7, 2023 • Wanda
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>The next IAYC will be held in Germany at the Klingenthal Youth Hostel, from the 4th August to the 24th August!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2023/01/05/statement-on-participation-fee-increase.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/assets/images/logos/logo_widescreen.png" alt="Statement on participation fee increase"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						Statement on participation fee increase
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Jan 5, 2023 • Daniel Mortimer
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Statement on participation fee increase</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2022/12/31/iayc-2023-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2022/12/31/walkway.jpg" alt="IAYC 2023 First Info (9th July - 29th July)"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2023 First Info (9th July - 29th July)
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 31, 2022 • Ruurd
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2023, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2022/09/16/iayc-2023-announcement.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2022/09/16/eichsfelder_hutte.jpg" alt="IAYC 2023 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2023 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Sep 16, 2022 • Wanda
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>The next IAYC will be held again in Germany at the Eichsfelder Hutte, St.Andreasberg from the 9th July to the 30th July!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2022/01/01/first-info-iayc-2022.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2022/01/01/observing_field.jpg" alt="First Info - IAYC 2022 (17th July - 6th August)"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						First Info - IAYC 2022 (17th July - 6th August)
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Jan 1, 2022 • Ruurd
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2022, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2021/12/31/first-info-iayc-2023-9th-july-30th-july.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/assets/images/logos/logo_widescreen.png" alt="First Info - IAYC 2023 (9th July - 30th July)"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						First Info - IAYC 2023 (9th July - 30th July)
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 31, 2021 • Ruurd
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2023, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2021/11/14/iayc-2022-announcement.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2021/11/14/eichsfelder_hutte.jpg" alt="IAYC 2022 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2022 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Nov 14, 2021 • Mel
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Next year the IAYC will take place from the 17th July to the 6th August, 2022 and it will be in Germany again, but at...
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2021/05/01/eiayc-2021-announcement.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2021/05/01/eiayc.png" alt="First Info – eIAYC 2021"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						First Info – eIAYC 2021
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						May 1, 2021 • IAYC Leadership Team
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>We are delighted to announce two new eIAYC activities this summer: an online seminar series and a hackathon. Both former participants and the general public...
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2021/02/16/iayc-sad-news.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/assets/images/logos/logo_widescreen.png" alt="Sad news about the IAYC 2021"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						Sad news about the IAYC 2021
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Feb 16, 2021 • IAYC Leaderteam
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>After long discussions, we regret to announce that <strong>the IAYC 2021 has been cancelled</strong> due to the ongoing COVID-19 pandemic.</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2020/03/18/important-announcement-about-iayc-2020.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/assets/images/logos/logo_widescreen.png" alt="Important announcement about IAYC 2020"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						Important announcement about IAYC 2020
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Mar 18, 2020 • Mike
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>We regret to announce that <strong>IAYC 2020 has been cancelled</strong> due to the COVID-19 pandemic.</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2020/02/04/exciting-news.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2020/02/04/wilhelm_foundation.svg" alt="Wilhelm and Else Heraeus Foundation Grant"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						Wilhelm and Else Heraeus Foundation Grant
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Feb 4, 2020 • Hannah
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>The Wilhelm and Else Heraeus Foundation is generously offering the IAYC a special grant fund for this year!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2019/12/27/iayc-2020-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2019/12/27/hostel.jpg" alt="First Info - IAYC 2020 (12th July - 1st August)"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						First Info - IAYC 2020 (12th July - 1st August)
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 27, 2019 • Cillian
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2020, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2019/12/20/iayc-gets-published-in-nature-astronomy.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2019/12/20/41550_2019_965_Fig5_HTML.jpg" alt="IAYC gets published in Nature Astronomy"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC gets published in Nature Astronomy
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 20, 2019 • Josh, Hannah
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>The camp is 50 years old, and we’ve published an article in Nature Astronomy to celebrate!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2019/10/29/iayc-2020-announcement.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2019/10/29/hostel.jpg" alt="IAYC 2020 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2020 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Oct 29, 2019 • Leaderteam
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Next year the IAYC will take place between the <strong>12th July to the 1st August, 2020</strong> and we’ll be in Spain!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2019/01/01/iayc-2019-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2019/01/01/klingenthal.jpg" alt="IAYC 2019 First Info"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2019 First Info
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Jan 1, 2019 • Eli
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2019, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2018/08/12/iayc-announcement-2019.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2018/08/12/klingenthal.jpg" alt="IAYC 2019 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2019 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Aug 12, 2018 • Eli
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Next year the IAYC will take place between the <strong>21st July to the 10th August, 2019</strong> in Klingethal!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2017/12/25/iayc-2018-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2017/12/25/nettlecombe_valley.jpg" alt="IAYC 2018 First Info"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2018 First Info
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 25, 2017 • Alex
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2018, check out this year’s working groups and apply!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2017/08/24/iayc-announcement-2018.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2017/08/24/nettlecombe_jcrocker.jpg" alt="IAYC 2018 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2018 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Aug 24, 2017 • Alex
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Next year the IAYC will take place between the <strong>24th July to the 13th August, 2018</strong> and we’re back in the UK!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2016/12/25/iayc-2017-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2016/12/25/pool.jpg" alt="IAYC 2017 First Info"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2017 First Info
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 25, 2016 • Irati
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2017, check out this year’s working groups and apply online!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2016/11/02/iayc-announcement-2017.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2016/11/02/hostel.jpg" alt="IAYC 2017 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2017 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Nov 2, 2016 • Irati
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Next year the IAYC will take place between the <strong>16th July to the 5th August, 2017</strong> and it will finally be in Spain again!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2016/04/20/iayc-patches.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2016/04/20/IAYC-embroidered-patch.jpg" alt="IAYC Patches"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC Patches
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Apr 20, 2016 • Josh
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>IAYC Patches! Courtesy of Embroidered Patches.</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2016/03/06/iayc-equipment-list.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/assets/images/logos/logo_widescreen.png" alt="Equipment list updated"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						Equipment list updated
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Mar 6, 2016 • Josh
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>We’ve updated our equipment list including some new photos.</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2016/01/29/iayc-baa.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/assets/images/logos/logo_widescreen.png" alt="BAA Article"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						BAA Article
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Jan 29, 2016 • Hannah
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>The British Astronomical Association have published an article about the IAYC!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2015/12/25/iayc-2016-first-info.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2015/12/25/nettlecombe_jcrocker.jpg" alt="IAYC 2016 First Info"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2016 First Info
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Dec 25, 2015 • Hannah
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Details of the IAYC 2016, check out this year’s working groups and apply!</p>
+
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+		<a href="/2015/10/03/iayc-announcement-2016.html" class="block group" style="text-decoration: none!important;">
+			<article class="cursor-pointer">
+				
+				<div class="aspect-video overflow-hidden mb-4 flex items-center justify-center">
+					<img src="/2015/10/03/nettlecombe_valley.jpg" alt="IAYC 2016 Announcement"
+						class="w-full h-full object-cover group-hover:!scale-105 transition-transform " />
+				</div>
+
+				<div>
+					<h3
+						class="text-lg font-bold text-light-blue mb-2 leading-tight group-hover:!text-white group-active:!text-white transition-colors ">
+						IAYC 2016 Announcement
+					</h3>
+					<p
+						class="text-sm italic text-light-gray mb-3 group-hover:text-white group-active:text-white transition-colors ">
+						Oct 3, 2015 • Hannah
+					</p>
+
+					
+					<div
+						class="prose prose-sm max-w-none text-light-gray text-justify group-hover:!text-white group-active:!text-white transition-colors ">
+						<p>Next year the IAYC will take place between the <strong>24th July to the 13th August, 2016</strong> and it will be in the UK for the...
+					</div>
+					
+				</div>
+			</article>
+		</a>
+		
+	</div>
+</div>
+</article>
+
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

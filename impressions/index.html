@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>Camp Impressions</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/impressions/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar-->
+  <div class="hidden md:flex items-center">
+    <a href="https://apply.iayc.org"
+      class="rounded-full px-4 py-2 text-white font-medium transition-all bg-dark-red hover:brightness-150 active:brightness-150">
+      Apply
+    </a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button -->
+      <div class="my-4">
+        <a href="https://apply.iayc.org"
+          class="bg-dark-red rounded-full text-xl text-center text-white items-center justify-center gap-2 w-full hover:brightness-150 active:brightness-150"
+          style="padding: 1rem 2rem !important;">
+          <i class="fas fa-rocket"></i> Apply Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    <h1 class="mb-2 mt-4 text-4xl font-bold leading-relaxed text-light-purple">Camp Impressions</h1>
+
+<!-- Display date, author, and meta if it is a post -->
+<p class="italic text-light-gray mb-6">
+	
+	
+	
+</p>
+
+<!-- Floating Table of Contents -->
+
+
+<article class="prose max-w-none">
+	Below you will find a selection of impressions written by participants of previous camps. Hopefully they will give you a
+good idea of what to expect at the camp from a participants' perspective.
+
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+  
+  <a href="/impressions/2025"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2025</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">De Klonie, Netherlands</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Alex Green (Australia)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">I’m not sure why I initially applied to this camp. Of course, I have had a love
+for astronomy for many years, but this is something I never would have done
+before. Applying to something I had never heard of, in a continent I had never
+been to, was one of the biggest risks I have taken. But it was also the best
+decision of my life.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2024"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2024</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Klingenthal, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Zlata (Ukraine)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">I’m not sure what compelled me to look up astronomical camps on that random
+evening and click on the IAYC website, but what I do know is that it was one of the
+best decisions of my life. I remember how nervous I was on the way to the camp
+house, especially because I knew that I was going to be one of the youngest at
+camp. But on the first day, I saw the oldies running to hug each other, so excited to
+meet again, with huge smiles on their faces, and I had a feeling that everything
+would be alright and that the next 3 weeks were really going to be amazing. And I
+was right. I remember being super confused by all the traditions in the first few days,
+and one of the oldies told me that I would catch on really fast. And you really do just
+embrace all the craziness of IAYC and become a part of it so, so quickly. By day 3, I
+felt like I was a part of something really great, and by the end of the first week,
+despite meeting everyone for the first time, it felt like I’d known them for forever
+before. That’s what the IAYC is like – you meet all these amazing people in a safe
+environment, and by the time camp ends, you end up with friendships that stretch all
+over the world.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2023"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2023</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Eichsfelder, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Sashka (Spain)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">On the first day of camp, I was asked to describe myself using one sentence. Attempting to describe IAYC in one sentence, or even in just some pages, is impossible. It’s hard to describe the way it makes you feel during and after it, it’s hard to describe the warm and cozy feeling it creates and it´s even harder to look back now at all those memories and not smile. If I had to describe IAYC in one sentence, I guess it would be “A warm home you didn’t know you needed, but found, and never want to leave again”.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2022"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2022</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Eichsfelder, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Jimo (Argentina)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">Going to IAYC 2022 was my first time being on a plane alone. I had never been away from home for that long by myself, let alone on another continent. When I arrived in Germany, my suitcase wasn’t there, it had been lost on the way. Another participant kindly offered to let me -stay at his house the night before camp because he lived close to the airport. So there I was, in a strange country, with no suitcase, going to stay with someone I didn’t know. Sounds scary, right? Well, it was. But as soon as I got there, I found a warm welcome hug and a helping hand. The IAYC spirit was already there, even before camp officially started. The next day, we left for the camp and already started meeting people at the train station. There were some faces I recognised from the Facebook group, and some new ones. Some were oldies with t-shirts from past camps, and some newbies as lost as me, but everyone was extremely excited about what was about to start. The camp started, and as the days went by, the IAYC atmosphere started to settle. Most of us didn’t know each other before, but in there it was as if we’d been friends for years. As soon as people found out I’d lost my things, everyone offered to lend me stuff. For a week I was using other people’s t-shirts and shampoo until my suitcase eventually arrived. Everyone was so kind to me that I didn’t even have time to worry about my luggage being lost. That’s how IAYC felt to me, it didn’t matter where you were from, what you did before or what you were going through, there was always someone there willing to help, or just give you a hug when you needed it.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2019"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2019</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Klingenthal, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Dasha (Ukraine)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">It is always very hard to put into words your impressions after such an indescribable experience.
+But on the other hand, it is an attempt to release all these uniquely warm feelings and memories that, hopefully, would push someone to apply here as it worked one day for me.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2018"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2018</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Nettlecombe Court, United Kingdom</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Francesco (Italy)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">I’m writing this review just a month after my first IAYC. Every time I talk with one of my friends, I end up talking about this camp and I tell countless anecdotes. It’s surprising for them how I never get bored and also how I always find new stories! However, I still haven’t managed to explain properly what this camp is. I always feel like I could tell more, like they couldn’t catch the special vibe of this experience. Maybe this is because the only way to do it is to participate in it. You, dear reader, may wonder why I am writing this experience report then. Well, I’ll try to do it the same way I tell my friends.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2017"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2017</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">El Solitario, Spain</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Thinh Nguyen (Vietnam)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">To Irati, Klaus, Aitor, Dan and all the sponsors giving me the grant for the camp,
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2016"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2016</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Nettlecombe Court, United Kingdom</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Pau Batlle Franch (Spain)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">Writing about the IAYC nearly just after arriving home is difficult, since all the memories are still so recent that it is hard to find the exact words to describe what this amazing experience has meant for me.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2015"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2015</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Klingenthal, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Anthony Choon Wei Vun (Malaysia)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">It seems like it was only yesterday that I arrived at IAYC 2015 camp at Klingenthal, and it is two days from today to say goodbye to other participants of the camp. It has been an out- of-the-world experience at this camp. I have met so many wonderful people from around the globe, people of different cultures, backgrounds, and experiences. Listening to every one of them broadens my perspective in life. It is surprising that mutual interest Astronomy can bring various people together in one camp.
+Throughout this camp, I have learnt many new things. I started learning ping pong with Mishal and Aoife from the beginning of the camp and now we are all so good at it! During the working group session, I also had the chance to learn some German from Emelie, Niklas, and Patsi. Niklas and Emelie had also taught me how to solve the Rubik cube partially. Moreover, I have also learnt how to set up and operate a telescope. Alexandro from Spain also taught me how to process photos taken for Astro-photography. During the free time, I also got some guitar lesson from Ayoub.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2014"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2014</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Weyer, Austria</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Livia Stark (Poland)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">1 The Bubble-Universe
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2013"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2013</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Klingenthal, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Matthew Maclay (WI, USA)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">The IAYC experience is absolutely remarkable; I discovered more than I could have imagined in the three weeks of camp. The IAYC is a family of friends that are passionately curious about the universe. Whether you are a competent astronomer at a graduate level, or just curious about constellations, the IAYC has incredible opportunities to offer you. Friendships that I molded at the camp continue to endure, and provide me links to every corner of the globe. Nowhere else have I seen and partaken in such sincere and unhindered camaraderie.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2012"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2012</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Eichendorf, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Lucía Prada Zambrano (Spain)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">Thinking about the IAYC now that I am at home with all these pictures of us smiling and laughing, now, without the noise of 80 people talking and making jokes all the time, like a soundtrack, now, in a room by myself so far from Eichendorf - sometimes I think that this period of time that we spent at the camp together was just like a dream. We had loads of fun and did so many interesting things, I am sure that everyone (including the leader team) learned a lot (about much more than just astronomy). However, like when you are eating a delicious chocolate cake, enjoying every minute of it, time passed by really fast. So fast that now that I am back home where everything is still the same - just like before I left for camp… nothing has changed, things can be found in the same places where they always used to be… It seems that the IAYC took place in a different world, where neither time, distance nor different ages, levels of skill, nationalities or race matter. There really is a good atmosphere at the camp, it’s almost as if you were on holidays, with friendly young people from all over the world who are interested in the same things you are interested in. Everyone who joins the IAYC seems to be a special person with a lot of energy and good mood to make us smile with their kind way of saying ‘good morning’. For me IAYCers are people who like to read interesting books, who care about science, who enjoy spending their free time observing the night sky, and most importantly: they’re great people to hang out with, who will do everything they can to make a party very lively after a long day of hard work and research with their projects.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2011"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2011</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Třemešek, Czech Republic</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Hannah Dalgleish (UK)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">By the time I arrived at the Třemešek camphouse all was eerily quiet. It seemed that most people had already gone to sleep, or the oldies were catching up somewhere, unbeknownst to me. I had no idea what an oldie was, but they sounded rather intimidating to say the least.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2010"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2010</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Klingenthal, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Aleksandra Sokołowska (Poland)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">For a minute there I lost myself,
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2009"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2009</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Hala Miziowa, Poland</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Josh Veitch-Michaelis (UK)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">I heard about IAYC almost by chance. During my first year as a Physics undergraduate, I received an email offering 3 weeks of astronomical adventure in the Polish mountains. Intrigued, I did some digging and contacted some past participants - all of whom were very enthusiastic. Unfortunately, I only received the information with a fortnight to the application deadline, so I hastily filled in the form and sent it off. Fast-forward a few months and I had been accepted, paid the fees, booked my flights and had some emails from my working group leader. All very exciting, but I still had no idea what to expect - was everyone going to be super nerdy? Would the language barrier prove to be a problem (as a stereotypical Briton, my grasp of languages stretches to bad French)? I had arranged to meet a couple of other English folk in Krakow so with a bit of luck I would at least find the place.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2008"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2008</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Sayda, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Ana Dishlieska-Mitova (Macedonia)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">Sixty five travellers through the world and through life, and passionate lovers of the starry night skies have met in the centre of the world for those three weeks from 22.07-09.08, Sayda - Germany. For a newbie that I was, this was an unforgettable experience that I tried to catch as much as possible with all the senses, the heart, the soul and the mind. At the start, I think as everyone who comes from far away to a place that he/she doesn’t know with people that are still strangers to him/her, I was kind of afraid about (not) fitting in. At the beginning you feel like being dragged out of your home and your habitual everyday life, and put in an environment not familiar to you, but for sure till the end of the camp you will feel it more yours than many others at your homeland. The main reason for this is the people you meet there. Each of them was a world waiting to be discovered. I felt honored to be among so many different people, people from variety of backgrounds who have so many colorful ideas and each of them is unique in his/her own way. Together we made a land without borders in which we lived in piece and love those three extraordinary weeks, and we proved that although there were so many differences that made this experience so colorful and rich, there was just one feeling of unity that outran them all and connected us in the IAYC created world.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2007"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2007</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Třemešek, Czech Republic</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Toni-Farren Vraagom
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">Allow me to tell you the IAYC-story through the eyes of a first time participant. So sit back, relax and prepare to be swept away into the wonderful world of stars, comets and constellations.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2006"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2006</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Třemešek, Czech Republic</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Ondrej Urban (Slovakia)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">Forty-second to find it, forty-two being the answer. Surrounded by woods and great people, lack of sleep and lack of tiredness at the same time. Symbols and traditions at each step and yet new ones jumping into existence right before your amazed eyes. What all can happen when you take 7,5m3 of human beings out to the middle of nowhere and stuff them into area equipped with a pool, finite number of showers, several cozy rooms and a dog bigger than your bike?
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2005"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2005</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Závadka nad Hronom, Slovakia</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Ana Brajovic (Serbia)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">5…4…3…1… OFFBLAST!
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2004"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2004</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Sayda, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Erik Jansen (Netherlands)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">As I had missed the IAYC 2003 in Klingenthal, I felt a bit like a lost soul coming back home. But it was surprising how much I had forgotten about my beloved home…
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2003"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2003</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Klingenthal, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Ana Ruiz M. (Spain)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">There used to be a tower in the middle of a forest. Just at the border between Germany and Czech Republic. Somewhere. I don’t know if it is still there, but I guess so. I hope so. It was one of the best places ever to see a sunrise.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/2002"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">2002</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Eichendorf, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Ania Lesiewicz
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">IAYC 2002 was definitely blue. But not some ordinary blue, neither the patented blue kept among other places in the Cologne museum. It was blue da be dee da. It became blue after a ferocious fight on the corridor of the camp house; weapons being sizeable loudspeakers. Even when the victory was almost obvious, a few guerrillas still claimed that there’s No reason to be ashamed/ No reason to be sad/ Can you feel the other place/ Don’t you feel so fine/ Forever have a good time/ I just wanna be happy now/ The music is deep inside/ So baby can you try/ We can’t find/ So I begin.
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/1999"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">1999</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Vép, Hungary</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Norbert Werner (Slovakia)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">IAYC 1999 was a really special camp. It took place in a small village called Vép in Hungary, in the central-line of the totality of the solar eclipse. Many people wanted to see the eclipse, so this IAYC was really huge. It had about 100 participants and in the middle of the camp when the oldies arrived to see the disappearing Sun we were in the house about 150! The big camp was in a big house, which was surrounded by a nice park. Nearby was a football field for the NAP and a gigantic Chupa-Chup ;)
+</p>
+    </div>
+  </a>
+  
+  <a href="/impressions/1998"
+    class="block card bg-gradient-to-br from-dark-purple to-dark-blue backdrop-blur-sm shadow-md hover:shadow-lg active:shadow-lg border border-light-purple/20 overflow-hidden hover:scale-105 hover:!text-white active:!text-white cursor-pointer group"
+    style="text-decoration: none!important;">
+    <div class="flex items-center justify-between">
+      <span
+        class="text-xl !font-bold !font-title text-light-purple group-hover:!text-white group-active:!text-white transition-colors mr-4">1998</span>
+      <span class="bg-light-purple! text-dark-purple! text-sm rounded-full font-medium px-2 py-1 text-right truncate">Klingenthal, Germany</span>
+    </div>
+    <p class="text-light-gray text-sm mb-2 italic group-hover:!text-white group-active:!text-white transition-colors">
+      By
+      Sebastian Scheuer (Germany)
+    </p>
+    <div
+      class="text-light-gray text-sm mb-2 h-20 overflow-hidden group-hover:!text-white group-active:!text-white transition-colors">
+      <p class="line-clamp-3 leading-relaxed text-ellipsis">I read about IAYC 1998 in the German astronomy magazine ‘Sterne und Weltraum’. Not knowing what to expect, I decided to apply to the camp, for the first time. Of course, quite some information was available on the camp’s website. And although I knew it would be only four hours a day of so-called working group time, I didn’t know what I really should expect. What will this working group time be like? Instructor standing in front of the group distributing tasks and asking questions? Oh well, no, they wrote it’s not like school…
+</p>
+    </div>
+  </a>
+  
+</div>
+</article>
+
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
