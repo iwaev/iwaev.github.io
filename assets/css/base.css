@@ -16,7 +16,6 @@ BASE STYLES & DESIGN SYSTEM
   font-family: "Figtree";
   src: url("../fonts/Figtree-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
-  font-weight: 300 900;
   font-display: swap;
 }
 
@@ -53,6 +52,11 @@ p,
 div,
 a {
   @apply font-primary;
+}
+
+/* Override bold weight globally */
+.font-bold {
+  font-weight: 550 !important;
 }
 
 /* Page titles - much larger and more prominent */

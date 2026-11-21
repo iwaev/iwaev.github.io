@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics tracking for the website. Loads the gtag.js library asynchronously. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXK0C8CCVF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JXK0C8CCVF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <!-- Sets the page title: uses page title if available, otherwise site title. -->
+    <title>IAYC 2026</title>
+    
+    <!-- Sets the meta description for SEO using the site description. -->
+    <meta name="description" content="The International Astronomical Youth Camp is an annual summer camp for people aged between 16-24 years old who are interested in astronomy and astrophysics.
+">
+
+    <!-- Make canonical link for better SEO. -->
+    <link rel="canonical" href="https://iayc.org/impressions/2026/">
+
+    <!-- Sets the tiny icon for the site. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logos/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/logos/favicon/site.webmanifest">
+    
+    <!-- Redirect browsers looking for favicons at root to correct location -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/logos/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/logos/favicon/favicon.ico">
+    
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS: links to the main stylesheet for the site. -->
+    <link rel="stylesheet" href="/assets/css/compiled.css">
+    
+</head>
+
+
+<body>
+  <!-- Define navigation data directly in header.html using arrays -->
+
+
+
+
+
+
+<!-- Positioning of the header box -->
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-transform  ease-in-out text-light-purple px-4"
+>
+  <!-- Desktop navbar -->
+<nav
+  class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/95 shadow-lg shadow-black">
+  <!-- Logo/Brand -->
+  <a href="/" class="flex items-center space-x-2">
+    <img src="/assets/images/logos/header-light.png" alt="IAYC header logo" class="h-8 w-auto" />
+    <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <div class="hidden md:flex flex-1 items-center justify-center font-medium space-x-8">
+    <!-- Main navigation links -->
+    
+    <a href="/nextcamp/" class="navbar-item">
+      Next Camp
+    </a>
+    
+    <a href="/program/" class="navbar-item">
+      Program
+    </a>
+    
+    <a href="/impressions/" class="navbar-item">
+      Impressions
+    </a>
+    
+    <a href="/news/" class="navbar-item">
+      News
+    </a>
+    
+    <a href="/faq/" class="navbar-item">
+      FAQ
+    </a>
+    
+
+    <!-- More dropdown -->
+    <div class="relative group">
+      <button id="more-toggle" class="menu-button flex items-center hover:text-white active:text-white">
+        More
+        <i class="fa-solid fa-chevron-down w-4 h-4 ml-1"></i>
+      </button>
+      <div id="more-panel"
+        class="menu-panel w-48 absolute top-full mt-2 invisible z-60 text-left shadow-xl shadow-black">
+        
+        <a href="/about-iwa/">About IWA</a>
+        
+        <a href="/support/">Support the IAYC</a>
+        
+        <a href="/equipment/">Equipment</a>
+        
+        <a href="/diversity/">Diversity</a>
+        
+        <a href="/contact/">Contact Us</a>
+        
+        <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Apply button in the desktop navbar (shown when the latest camp post is a first-info) -->
+  
+  
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center">
+    <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+      <i class="fas fa-bars text-2xl transition-colors group-hover:text-white"></i>
+    </button>
+  </div>
+  <!-- End of Mobile menu button -->
+</nav>
+  <!-- Mobile nav menu -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-dark-dark-blue">
+  <!-- Mobile nav menu header -->
+  <div class="w-full fixed top-0 left-0 z-50 px-4">
+    <nav
+      class="flex max-w-4xl mx-auto items-center justify-between rounded-full h-16 px-6 mt-4 bg-dark-purple/50 shadow-lg shadow-black">
+      <!-- Logo/Brand -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/assets/images/logos/header-light.png" alt="IAYC header logo"
+          class="h-8 w-auto" />
+        <span class="text-xl text-light-purple !font-title hover:text-white active:text-white">IAYC</span>
+      </a>
+
+      <!-- Mobile menu close button -->
+      <button onclick="toggleMobileMenu()" class="menu-button flex items-center group">
+        <i class="fas fa-times text-2xl transition-colors group-hover:text-white"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile nav menu content -->
+
+  <div class="flex flex-col min-h-full p-4 pt-[calc(var(--navbar-height)+2rem)]">
+    <div class="menu-panel w-full !bg-dark-dark-blue text-lg">
+      <!-- Main navigation links -->
+      
+      <a href="/nextcamp/">Next Camp</a>
+      
+      <a href="/program/">Program</a>
+      
+      <a href="/impressions/">Impressions</a>
+      
+      <a href="/news/">News</a>
+      
+      <a href="/faq/">FAQ</a>
+      
+
+      <!-- Secondary navigation links -->
+      <p class="font-bold mt-4 border-t border-dark-purple">More</p>
+
+      <div class="ml-4">
+         <a href="/about-iwa/">About IWA</a>
+         <a href="/support/">Support the IAYC</a>
+         <a href="/equipment/">Equipment</a>
+         <a href="/diversity/">Diversity</a>
+         <a href="/contact/">Contact Us</a>
+         <a href="/privacy/">Privacy Policy</a>
+        
+      </div>
+
+      <!-- Apply Button (shown when the latest camp post is a first-info) -->
+      
+      
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</header>
+
+<!-- Load unified menu JavaScript -->
+<script src="/assets/js/menu.js"></script>
+
+  <main class="max-w-4xl mx-auto pt-[calc(var(--navbar-height)+2rem)] px-8 pb-8">
+    
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+  <div class="max-w-4xl mx-auto p-4">
+    <!-- Title Section with Navigation -->
+    <header class="mb-8">
+      <!-- Navigation Arrows -->
+      <div class="flex items-center justify-between">
+        <div>
+          
+          <a href="/impressions/2025"
+            class="inline-flex items-center text-light-purple hover:text-light-red active:text-light-red transition-colors  group gap-2">
+            <span class="text-sm font-medium">
+              <i
+                class="fas fa-chevron-left flex items-center justify-center group-hover:-translate-x-1 transition-all "></i>
+              2025
+            </span>
+          </a>
+          
+        </div>
+
+        <div>
+          
+        </div>
+      </div>
+
+      <!-- Title and Info -->
+      <div class="text-center">
+        <h1 class="mb-4 text-4xl font-bold text-light-purple">
+          IAYC 2026
+        </h1>
+        <div class="flex items-center justify-center space-x-2 text-light-gray italic">
+          <span>Mazarete, Spain</span>
+          <span>•</span>
+          <span>Chara (Cyprus)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="prose max-w-none">
+      <p>When I came across an IAYC ad last December, I knew I was signing up for something awesome. Well, the camp was everything I expected and hoped for, but  x100.</p>
+
+<p>From my first interactions with super friendly and welcoming oldies before we even got to the camphouse, to leaders coming up to me and going “oh you’re the lawyer from Cyprus!” before I even got the chance to introduce myself to any of them yet, the atmosphere already felt like a warm hug from the first moment. Apart from the surprise element in different games and silly camp traditions, I felt like I fit in already from day one.</p>
+
+<p>As a non-STEM major, I was a bit worried that I couldn’t live up to the project expectations. My impostor syndrome didn’t last for longer than the first Working Group session though, as our leader, Zooey, reassured me, and soon enough I realised that my working group partners were equally as inexperienced in telescope observations as I was. The approach of the leaders is to give you guidance and resources for your project, but to let you learn the ropes on your own, which allowed us to experiment a lot before finding what worked best for our project’s needs. Trying to take pictures of Saturn’s moons with a telescope while having little to no prior skill in practical astronomy and astrophotography was a humbling experience but definitely a very rewarding one as well, and sharing it with my working group partners was a big part of that. In IAYC you learn so many things that go beyond university lectures, and you get to do so by trial and error and a lot of guidance from experienced leaders.</p>
+
+<p>You also get to learn a lot about other people’s passions and niches and share your own with them! People at the IAYC are very passionate about space and intricate topics, and thus were very excited to learn about my niche (space law), which is a topic often overlooked by other law students and lawyers. There is no shortage of things you can learn here about different scientific branches, different cultures, and perspectives in general, be it from workshops, late-night talks, or memorable conversations with people. A lot of these will stay with me for a long time.</p>
+
+<p>One of my favourite memories from this year’s camp was the total solar eclipse. It was the most beautiful thing I have seen in my entire life, and sharing it with everyone at the camp made it a very emotional experience. The same night, it was the peak of the perseid meteor shower. We gathered with our red torches in the observation field under the dark sky, singing, playing guitars, and watching the massive perseids, one after another. I remember myself lying on the ground, stargazing, everyone around me singing, and feeling a sense of wholeness and totality (like the eclipse that day); a sense that in that moment I did not need anything else to be happy.</p>
+
+<p>If I start listing all of the moments that shifted something in me at this camp, this text will become a book. I just want to say that I am eternally grateful to everyone at the camp who made my first experience so beautiful, and to all the people who tirelessly worked behind the scenes to make it possible, as well as the grant donors who gave me the opportunity to attend the camp.</p>
+
+<p>I read somewhere on the website when I was applying, that time at camp works differently and that it goes both too slow and too fast at the same time. I didn’t know what that meant at the time, but now that I lived through it, I completely understand, and there is no better way to explain this weird time warping effect. It’s like being in a parallel dimension for a while and then being pulled out of it. It’s interesting how I can only think of sci-fi concepts to describe this dream-like state; maybe this is also a camp effect.</p>
+
+<p>I can’t wait to join our weird little astronomy bubble next year. I am still in disbelief that this is a real experience and that it really happened to me. Ad astra, my friends!</p>
+
+    </article>
+  </div>
+  </main>
+  <footer class="p-8 border-t border-dark-purple mx-4">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+    <div class="text-left">
+      <h3 class="text-sm! mb-2">Contact</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          General enquiries and information:
+          <a href="mailto:info@iayc.org" class="text-blue-300!">info@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          President (Wanda Witte):
+          <a href="mailto:board@iayc.org" class="text-blue-300!">board@iayc.org</a>
+        </p>
+        <p class="mb-1">
+          Webmaster (Zooey Nguyen):
+          <a href="mailto:webmaster@iayc.org" class="text-blue-300!">webmaster@iayc.org</a>
+        </p>
+      </div>
+    </div>
+    <!-- IAYC Logo -->
+    <div class="flex justify-center order-first md:order-none">
+      <img src="/assets/images/logos/Logo_IAYC_color.png" alt="IAYC Logo" class="h-36" />
+    </div>
+
+    <div class="text-left md:text-right">
+      <h3 class="text-sm! mb-2">Legal</h3>
+      <div class="text-xs">
+        <p class="mb-1">
+          IWA e.V. is registered at the Amtsgericht Frankfurt (Oder), under registration number VR 6910.
+        </p>
+        <p>
+          <a href="https://iayc.org/privacy" class="text-blue-300!">Privacy Policy</a>
+          |
+          <a href="https://iayc.org/about-iwa" class="text-blue-300!">About IWA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
